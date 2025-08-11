@@ -10,6 +10,11 @@ namespace OrderManagement.Domain.Common
     {
         public string Message { get; set; } = string.Empty;
         public T Data { get; set; }
-        public int ErrorCode { get; set; }
+        public ErrorCode Code { get; set; }
+        public enum ErrorCode
+        {
+            Success = 0,
+            Error = 1
+        }
     }
 }

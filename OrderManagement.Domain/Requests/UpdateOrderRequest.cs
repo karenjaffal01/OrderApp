@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderManagement.Domain.DTO
+namespace OrderManagement.Domain.Requests
 {
-    public class updateOrderDTO
+    public class UpdateOrderRequest
     {
         public int Id { get; set; }
-        
         public string? CustomerName { get; set; }
         public string? UpdatedBy { get; set; }
     }

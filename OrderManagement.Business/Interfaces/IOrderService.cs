@@ -11,11 +11,12 @@ namespace OrderManagement.Business.Interfaces
 {
     public interface IOrderService
     {
-        Task<int> CreateOrderAsync(CreateOrderDTO orderDto);
+        Task<Response<object>> CreateOrderAsync(CreateOrderDTO dto);
         Task<Response<object>> UpdateOrderAsync(updateOrderDTO dto);
         Task<Response<object>> DeleteOrderAsync(int orderId);
         Task<Response<object>> DeleteOrdersAsync(int orderId);
         Task<Response<OrderDTO>> GetOrderByIdAsync(int orderId);
         Task<Response<object>> PlaceOrderWithItemsAsync(CreateOrderDTO orderDto, List<CreateOrderItemDTO> itemsDto);
+        Task<Response<List<OrderDTO>>> GetAllOrdersAsync();
     }
 }

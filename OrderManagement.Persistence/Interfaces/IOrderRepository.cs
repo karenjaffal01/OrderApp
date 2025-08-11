@@ -9,6 +9,8 @@ public interface IOrderRepository
     Task<(int ErrorCode, string Message)> DeleteOrderAsync(int orderId, IDbTransaction transaction);
     Task<(int ErrorCode, string Message)> DeleteOrderWithItemsAsync(int orderId, IDbTransaction transaction);
     Task<OrderDTO> GetOrderWithItemsAsync(int orderId);
-    
+    Task<IEnumerable<OrderDTO>> GetAllOrdersAsync();
+
+
 }
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OrderManagement.Business.Interfaces;
 using OrderManagement.Domain.DTO;
+using OrderManagement.Domain.Common; // For Response<T>
 
 namespace OrderManagement.API.Controller
 {
@@ -13,11 +14,15 @@ namespace OrderManagement.API.Controller
         {
             _orderItemService = orderItemService;
         }
+
         [HttpPost]
         public async Task<IActionResult> AddOrderItem([FromBody] CreateOrderItemDTO dto)
         {
             var response = await _orderItemService.AddOrderItemAsync(dto);
-            return Ok(response);
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+            else
+                return BadRequest(response);
         }
 
         [HttpPut("{id}")]
@@ -25,15 +30,20 @@ namespace OrderManagement.API.Controller
         {
             dto.Id = id;
             var response = await _orderItemService.UpdateOrderItemAsync(dto);
-            return Ok(response);
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+            else
+                return BadRequest(response);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrderItem(int id)
         {
             var response = await _orderItemService.DeleteOrderItemAsync(id);
-            return Ok(response);
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+            else
+                return BadRequest(response);
         }
-
     }
 }

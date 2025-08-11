@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OrderManagement.Business.Interfaces;
 using OrderManagement.Domain.Entities;
+using OrderManagement.Domain.Common; 
 
 namespace OrderManagement.API.Controller
 {
@@ -19,15 +20,20 @@ namespace OrderManagement.API.Controller
         public async Task<IActionResult> CreateUser([FromBody] Login dto)
         {
             var response = await _service.CreateUserAsync(dto);
-            return Ok(response);
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+            else
+                return BadRequest(response);
         }
 
         [HttpPost("authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] Login dto)
         {
             var response = await _service.GetUserAsync(dto.Username, dto.Password);
-            return Ok(response);
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+            else
+                return Unauthorized(response); 
         }
     }
-
 }

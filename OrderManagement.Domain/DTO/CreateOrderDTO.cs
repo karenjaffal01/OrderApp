@@ -9,7 +9,6 @@ namespace OrderManagement.Domain.DTO
     public class CreateOrderDTO
     {
             public string CustomerName { get; set; }
-            public DateTime OrderDate { get; set; }
             public string CreatedBy { get; set; }
     }
 }

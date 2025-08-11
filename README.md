@@ -1,5 +1,5 @@
 For Week 1, we need to implement the following:
- 
+
 Setup the project structure.
 Build the first API service (OrderService)
 Create schema order with tables and stored procedures.
@@ -25,14 +25,14 @@ Domain
 Database Setup
 
 Create order schema with tables:
-order, order_items, login
+order, order\_items, login
 Ensure all base tables have the default columns:
-created_by
-created_date
-updated_by
-updated_date
-is_active
-is_deleted
+created\_by
+created\_date
+updated\_by
+updated\_date
+is\_active
+is\_deleted
 Write stored procedures (CRUD) returning { errorCode, data }.
 
 EF Core + Dapper Setup
@@ -43,12 +43,55 @@ Logging
 Setup Serilog (console and files) with correlation IDs.
 Base Response Structure
 {
-  "message": "Operation successful",
-  "data": {},
-  "errorCode": 0
+"message": "Operation successful",
+"data": {},
+"errorCode": 0
 }
 Swagger
 Enable and configure annotations.
 CRUD API Endpoints
 Implement /api/orders CRUD with Dapper.
-Use basic validation attributes (e.g., [Required], [StringLength]).
+Use basic validation attributes (e.g., \[Required], \[StringLength]).
+
+
+
+
+
+
+
+For Week 2: Authentication and InventoryService
+
+Goals
+
+Implement JWT authentication, claims.
+
+Add InventoryService with its own schema inventory.
+
+Secure APIs with JWT and claims.
+
+Steps
+
+JWT Setup
+
+Configure token issuance and validation.
+
+Use login table for authentication.
+
+Define claims and roles.
+
+Secure APIs
+
+Apply \[Authorize] and claims policies to OrderService endpoints.
+
+InventoryService Setup
+
+Create inventory schema with tables (items, stock + default audit columns).
+
+Write CRUD stored procedures.
+
+Setup solution with API, Business, Persistence, Domain.
+
+Configure EF Core + Dapper.
+
+Implement /api/inventory CRUD endpoints with JWT protection.
+

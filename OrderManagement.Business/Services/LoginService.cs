@@ -26,7 +26,11 @@ namespace OrderManagement.Business.Services
             try
             {
                 var result = await _repo.CreateUserAsync(dto);
-                if (result.ErrorCode == 0)
+
+                // Map int error code from repo to enum
+                var errorCode = result.Code == Response<object>.ErrorCode.Success ? Response<object>.ErrorCode.Success : Response<object>.ErrorCode.Error;
+
+                if (errorCode == Response<object>.ErrorCode.Success)
                 {
                     _logger.LogInformation("User '{Username}' created successfully", dto.Username);
                 }
@@ -34,6 +38,8 @@ namespace OrderManagement.Business.Services
                 {
                     _logger.LogWarning("Failed to create user '{Username}'. Reason: {Message}", dto.Username, result.Message);
                 }
+
+                result.Code = errorCode; // ensure proper enum assignment
                 return result;
             }
             catch (Exception ex)
@@ -43,7 +49,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = ex.Message,
                     Data = null,
-                    ErrorCode = -1
+                    Code = Response<object>.ErrorCode.Error
                 };
             }
         }
@@ -55,7 +61,10 @@ namespace OrderManagement.Business.Services
             try
             {
                 var result = await _repo.GetUserAsync(username, password);
-                if (result.ErrorCode == 0)
+
+                var errorCode = result.Code == Response<object>.ErrorCode.Success ? Response<object>.ErrorCode.Success : Response<object>.ErrorCode.Error;
+
+                if (errorCode == Response<object>.ErrorCode.Success)
                 {
                     _logger.LogInformation("User '{Username}' found and authenticated", username);
                 }
@@ -63,6 +72,8 @@ namespace OrderManagement.Business.Services
                 {
                     _logger.LogWarning("Authentication failed for username '{Username}'. Reason: {Message}", username, result.Message);
                 }
+
+                result.Code = errorCode;
                 return result;
             }
             catch (Exception ex)
@@ -72,7 +83,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = ex.Message,
                     Data = null,
-                    ErrorCode = -1
+                    Code = Response<object>.ErrorCode.Error
                 };
             }
         }

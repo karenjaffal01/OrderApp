@@ -11,7 +11,7 @@ namespace OrderManagement.Business.Interfaces
 {
     public interface IOrderItemService
     {
-        Task<int> AddOrderItemAsync(CreateOrderItemDTO dto);
+        Task<Response<object>> AddOrderItemAsync(CreateOrderItemDTO dto);
         Task<Response<object>> UpdateOrderItemAsync(UpdateOrderItemDTO dto);
         Task<Response<object>> DeleteOrderItemAsync(int id);
     }

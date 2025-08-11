@@ -19,7 +19,7 @@ namespace OrderManagement.Business.Services
             _logger = logger;
         }
 
-        public async Task<int> AddOrderItemAsync(CreateOrderItemDTO dto)
+        public async Task<Response<object>> AddOrderItemAsync(CreateOrderItemDTO dto)
         {
             _logger.LogInformation("Starting to add order item for OrderId: {OrderId}", dto.OrderId);
             await _unitOfWork.BeginTransactionAsync();
@@ -30,15 +30,27 @@ namespace OrderManagement.Business.Services
                 await _unitOfWork.CommitAsync();
 
                 _logger.LogInformation("Order item {OrderItemId} added successfully to OrderId: {OrderId}", orderItemId, dto.OrderId);
-                return orderItemId;
+
+                return new Response<object>
+                {
+                    Message = "Order item added successfully",
+                    Data = new { ItemId = orderItemId },
+                    Code = Response<object>.ErrorCode.Success
+                };
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Failed to add order item for OrderId: {OrderId}", dto.OrderId);
                 await _unitOfWork.RollbackAsync();
-                throw;
+                return new Response<object>
+                {
+                    Message = ex.Message,
+                    Data = null,
+                    Code = Response<object>.ErrorCode.Error
+                };
             }
         }
+
 
         public async Task<Response<object>> UpdateOrderItemAsync(UpdateOrderItemDTO dto)
         {
@@ -46,8 +58,11 @@ namespace OrderManagement.Business.Services
             await _unitOfWork.BeginTransactionAsync();
             try
             {
-                var (errorCode, message) = await _unitOfWork.OrderItems.UpdateOrderItemAsync(dto, _unitOfWork.Transaction);
-                if (errorCode != 0)
+                var (errorCodeInt, message) = await _unitOfWork.OrderItems.UpdateOrderItemAsync(dto, _unitOfWork.Transaction);
+
+                var errorCode = errorCodeInt == 0 ? Response<object>.ErrorCode.Success : Response<object>.ErrorCode.Error;
+
+                if (errorCode == Response<object>.ErrorCode.Error)
                 {
                     _logger.LogWarning("Failed to update order item {OrderItemId}. Reason: {Message}", dto.Id, message);
                     await _unitOfWork.RollbackAsync();
@@ -62,7 +77,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = message,
                     Data = new { ItemId = dto.Id },
-                    ErrorCode = errorCode
+                    Code = errorCode
                 };
             }
             catch (Exception ex)
@@ -73,7 +88,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = ex.Message,
                     Data = null,
-                    ErrorCode = -1
+                    Code = Response<object>.ErrorCode.Error
                 };
             }
         }
@@ -84,8 +99,11 @@ namespace OrderManagement.Business.Services
             await _unitOfWork.BeginTransactionAsync();
             try
             {
-                var (errorCode, message) = await _unitOfWork.OrderItems.DeleteOrderItemAsync(id, _unitOfWork.Transaction);
-                if (errorCode != 0)
+                var (errorCodeInt, message) = await _unitOfWork.OrderItems.DeleteOrderItemAsync(id, _unitOfWork.Transaction);
+
+                var errorCode = errorCodeInt == 0 ? Response<object>.ErrorCode.Success : Response<object>.ErrorCode.Error;
+
+                if (errorCode == Response<object>.ErrorCode.Error)
                 {
                     _logger.LogWarning("Could not delete order item {OrderItemId}. Reason: {Message}", id, message);
                     await _unitOfWork.RollbackAsync();
@@ -100,7 +118,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = message,
                     Data = new { ItemId = id },
-                    ErrorCode = errorCode
+                    Code = errorCode
                 };
             }
             catch (Exception ex)
@@ -111,7 +129,7 @@ namespace OrderManagement.Business.Services
                 {
                     Message = ex.Message,
                     Data = null,
-                    ErrorCode = -1
+                    Code = Response<object>.ErrorCode.Error
                 };
             }
         }

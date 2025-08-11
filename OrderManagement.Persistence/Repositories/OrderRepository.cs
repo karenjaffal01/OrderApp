@@ -20,7 +20,7 @@ public class OrderRepository : IOrderRepository
         int newOrderId = await _connection.QuerySingleAsync<int>(sql, new //dapper call
         {
             CustomerName = dto.CustomerName,
-            OrderDate = dto.OrderDate.ToUniversalTime(),
+            OrderDate = DateTime.UtcNow,
             CreatedBy = dto.CreatedBy
         }, transaction); //we pass transaction to execute the command on that transaction ensure its part of existing transaction instead of creating one
 
@@ -37,13 +37,40 @@ public class OrderRepository : IOrderRepository
             {
                 p_order_id = dto.Id,
                 p_customer_name = dto.CustomerName,
-                p_order_date = dto.OrderDate,
+                p_order_date = DateTime.UtcNow,
                 p_updated_by = dto.UpdatedBy
             },
             transaction
         );
 
         return result;
+    }
+    public async Task<IEnumerable<OrderDTO>> GetAllOrdersAsync()
+    {
+        var sql = "SELECT * FROM public.get_all_orders();";
+
+        var orderDict = new Dictionary<int, OrderDTO>();
+
+        var result = await _connection.QueryAsync<OrderDTO, OrderItemDTO, OrderDTO>(
+            sql,
+            (order, item) =>
+            {
+                if (!orderDict.TryGetValue(order.Id, out var currentOrder))
+                {
+                    currentOrder = order;
+                    currentOrder.OrderItems = new List<OrderItemDTO>();
+                    orderDict.Add(currentOrder.Id, currentOrder);
+                }
+
+                if (item != null && item.ItemId != 0)
+                    currentOrder.OrderItems.Add(item);
+
+                return currentOrder;
+            },
+            splitOn: "ItemId"
+        );
+
+        return orderDict.Values;
     }
 
     public async Task<(int ErrorCode, string Message)> DeleteOrderAsync(int orderId, IDbTransaction transaction)

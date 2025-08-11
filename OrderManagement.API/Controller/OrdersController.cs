@@ -2,7 +2,7 @@
 using OrderManagement.Business.Interfaces;
 using OrderManagement.Domain.Common;
 using OrderManagement.Domain.DTO;
-using OrderManagement.Domain.Entities;
+using OrderManagement.Domain.Requests;
 using System.Threading.Tasks;
 
 [ApiController]
@@ -17,76 +17,82 @@ public class OrdersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateOrder([FromBody] CreateOrderDTO dto)
+    public async Task<IActionResult> CreateOrder(CreateOrderRequest request)
     {
-        int newOrderId = await _orderService.CreateOrderAsync(dto);
-        var response = new Response<object>
+        var dto = new CreateOrderDTO
         {
-            Message = "Order created successfully",
-            Data = new { OrderId = newOrderId },
-            ErrorCode = 0
+            CustomerName = request.CustomerName,
+            CreatedBy = request.CreatedBy
         };
 
-        return Ok(response);
+        var response = await _orderService.CreateOrderAsync(dto);
+
+        if (response.Code == Response<object>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateOrder(int id, [FromBody] updateOrderDTO dto)
+    public async Task<IActionResult> UpdateOrder(UpdateOrderRequest request)
     {
-        dto.Id = id;
-        var response = await _orderService.UpdateOrderAsync(dto);
-        return Ok(response);
-    }
-    //[HttpDelete("{id}")]
-    //public async Task<IActionResult> DeleteOrder(int id)
-    //{
-    //    if (id <= 0)
-    //    {
-    //        return BadRequest(new Response<object>
-    //        {
-    //            Message = "Invalid order ID.",
-    //            Data = null,
-    //            ErrorCode = 1
-    //        });
-    //    }
+        var dto = new updateOrderDTO
+        {
+            Id = request.Id,
+            CustomerName = request.CustomerName,
+            UpdatedBy = request.UpdatedBy
+        };
 
-    //    var response = await _orderService.DeleteOrderAsync(id);
-    //    return Ok(response);
-    //}
+        var response = await _orderService.UpdateOrderAsync(dto);
+
+        if (response.Code == Response<object>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
+
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteOrders(int id)
     {
-        if (id <= 0)
-        {
-            return BadRequest(new Response<object>
-            {
-                ErrorCode = 1,
-                Message = "Invalid order ID.",
-                Data = null
-            });
-        }
-
         var response = await _orderService.DeleteOrdersAsync(id);
-        return Ok(response);
+
+        if (response.Code == Response<object>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
     }
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetOrderById(int id)
     {
-        if (id <= 0)
-            return BadRequest(new Response<OrderDTO>
-            {
-                ErrorCode = 1,
-                Message = "Invalid order ID.",
-                Data = null
-            });
-
         var response = await _orderService.GetOrderByIdAsync(id);
-        return Ok(response);
+
+        if (response.Code == Response<OrderDTO>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
     }
+
     [HttpPost("PlaceOrderWithItems")]
     public async Task<IActionResult> PlaceOrderWithItems([FromBody] PlaceOrderWithItemsDTO dto)
     {
         var response = await _orderService.PlaceOrderWithItemsAsync(dto.Order, dto.OrderItems);
-        return Ok(response);
+
+        if (response.Code == Response<object>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
     }
+    [HttpGet]
+    public async Task<IActionResult> GetAllOrders()
+    {
+        var response = await _orderService.GetAllOrdersAsync();
+
+        if (response.Code == Response<List<OrderDTO>>.ErrorCode.Success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
+
 }
