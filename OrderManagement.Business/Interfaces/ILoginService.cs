@@ -1,4 +1,5 @@
 ﻿using OrderManagement.Domain.Common;
+using OrderManagement.Domain.DTO;
 using OrderManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,7 @@ namespace OrderManagement.Business.Interfaces
 {
     public interface ILoginService
     {
-        Task<Response<object>> CreateUserAsync(Login dto);
-        Task<Response<object>> GetUserAsync(string username, string password);
+        Task<Response<object>> RegisterAsync(LoginDTO dto);
+        string CreateToken(Login user);
     }
-
 }

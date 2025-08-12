@@ -35,8 +35,8 @@ builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

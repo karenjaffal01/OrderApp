@@ -1,45 +1,58 @@
 ﻿using Dapper;
+using Npgsql;
 using OrderManagement.Domain.Common;
 using OrderManagement.Domain.Entities;
 using OrderManagement.Persistence.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderManagement.Persistence.Repositories
+public class LoginRepository : ILoginRepository
 {
-    public class LoginRepository : ILoginRepository
+    private readonly IDbConnection _connection;
+
+    public LoginRepository(IDbConnection connection)
     {
-        private readonly IDbConnection _connection;
+        _connection = connection;
+    }
 
-        public LoginRepository(IDbConnection connection)
-        {
-            _connection = connection;
-        }
+    public async Task<Response<object>> CreateUserAsync(Login user)
+    {
+        var sql = "SELECT public.create_user(@p_username, @p_password);";
 
-        public async Task<Response<object>> CreateUserAsync(Login dto)
+        try
         {
-            var sql = "SELECT * FROM create_user(@p_username, @p_password)";
-            var result = await _connection.QueryFirstOrDefaultAsync<Response<object>>(sql, new
+            var newUserId = await _connection.QuerySingleAsync<int>(sql, new
             {
-                p_username = dto.Username,
-                p_password = dto.Password
+                p_username = user.Username, 
+                p_password = user.PasswordHash
             });
-            return result;
-        }
 
-        public async Task<Response<object>> GetUserAsync(string username, string password)
-        {
-            var sql = "SELECT * FROM get_user(@p_username, @p_password)";
-            var result = await _connection.QueryFirstOrDefaultAsync<Response<object>>(sql, new
+            return new Response<object>
             {
-                p_username = username,
-                p_password = password
-            });
-            return result;
+                Message = "User registered successfully",
+                Data = new { UserId = newUserId },
+                Code = (int)Response<object>.ErrorCode.Success
+            };
+        }
+        catch (PostgresException pgEx) when (pgEx.SqlState == "23505") // unique_violation
+        {
+            return new Response<object>
+            {
+                Message = "Username already exists",
+                Data = null,
+                Code = Response<object>.ErrorCode.Error
+            };
+        }
+        catch (Exception ex)
+        {
+            return new Response<object>
+            {
+                Message = $"Error registering user: {ex.Message}",
+                Data = null,
+                Code = Response<object>.ErrorCode.Error
+            };
         }
     }
+
+
 }
