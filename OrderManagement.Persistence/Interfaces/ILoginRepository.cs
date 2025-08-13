@@ -11,5 +11,6 @@ namespace OrderManagement.Persistence.Interfaces
     public interface ILoginRepository
     {
         Task<Response<object>> CreateUserAsync(Login user);
+        Task<Login?> GetUserAsync(string username);
     }
 }

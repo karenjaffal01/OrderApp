@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OrderManagement.Business.Interfaces;
 using OrderManagement.Domain.Common;
 using OrderManagement.Domain.DTO;
@@ -15,7 +16,7 @@ public class OrdersController : ControllerBase
     {
         _orderService = orderService;
     }
-
+    [Authorize]
     [HttpPost]
     public async Task<IActionResult> CreateOrder(CreateOrderRequest request)
     {

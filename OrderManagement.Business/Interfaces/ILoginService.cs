@@ -12,6 +12,7 @@ namespace OrderManagement.Business.Interfaces
     public interface ILoginService
     {
         Task<Response<object>> RegisterAsync(LoginDTO dto);
+        Task<string> LoginUser(LoginDTO user);
         string CreateToken(Login user);
     }
 }

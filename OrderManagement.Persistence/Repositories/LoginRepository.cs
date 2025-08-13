@@ -4,6 +4,7 @@ using OrderManagement.Domain.Common;
 using OrderManagement.Domain.Entities;
 using OrderManagement.Persistence.Interfaces;
 using System.Data;
+using System.Data.Common;
 using System.Threading.Tasks;
 
 public class LoginRepository : ILoginRepository
@@ -24,7 +25,7 @@ public class LoginRepository : ILoginRepository
             var newUserId = await _connection.QuerySingleAsync<int>(sql, new
             {
                 p_username = user.Username, 
-                p_password = user.PasswordHash
+                p_password = user.Password
             });
 
             return new Response<object>
@@ -34,7 +35,7 @@ public class LoginRepository : ILoginRepository
                 Code = (int)Response<object>.ErrorCode.Success
             };
         }
-        catch (PostgresException pgEx) when (pgEx.SqlState == "23505") // unique_violation
+        catch (PostgresException pgEx) when (pgEx.SqlState == "23505")//unique_violation since username has constraint unique so if inserting an already found user we will get that error
         {
             return new Response<object>
             {
@@ -54,5 +55,13 @@ public class LoginRepository : ILoginRepository
         }
     }
 
+    public async Task<Login?> GetUserAsync(string username)
+    {
+        const string query = @"SELECT * FROM ""Login"" WHERE ""Username"" = @Username LIMIT 1";
 
+        return await _connection.QueryFirstOrDefaultAsync<Login>(
+            query,
+            new { Username = username }
+        );
+    }
 }

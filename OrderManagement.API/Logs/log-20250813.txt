@@ -1,0 +1,621 @@
+2025-08-13 12:12:59.393 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:12:59.460 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:12:59.548 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:12:59.550 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:12:59.552 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:13:03.938 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:13:04.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 383.0176ms
+2025-08-13 12:13:04.322 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:13:09.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:13:09.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:13:09.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 47.5645ms
+2025-08-13 12:13:10.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.9647ms
+2025-08-13 12:13:10.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:13:10.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.0296ms
+2025-08-13 12:15:15.079 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:15:15.135 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:15:15.335 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:15:15.337 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:15:15.339 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:15:18.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:15:19.183 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 195.8282ms
+2025-08-13 12:15:19.208 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:15:26.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:15:26.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:15:26.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 89.7559ms
+2025-08-13 12:15:26.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.0211ms
+2025-08-13 12:15:26.586 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:15:26.611 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.5755ms
+2025-08-13 12:16:07.621 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:16:07.649 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:16:07.688 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:16:07.876 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:16:08.580 +03:00 [ERR] Unexpected error while logging in user 'karen'
+Npgsql.PostgresException (0x80004005): 42P01: relation "users" does not exist
+
+POSITION: 15
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at LoginRepository.GetUserAsync(String username) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Persistence\Repositories\LoginRepository.cs:line 62
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 69
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "users" does not exist
+    Position: 15
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+2025-08-13 12:16:45.295 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 37596.4419ms
+2025-08-13 12:16:45.302 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:16:45.314 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "users" does not exist
+
+POSITION: 15
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at LoginRepository.GetUserAsync(String username)
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 69
+   at OrderManagement.API.Controller.AuthController.Login(LoginDTO dto) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API\Controller\AuthController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "users" does not exist
+    Position: 15
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+2025-08-13 12:16:45.406 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 500 null text/plain; charset=utf-8 37785.1489ms
+2025-08-13 12:16:46.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-08-13 12:16:46.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 114.4457ms
+2025-08-13 12:16:46.446 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:16:46.447 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:16:46.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.3507ms
+2025-08-13 12:16:46.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.2198ms
+2025-08-13 12:16:46.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:16:46.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.1547ms
+2025-08-13 12:17:02.664 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:17:02.675 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:17:02.684 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:17:02.692 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:17:02.876 +03:00 [ERR] Unexpected error while logging in user 'karen'
+Npgsql.PostgresException (0x80004005): 42P01: relation "login" does not exist
+
+POSITION: 15
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at LoginRepository.GetUserAsync(String username)
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 69
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "login" does not exist
+    Position: 15
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+2025-08-13 12:19:41.316 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:19:41.356 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:19:41.497 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:19:41.499 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:19:41.502 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:19:56.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:19:56.943 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 177.3596ms
+2025-08-13 12:19:56.962 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:20:02.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:20:02.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:20:02.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 68.0305ms
+2025-08-13 12:20:02.356 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.6966ms
+2025-08-13 12:20:02.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:20:02.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.4919ms
+2025-08-13 12:20:15.597 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-13 12:20:15.608 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-13 12:20:15.637 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:20:15.833 +03:00 [INF] Attempting to register user with username: karen
+2025-08-13 12:20:17.033 +03:00 [WRN] Failed to register user 'karen'. Reason: Username already exists
+2025-08-13 12:20:17.044 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 12:20:17.086 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 1433.1924ms
+2025-08-13 12:20:17.091 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-13 12:20:17.100 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 400 null application/json; charset=utf-8 1503.6594ms
+2025-08-13 12:20:40.849 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:20:40.859 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:20:40.867 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:20:40.877 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:20:40.937 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:20:41.010 +03:00 [ERR] Unexpected error while logging in user 'karen'
+System.ArgumentNullException: Value cannot be null. (Parameter 'hashedPassword')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Identity.PasswordHasher`1.VerifyHashedPassword(TUser user, String hashedPassword, String providedPassword)
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 79
+2025-08-13 12:28:56.379 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:28:56.503 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:28:56.746 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:28:56.749 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:28:56.752 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:29:03.130 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:29:03.798 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 674.1766ms
+2025-08-13 12:29:03.813 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:29:08.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:29:08.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:29:09.045 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 64.3056ms
+2025-08-13 12:29:09.082 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.8006ms
+2025-08-13 12:29:09.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:29:09.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.6599ms
+2025-08-13 12:29:28.455 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:29:28.468 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:29:28.497 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:29:28.615 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:29:29.612 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:29:29.778 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 12:29:29.972 +03:00 [ERR] Unexpected error while logging in user 'karen'
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue(IConfiguration configuration, Type type, String key, Object defaultValue)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue[T](IConfiguration configuration, String key, T defaultValue)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue[T](IConfiguration configuration, String key)
+   at LoginService.CreateToken(Login user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 105
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 87
+2025-08-13 12:33:30.642 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:33:30.688 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:33:30.867 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:33:30.870 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:33:30.872 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:33:35.553 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:33:35.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 170.9806ms
+2025-08-13 12:33:35.727 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:33:43.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:33:43.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 15.6231ms
+2025-08-13 12:33:43.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:33:43.173 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.7828ms
+2025-08-13 12:33:43.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:33:43.259 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.1837ms
+2025-08-13 12:33:59.005 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:33:59.022 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:33:59.061 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:33:59.217 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:33:59.704 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:33:59.808 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 12:33:59.952 +03:00 [ERR] Unexpected error while logging in user 'karen'
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue(IConfiguration configuration, Type type, String key, Object defaultValue)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue[T](IConfiguration configuration, String key, T defaultValue)
+   at Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue[T](IConfiguration configuration, String key)
+   at LoginService.CreateToken(Login user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 105
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 87
+2025-08-13 12:41:33.925 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:41:33.969 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:41:34.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:41:34.035 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:41:34.037 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:41:38.571 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:41:38.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 169.1402ms
+2025-08-13 12:41:38.750 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:41:44.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:41:45.008 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 17.332ms
+2025-08-13 12:41:45.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:41:45.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.1957ms
+2025-08-13 12:41:45.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:41:45.156 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5186ms
+2025-08-13 12:41:57.431 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:41:57.448 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:41:57.488 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:41:57.692 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:41:58.647 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:41:58.785 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 12:41:59.075 +03:00 [ERR] Unexpected error while logging in user 'karen'
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS512', the key size must be greater than: '512' bits, key has '256' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at LoginService.CreateToken(Login user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 118
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 88
+2025-08-13 12:43:23.464 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:43:23.527 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:43:23.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:43:23.780 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:43:23.783 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:43:32.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:43:32.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 272.0889ms
+2025-08-13 12:43:32.961 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:43:37.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:43:37.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:43:37.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 45.8228ms
+2025-08-13 12:43:37.357 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.4999ms
+2025-08-13 12:43:37.482 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:43:37.515 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.7827ms
+2025-08-13 12:43:51.366 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:43:51.376 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:43:51.406 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:43:51.579 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:43:52.142 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:43:52.281 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 12:43:52.528 +03:00 [ERR] Unexpected error while logging in user 'karen'
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS512', the key size must be greater than: '512' bits, key has '504' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at LoginService.CreateToken(Login user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 118
+   at LoginService.LoginUser(LoginDTO user) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\LoginService.cs:line 88
+2025-08-13 12:45:30.960 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 12:45:31.020 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 12:45:31.273 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 12:45:31.278 +03:00 [INF] Hosting environment: Development
+2025-08-13 12:45:31.280 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 12:45:35.255 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 12:45:35.487 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 237.8086ms
+2025-08-13 12:45:35.505 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 12:45:39.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 12:45:39.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 12:45:39.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 30.2314ms
+2025-08-13 12:45:39.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.9233ms
+2025-08-13 12:45:39.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 12:45:40.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.4732ms
+2025-08-13 12:45:53.349 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 12:45:53.366 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:45:53.398 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 12:45:53.548 +03:00 [INF] Login attempt for user: karen
+2025-08-13 12:45:54.112 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 12:45:54.335 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 12:45:54.516 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 12:45:54.536 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1127.129ms
+2025-08-13 12:45:54.542 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 12:45:54.552 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1203.1194ms
+2025-08-13 13:43:29.803 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 13:43:30.507 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 13:43:30.510 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 13:43:30.604 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 13:43:30.605 +03:00 [INF] Hosting environment: Development
+2025-08-13 13:43:30.606 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 13:44:15.490 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 13:44:16.383 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 901.639ms
+2025-08-13 13:44:16.459 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 13:44:21.910 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 13:44:21.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 13:44:21.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 56.8307ms
+2025-08-13 13:44:21.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.2455ms
+2025-08-13 13:44:22.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 13:44:22.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.223ms
+2025-08-13 13:44:45.088 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 13:44:45.148 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 13:44:45.183 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 13:44:45.189 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 101.5227ms
+2025-08-13 13:45:24.627 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 13:45:24.647 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 13:45:24.694 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 13:45:25.230 +03:00 [INF] Login attempt for user: karen
+2025-08-13 13:45:25.953 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 13:45:26.098 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 13:45:26.209 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 13:45:26.236 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1523.9501ms
+2025-08-13 13:45:26.245 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 13:45:26.253 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1625.5912ms
+2025-08-13 13:45:45.878 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 13:45:45.885 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 13:45:45.888 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 13:45:45.892 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 14.0602ms
+2025-08-13 13:50:39.483 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 13:50:39.891 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 13:50:39.894 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 13:50:40.038 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 13:50:40.040 +03:00 [INF] Hosting environment: Development
+2025-08-13 13:50:40.041 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 13:50:44.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 13:50:44.569 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 343.5527ms
+2025-08-13 13:50:44.588 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 13:50:50.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 13:50:50.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 13:50:50.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 59.5886ms
+2025-08-13 13:50:50.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.7596ms
+2025-08-13 13:50:50.689 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 13:50:50.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.4173ms
+2025-08-13 13:56:07.613 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 13:56:08.040 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 13:56:08.042 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 13:56:08.222 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 13:56:08.225 +03:00 [INF] Hosting environment: Development
+2025-08-13 13:56:08.226 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 13:56:24.448 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 13:56:24.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 305.5267ms
+2025-08-13 13:56:24.757 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 13:56:30.785 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 13:56:30.796 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 11.4472ms
+2025-08-13 13:56:30.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 13:56:31.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 264.0006ms
+2025-08-13 13:56:32.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 13:56:32.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.9344ms
+2025-08-13 14:34:34.401 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 14:34:35.292 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 14:34:35.295 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 14:34:35.415 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 14:34:35.417 +03:00 [INF] Hosting environment: Development
+2025-08-13 14:34:35.419 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 14:34:40.621 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 14:34:41.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 1334.9896ms
+2025-08-13 14:34:41.962 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 14:34:47.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 14:34:47.279 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 14:34:47.337 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 73.4816ms
+2025-08-13 14:34:47.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.5344ms
+2025-08-13 14:34:47.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 14:34:47.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.4614ms
+2025-08-13 14:34:57.857 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 55
+2025-08-13 14:34:57.874 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 14:34:57.885 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 14:34:57.887 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 30.9293ms
+2025-08-13 14:35:31.416 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 14:35:31.433 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:35:31.488 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 14:35:31.717 +03:00 [INF] Login attempt for user: karen
+2025-08-13 14:35:32.721 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 14:35:32.859 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 14:35:32.931 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 14:35:32.944 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1443.1782ms
+2025-08-13 14:35:32.949 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:35:32.955 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1539.5556ms
+2025-08-13 14:36:31.315 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 14:36:31.338 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 14:36:31.372 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-13 14:36:31.457 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 14:36:31.459 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 143.6061ms
+2025-08-13 14:37:20.308 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 14:37:20.318 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 14:37:20.320 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-13 14:37:20.327 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 14:37:20.331 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 22.1286ms
+2025-08-13 14:45:21.779 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 14:45:22.188 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 14:45:22.192 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 14:45:22.251 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 14:45:22.253 +03:00 [INF] Hosting environment: Development
+2025-08-13 14:45:22.255 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 14:45:31.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 14:45:31.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 327.5522ms
+2025-08-13 14:45:31.448 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 14:45:36.590 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 14:45:36.606 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 16.1794ms
+2025-08-13 14:45:36.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 14:45:36.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.8195ms
+2025-08-13 14:45:36.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 14:45:36.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.691ms
+2025-08-13 14:45:57.951 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 14:45:58.046 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:45:58.079 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 14:45:58.295 +03:00 [INF] Login attempt for user: karen
+2025-08-13 14:45:59.273 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 14:45:59.436 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 14:45:59.515 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 14:45:59.535 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1445.8888ms
+2025-08-13 14:45:59.541 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:45:59.551 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1599.1876ms
+2025-08-13 14:46:48.330 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 14:46:48.347 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 14:46:48.383 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-13 14:46:48.455 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 14:46:48.459 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 128.9526ms
+2025-08-13 14:48:14.990 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 14:48:15.408 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 14:48:15.410 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 14:48:15.458 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 14:48:15.460 +03:00 [INF] Hosting environment: Development
+2025-08-13 14:48:15.463 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 14:48:21.792 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 14:48:22.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 270.4124ms
+2025-08-13 14:48:22.065 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 14:48:26.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 14:48:26.502 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 14:48:26.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 53.5869ms
+2025-08-13 14:48:26.573 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.0224ms
+2025-08-13 14:48:26.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 14:48:26.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.2045ms
+2025-08-13 14:48:48.067 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 14:48:48.162 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:48:48.212 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 14:48:48.382 +03:00 [INF] Login attempt for user: karen
+2025-08-13 14:48:48.819 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 14:48:48.977 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 14:48:49.060 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 14:48:49.076 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 853.7058ms
+2025-08-13 14:48:49.081 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 14:48:49.086 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1019.7113ms
+2025-08-13 14:50:15.773 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 14:50:15.788 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 14:50:15.851 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 14:50:15.854 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 80.8718ms
+2025-08-13 15:05:24.547 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 15:05:24.848 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 15:05:24.851 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 15:05:24.913 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 15:05:24.916 +03:00 [INF] Hosting environment: Development
+2025-08-13 15:05:24.917 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 15:05:30.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 15:05:31.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 283.7058ms
+2025-08-13 15:05:31.153 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 15:05:35.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 15:05:35.877 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 15:05:35.963 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 94.0116ms
+2025-08-13 15:05:35.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.6944ms
+2025-08-13 15:05:36.043 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 15:05:36.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.4856ms
+2025-08-13 15:05:50.204 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 15:05:50.228 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:05:50.292 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 15:05:50.621 +03:00 [INF] Login attempt for user: karen
+2025-08-13 15:05:51.610 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 15:05:51.969 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 15:05:52.107 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 15:05:52.145 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1820.6982ms
+2025-08-13 15:05:52.157 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:05:52.169 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1965.2951ms
+2025-08-13 15:10:39.318 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 15:10:39.737 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 15:10:39.740 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 15:10:39.818 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 15:10:39.822 +03:00 [INF] Hosting environment: Development
+2025-08-13 15:10:39.828 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 15:10:47.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 15:10:47.984 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 548.0863ms
+2025-08-13 15:10:48.010 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 15:10:51.828 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 15:10:51.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 35.9896ms
+2025-08-13 15:10:51.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 15:10:51.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.0026ms
+2025-08-13 15:10:52.080 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 15:10:52.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.0927ms
+2025-08-13 15:11:05.367 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 15:11:05.400 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:11:05.470 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 15:11:05.827 +03:00 [INF] Login attempt for user: karen
+2025-08-13 15:11:07.222 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 15:11:07.566 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 15:11:07.706 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 15:11:07.741 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 2242.3292ms
+2025-08-13 15:11:07.753 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:11:07.767 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 2399.3793ms
+2025-08-13 15:11:55.088 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 15:11:55.143 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-13 15:11:55.383 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-13 15:11:55.390 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 401 0 null 302.1395ms
+2025-08-13 15:17:24.763 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 15:17:25.180 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 15:17:25.186 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 15:17:25.431 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 15:17:25.434 +03:00 [INF] Hosting environment: Development
+2025-08-13 15:17:25.437 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 15:17:31.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 15:17:32.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 757.8459ms
+2025-08-13 15:17:32.112 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 15:17:38.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 15:17:38.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 15:17:38.959 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 59.065ms
+2025-08-13 15:17:39.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.8403ms
+2025-08-13 15:17:39.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 15:17:39.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.8505ms
+2025-08-13 15:17:54.641 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 15:17:54.701 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:17:54.777 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 15:17:55.135 +03:00 [INF] Login attempt for user: karen
+2025-08-13 15:17:56.135 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 15:17:56.402 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 15:17:56.538 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 15:17:56.570 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 1773.7569ms
+2025-08-13 15:17:56.579 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:17:56.590 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 1949.3044ms
+2025-08-13 15:18:24.784 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-08-13 15:18:24.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 9.9084ms
+2025-08-13 15:18:25.043 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-08-13 15:26:56.437 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-13 15:26:56.976 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-13 15:26:56.979 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-13 15:26:57.195 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-13 15:26:57.199 +03:00 [INF] Hosting environment: Development
+2025-08-13 15:26:57.204 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-13 15:27:01.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-13 15:27:02.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 587.4582ms
+2025-08-13 15:27:02.565 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-13 15:27:08.490 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-13 15:27:08.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-13 15:27:08.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 84.9207ms
+2025-08-13 15:27:08.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.6149ms
+2025-08-13 15:27:08.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-13 15:27:08.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.0198ms
+2025-08-13 15:27:22.376 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/login - application/json 46
+2025-08-13 15:27:22.431 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:27:22.513 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-13 15:27:22.859 +03:00 [INF] Login attempt for user: karen
+2025-08-13 15:27:24.043 +03:00 [INF] User 'karen' found. Verifying password...
+2025-08-13 15:27:24.390 +03:00 [INF] User 'karen' successfully authenticated
+2025-08-13 15:27:24.542 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 15:27:24.571 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Login (OrderManagement.API) in 2038.3471ms
+2025-08-13 15:27:24.583 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Login (OrderManagement.API)'
+2025-08-13 15:27:24.598 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/login - 200 null application/json; charset=utf-8 2222.1265ms
+2025-08-13 15:28:06.941 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-13 15:28:07.151 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-13 15:28:07.170 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.Requests.CreateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-13 15:28:07.203 +03:00 [INF] Starting creation of order for customer: carla
+2025-08-13 15:28:07.315 +03:00 [INF] Order 6 created successfully for customer: carla
+2025-08-13 15:28:07.325 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-13 15:28:07.386 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 203.1631ms
+2025-08-13 15:28:07.410 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-13 15:28:07.420 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 478.7439ms

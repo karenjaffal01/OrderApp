@@ -13,7 +13,6 @@ namespace OrderManagement.API.Controller
     public class AuthController : ControllerBase
     {
         private readonly ILoginService _loginService;
-
         public AuthController(ILoginService loginService)
         {
             _loginService = loginService;
@@ -38,6 +37,16 @@ namespace OrderManagement.API.Controller
             {
                 return BadRequest(response);
             }
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO dto)
+        {
+            var token = await _loginService.LoginUser(dto);
+
+            if (token == null)
+                return Unauthorized(new { message = "Invalid username or password" });
+
+            return Ok(new { token });
         }
     }
 }
