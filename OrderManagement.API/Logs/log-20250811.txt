@@ -1,0 +1,539 @@
+2025-08-11 00:19:29.888 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 00:19:29.982 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 00:19:30.317 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 00:19:30.323 +03:00 [INF] Hosting environment: Development
+2025-08-11 00:19:30.325 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 00:19:37.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 00:19:38.329 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 391.0855ms
+2025-08-11 00:19:38.354 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 00:19:41.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 00:19:41.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 00:19:41.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 60.7012ms
+2025-08-11 00:19:41.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.4417ms
+2025-08-11 00:19:42.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 00:19:42.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.0654ms
+2025-08-11 00:20:09.573 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Login/create - application/json 63
+2025-08-11 00:20:09.638 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.LoginController.CreateUser (OrderManagement.API)'
+2025-08-11 00:20:09.699 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(OrderManagement.Domain.Entities.Login) on controller OrderManagement.API.Controller.LoginController (OrderManagement.API).
+2025-08-11 00:20:09.879 +03:00 [INF] Attempting to create user with username: username123
+2025-08-11 00:20:10.583 +03:00 [INF] User 'username123' created successfully
+2025-08-11 00:20:10.608 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 00:20:10.644 +03:00 [INF] Executed action OrderManagement.API.Controller.LoginController.CreateUser (OrderManagement.API) in 927.5541ms
+2025-08-11 00:20:10.658 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.LoginController.CreateUser (OrderManagement.API)'
+2025-08-11 00:20:10.669 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Login/create - 200 null application/json; charset=utf-8 1096.8971ms
+2025-08-11 00:20:42.879 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Login/authenticate - application/json 63
+2025-08-11 00:20:42.902 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.LoginController.Authenticate (OrderManagement.API)'
+2025-08-11 00:20:42.923 +03:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(OrderManagement.Domain.Entities.Login) on controller OrderManagement.API.Controller.LoginController (OrderManagement.API).
+2025-08-11 00:20:42.942 +03:00 [INF] Checking credentials for username: username123
+2025-08-11 00:20:42.961 +03:00 [INF] User 'username123' found and authenticated
+2025-08-11 00:20:42.969 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 00:20:42.976 +03:00 [INF] Executed action OrderManagement.API.Controller.LoginController.Authenticate (OrderManagement.API) in 41.7196ms
+2025-08-11 00:20:42.983 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.LoginController.Authenticate (OrderManagement.API)'
+2025-08-11 00:20:42.989 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Login/authenticate - 200 null application/json; charset=utf-8 109.8641ms
+2025-08-11 09:20:13.916 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 09:20:14.022 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 09:20:14.129 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 09:20:14.132 +03:00 [INF] Hosting environment: Development
+2025-08-11 09:20:14.135 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 09:20:17.362 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 09:20:17.689 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 344.1514ms
+2025-08-11 09:20:17.712 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 09:20:22.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 09:20:22.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 09:20:22.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 65.8777ms
+2025-08-11 09:20:22.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 163.5902ms
+2025-08-11 09:20:22.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 09:20:22.573 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.8493ms
+2025-08-11 09:47:29.237 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 09:47:29.334 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 09:47:29.474 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 09:47:29.477 +03:00 [INF] Hosting environment: Development
+2025-08-11 09:47:29.480 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 09:47:33.720 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 09:47:34.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 392.4062ms
+2025-08-11 09:47:34.126 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 09:47:37.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 09:47:37.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 86.614ms
+2025-08-11 09:47:37.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 09:47:37.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.2916ms
+2025-08-11 09:47:37.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 09:47:37.835 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.6484ms
+2025-08-11 09:48:15.678 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders/PlaceOrderWithItems - application/json 280
+2025-08-11 09:48:15.717 +03:00 [INF] Executing endpoint 'OrdersController.PlaceOrderWithItems (OrderManagement.API)'
+2025-08-11 09:48:15.776 +03:00 [INF] Route matched with {action = "PlaceOrderWithItems", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlaceOrderWithItems(OrderManagement.Domain.DTO.PlaceOrderWithItemsDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 09:48:16.910 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 09:48:16.936 +03:00 [INF] Executed action OrdersController.PlaceOrderWithItems (OrderManagement.API) in 1145.4239ms
+2025-08-11 09:48:16.960 +03:00 [INF] Executed endpoint 'OrdersController.PlaceOrderWithItems (OrderManagement.API)'
+2025-08-11 09:48:17.089 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders/PlaceOrderWithItems - 200 null application/json; charset=utf-8 1406.2756ms
+2025-08-11 09:52:02.322 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders/PlaceOrderWithItems - application/json 418
+2025-08-11 09:52:02.361 +03:00 [INF] Executing endpoint 'OrdersController.PlaceOrderWithItems (OrderManagement.API)'
+2025-08-11 09:52:02.364 +03:00 [INF] Route matched with {action = "PlaceOrderWithItems", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlaceOrderWithItems(OrderManagement.Domain.DTO.PlaceOrderWithItemsDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 09:52:02.379 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 09:52:02.382 +03:00 [INF] Executed action OrdersController.PlaceOrderWithItems (OrderManagement.API) in 14.1617ms
+2025-08-11 09:52:02.438 +03:00 [INF] Executed endpoint 'OrdersController.PlaceOrderWithItems (OrderManagement.API)'
+2025-08-11 09:52:02.443 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders/PlaceOrderWithItems - 200 null application/json; charset=utf-8 121.2575ms
+2025-08-11 10:18:10.211 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 10:18:10.302 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 10:18:10.713 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 10:18:10.733 +03:00 [INF] Hosting environment: Development
+2025-08-11 10:18:10.737 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 10:18:13.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 10:18:13.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 478.3553ms
+2025-08-11 10:18:13.967 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 10:18:16.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 10:18:16.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 23.3747ms
+2025-08-11 10:18:16.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 10:18:16.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.7841ms
+2025-08-11 10:18:16.497 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 10:18:16.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.9391ms
+2025-08-11 10:19:30.055 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 10:19:30.193 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 10:19:30.301 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 10:19:30.306 +03:00 [INF] Hosting environment: Development
+2025-08-11 10:19:30.307 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 10:20:49.469 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 96
+2025-08-11 10:20:49.591 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 10:20:49.646 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.DTO.CreateOrderDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:20:49.938 +03:00 [INF] Starting creation of order for customer: user
+2025-08-11 10:20:50.727 +03:00 [INF] Order 7 created successfully for customer: user
+2025-08-11 10:20:50.749 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:20:50.790 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 1116.5526ms
+2025-08-11 10:20:50.808 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 10:20:50.864 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 1407.8533ms
+2025-08-11 10:21:32.283 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/OrderItem - application/json 106
+2025-08-11 10:21:32.295 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API)'
+2025-08-11 10:21:32.307 +03:00 [INF] Route matched with {action = "AddOrderItem", controller = "OrderItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrderItem(OrderManagement.Domain.DTO.CreateOrderItemDTO) on controller OrderManagement.API.Controller.OrderItemController (OrderManagement.API).
+2025-08-11 10:21:32.354 +03:00 [INF] Starting to add order item for OrderId: 7
+2025-08-11 10:21:32.405 +03:00 [INF] Order item 1 added successfully to OrderId: 7
+2025-08-11 10:21:32.418 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2025-08-11 10:21:32.434 +03:00 [INF] Executed action OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API) in 117.5548ms
+2025-08-11 10:21:32.472 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API)'
+2025-08-11 10:21:32.486 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/OrderItem - 200 null application/json; charset=utf-8 202.5656ms
+2025-08-11 10:24:07.082 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7224/api/Orders/7 - application/json 109
+2025-08-11 10:24:07.094 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 10:24:07.111 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(Int32, OrderManagement.Domain.DTO.updateOrderDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:24:07.131 +03:00 [INF] Starting update for order 7
+2025-08-11 10:24:07.175 +03:00 [INF] Order 7 updated successfully
+2025-08-11 10:24:07.182 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:24:07.187 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 72.0895ms
+2025-08-11 10:24:07.190 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 10:24:07.192 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7224/api/Orders/7 - 200 null application/json; charset=utf-8 118.8392ms
+2025-08-11 10:25:46.983 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/Orders/7 - null null
+2025-08-11 10:25:46.990 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:25:47.002 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:25:47.020 +03:00 [INF] Attempting to delete order 7 and its related items
+2025-08-11 10:25:47.035 +03:00 [INF] Order 7 and its items deleted successfully
+2025-08-11 10:25:47.039 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:25:47.048 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 41.094ms
+2025-08-11 10:25:47.051 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:25:47.054 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/Orders/7 - 200 null application/json; charset=utf-8 84.3833ms
+2025-08-11 10:27:07.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Orders/6 - null null
+2025-08-11 10:27:07.668 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-11 10:27:07.676 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:27:07.684 +03:00 [INF] Retrieving order 6 with items
+2025-08-11 10:27:07.905 +03:00 [INF] Order 6 retrieved successfully
+2025-08-11 10:27:07.907 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-11 10:27:07.937 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 256.5467ms
+2025-08-11 10:27:07.940 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-11 10:27:07.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Orders/6 - 200 null application/json; charset=utf-8 318.0744ms
+2025-08-11 10:44:54.748 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 10:44:55.127 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 10:44:55.275 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 10:44:55.279 +03:00 [INF] Hosting environment: Development
+2025-08-11 10:44:55.285 +03:00 [INF] Content root path: C:\Users\User\Downloads\OrderApp-20250808T112516Z-1-001\OrderApp\OrderManagement.API
+2025-08-11 10:45:13.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 10:45:14.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 462.9532ms
+2025-08-11 10:45:14.473 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 10:45:17.626 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 10:45:17.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 10:45:17.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 70.3909ms
+2025-08-11 10:45:17.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.3052ms
+2025-08-11 10:45:17.868 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 10:45:17.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.7185ms
+2025-08-11 10:45:31.003 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/Orders/543 - null null
+2025-08-11 10:45:31.032 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:45:31.171 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:45:31.443 +03:00 [INF] Attempting to delete order 543 and its related items
+2025-08-11 10:45:32.092 +03:00 [WRN] Could not delete order 543 with items. Reason: Order not found.
+2025-08-11 10:45:32.122 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:45:32.154 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 888.6864ms
+2025-08-11 10:45:32.157 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:45:32.183 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/Orders/543 - 200 null application/json; charset=utf-8 1180.5318ms
+2025-08-11 10:48:49.562 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/Orders/543 - null null
+2025-08-11 10:48:49.599 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:48:49.608 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:48:49.621 +03:00 [INF] Attempting to delete order 543 and its related items
+2025-08-11 10:48:49.645 +03:00 [WRN] Could not delete order 543 with items. Reason: Order not found.
+2025-08-11 10:48:49.657 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:48:49.667 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 46.5914ms
+2025-08-11 10:48:49.674 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:48:49.682 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/Orders/543 - 200 null application/json; charset=utf-8 120.6041ms
+2025-08-11 10:49:10.692 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/Orders/543 - null null
+2025-08-11 10:49:10.724 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:49:10.731 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 10:49:14.611 +03:00 [INF] Attempting to delete order 543 and its related items
+2025-08-11 10:49:20.898 +03:00 [WRN] Could not delete order 543 with items. Reason: Order not found.
+2025-08-11 10:49:49.162 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 10:49:49.183 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 38446.2546ms
+2025-08-11 10:49:49.191 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 10:49:49.201 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/Orders/543 - 200 null application/json; charset=utf-8 38510.0425ms
+2025-08-11 12:53:52.530 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 12:53:52.590 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 12:53:52.804 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 12:53:52.806 +03:00 [INF] Hosting environment: Development
+2025-08-11 12:53:52.808 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 12:54:09.635 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 12:54:09.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 231.3789ms
+2025-08-11 12:54:09.870 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 12:54:14.786 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 12:54:14.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 12:54:14.827 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 41.6348ms
+2025-08-11 12:54:14.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.9457ms
+2025-08-11 12:54:15.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 12:54:15.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.1166ms
+2025-08-11 12:54:39.377 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 96
+2025-08-11 12:54:39.396 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 12:54:39.454 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.DTO.CreateOrderDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 12:54:39.702 +03:00 [INF] Starting creation of order for customer: user
+2025-08-11 12:54:40.846 +03:00 [ERR] Failed to create order for customer: user
+Npgsql.PostgresException (0x80004005): 23514: new row for relation "Order" violates check constraint "Order_TotalAmount_check"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.<ReadMessage>g__ReadMessageSequential|49_0(NpgsqlConnector connector, Boolean async)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at OrderRepository.CreateOrderAsync(CreateOrderDTO dto, IDbTransaction transaction) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Persistence\Repositories\OrderRepository.cs:line 20
+   at OrderService.CreateOrderAsync(CreateOrderDTO dto) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\OrderService.cs:line 27
+  Exception data:
+    Severity: ERROR
+    SqlState: 23514
+    MessageText: new row for relation "Order" violates check constraint "Order_TotalAmount_check"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    Where: SQL statement "INSERT INTO "Order" (
+        "CustomerName",
+        "OrderDate",
+        "TotalAmount",
+        "CreatedBy",
+        "CreatedDate",
+        "IsActive",
+        "IsDeleted"
+    ) VALUES (
+        p_customer_name,
+        p_order_date,
+        0, 
+        p_created_by,
+        CURRENT_TIMESTAMP,
+        TRUE,
+        FALSE
+    )
+    RETURNING "Id""
+PL/pgSQL function create_order(text,timestamp with time zone,text) line 5 at SQL statement
+    SchemaName: public
+    TableName: Order
+    ConstraintName: Order_TotalAmount_check
+    File: execMain.c
+    Line: 2039
+    Routine: ExecConstraints
+2025-08-11 12:55:28.005 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 48538.7539ms
+2025-08-11 12:55:28.012 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 12:55:28.021 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 23514: new row for relation "Order" violates check constraint "Order_TotalAmount_check"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.<ReadMessage>g__ReadMessageSequential|49_0(NpgsqlConnector connector, Boolean async)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at OrderRepository.CreateOrderAsync(CreateOrderDTO dto, IDbTransaction transaction) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Persistence\Repositories\OrderRepository.cs:line 20
+   at OrderService.CreateOrderAsync(CreateOrderDTO dto) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\OrderService.cs:line 27
+   at OrderService.CreateOrderAsync(CreateOrderDTO dto) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\OrderService.cs:line 36
+   at OrdersController.CreateOrder(CreateOrderDTO dto) in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API\Controller\OrdersController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23514
+    MessageText: new row for relation "Order" violates check constraint "Order_TotalAmount_check"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    Where: SQL statement "INSERT INTO "Order" (
+        "CustomerName",
+        "OrderDate",
+        "TotalAmount",
+        "CreatedBy",
+        "CreatedDate",
+        "IsActive",
+        "IsDeleted"
+    ) VALUES (
+        p_customer_name,
+        p_order_date,
+        0, 
+        p_created_by,
+        CURRENT_TIMESTAMP,
+        TRUE,
+        FALSE
+    )
+    RETURNING "Id""
+PL/pgSQL function create_order(text,timestamp with time zone,text) line 5 at SQL statement
+    SchemaName: public
+    TableName: Order
+    ConstraintName: Order_TotalAmount_check
+    File: execMain.c
+    Line: 2039
+    Routine: ExecConstraints
+2025-08-11 12:55:28.087 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 500 null text/plain; charset=utf-8 48710.2096ms
+2025-08-11 12:56:42.200 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 12:56:42.244 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 12:56:42.469 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 12:56:42.472 +03:00 [INF] Hosting environment: Development
+2025-08-11 12:56:42.479 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 12:56:46.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 12:56:46.554 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 195.2688ms
+2025-08-11 12:56:46.566 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 12:56:51.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 12:56:51.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 12:56:51.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 58.7818ms
+2025-08-11 12:56:51.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8464ms
+2025-08-11 12:56:51.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 12:56:51.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.4587ms
+2025-08-11 12:57:26.577 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 97
+2025-08-11 12:57:26.596 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 12:57:26.629 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.DTO.CreateOrderDTO) on controller OrdersController (OrderManagement.API).
+2025-08-11 12:57:26.763 +03:00 [INF] Starting creation of order for customer: user1
+2025-08-11 12:57:27.159 +03:00 [INF] Order 4 created successfully for customer: user1
+2025-08-11 12:57:27.171 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 12:57:27.227 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 544.2813ms
+2025-08-11 12:57:27.231 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 12:57:27.241 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 663.8856ms
+2025-08-11 14:52:44.059 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 14:52:44.123 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 14:52:44.193 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 14:52:44.196 +03:00 [INF] Hosting environment: Development
+2025-08-11 14:52:44.198 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 14:52:49.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 14:52:49.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 416.3202ms
+2025-08-11 14:52:49.441 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 14:52:55.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 14:52:55.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 14:52:55.599 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 58.184ms
+2025-08-11 14:52:55.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.9736ms
+2025-08-11 14:52:55.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 14:52:55.845 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.0572ms
+2025-08-11 14:53:05.738 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/OrderItem/4 - null null
+2025-08-11 14:53:05.752 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.OrderItemController.DeleteOrderItem (OrderManagement.API)'
+2025-08-11 14:53:05.806 +03:00 [INF] Route matched with {action = "DeleteOrderItem", controller = "OrderItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrderItem(Int32) on controller OrderManagement.API.Controller.OrderItemController (OrderManagement.API).
+2025-08-11 14:53:06.039 +03:00 [INF] Attempting to delete order item 4
+2025-08-11 14:53:06.957 +03:00 [WRN] Could not delete order item 4. Reason: Order item not found
+2025-08-11 14:53:06.979 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 14:53:07.026 +03:00 [INF] Executed action OrderManagement.API.Controller.OrderItemController.DeleteOrderItem (OrderManagement.API) in 1212.5147ms
+2025-08-11 14:53:07.029 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.OrderItemController.DeleteOrderItem (OrderManagement.API)'
+2025-08-11 14:53:07.039 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/OrderItem/4 - 400 null application/json; charset=utf-8 1301.6321ms
+2025-08-11 14:54:27.177 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/OrderItem - application/json 110
+2025-08-11 14:54:27.188 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API)'
+2025-08-11 14:54:27.195 +03:00 [INF] Route matched with {action = "AddOrderItem", controller = "OrderItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrderItem(OrderManagement.Domain.DTO.CreateOrderItemDTO) on controller OrderManagement.API.Controller.OrderItemController (OrderManagement.API).
+2025-08-11 14:54:27.236 +03:00 [INF] Starting to add order item for OrderId: 4
+2025-08-11 14:54:27.279 +03:00 [INF] Order item 1 added successfully to OrderId: 4
+2025-08-11 14:54:27.283 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 14:54:27.285 +03:00 [INF] Executed action OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API) in 83.7485ms
+2025-08-11 14:54:27.293 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.OrderItemController.AddOrderItem (OrderManagement.API)'
+2025-08-11 14:54:27.295 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/OrderItem - 200 null application/json; charset=utf-8 117.7111ms
+2025-08-11 15:08:06.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:08:06.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 26.5352ms
+2025-08-11 15:08:06.451 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:08:16.591 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:08:16.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.1746ms
+2025-08-11 15:08:16.611 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:08:16.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.8944ms
+2025-08-11 15:08:16.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:08:16.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.6667ms
+2025-08-11 15:13:10.367 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 15:13:10.402 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 15:13:10.448 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 15:13:10.450 +03:00 [INF] Hosting environment: Development
+2025-08-11 15:13:10.451 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 15:13:17.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:13:17.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 213.1917ms
+2025-08-11 15:13:17.752 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:13:24.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:13:24.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:13:24.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 51.2381ms
+2025-08-11 15:13:24.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8389ms
+2025-08-11 15:13:24.825 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:13:24.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.0988ms
+2025-08-11 15:35:28.399 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 15:35:28.438 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 15:35:28.593 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 15:35:28.595 +03:00 [INF] Hosting environment: Development
+2025-08-11 15:35:28.597 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 15:35:38.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:35:38.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 256.6832ms
+2025-08-11 15:35:38.350 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:35:43.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:35:43.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:35:43.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 62.431ms
+2025-08-11 15:35:43.516 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.4717ms
+2025-08-11 15:35:43.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:35:43.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.0426ms
+2025-08-11 15:35:54.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Orders - null null
+2025-08-11 15:35:54.115 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-11 15:35:54.139 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-11 15:35:54.275 +03:00 [INF] Retrieving all orders
+2025-08-11 15:35:55.157 +03:00 [ERR] An error occurred while fetching orders
+Npgsql.PostgresException (0x80004005): 42883: function public.get_all_orders() does not exist
+
+POSITION: 15
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 940
+   at OrderRepository.GetAllOrdersAsync() in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Persistence\Repositories\OrderRepository.cs:line 54
+   at OrderService.GetAllOrdersAsync() in C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.Business\Services\OrderService.cs:line 270
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: function public.get_all_orders() does not exist
+    Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+    Position: 15
+    File: parse_func.c
+    Line: 636
+    Routine: ParseFuncOrColumn
+2025-08-11 15:35:55.297 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:35:55.360 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1209.9295ms
+2025-08-11 15:35:55.364 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-11 15:35:55.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Orders - 400 null application/json; charset=utf-8 1264.9864ms
+2025-08-11 15:36:43.240 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 15:36:43.286 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 15:36:43.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 15:36:43.342 +03:00 [INF] Hosting environment: Development
+2025-08-11 15:36:43.344 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 15:36:58.066 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:36:58.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 200.6757ms
+2025-08-11 15:36:58.275 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:37:04.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:37:04.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:37:04.687 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 46.922ms
+2025-08-11 15:37:04.799 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.9631ms
+2025-08-11 15:37:04.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:37:04.857 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.765ms
+2025-08-11 15:37:11.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Orders - null null
+2025-08-11 15:37:11.335 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-11 15:37:11.359 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-11 15:37:11.471 +03:00 [INF] Retrieving all orders
+2025-08-11 15:37:12.200 +03:00 [INF] Orders retrieved successfully
+2025-08-11 15:37:12.223 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:37:12.285 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 916.3592ms
+2025-08-11 15:37:12.293 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-11 15:37:12.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 974.0301ms
+2025-08-11 15:46:09.163 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 15:46:09.207 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 15:46:09.419 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 15:46:09.422 +03:00 [INF] Hosting environment: Development
+2025-08-11 15:46:09.424 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 15:46:16.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:46:17.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 255.918ms
+2025-08-11 15:46:17.249 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:46:21.875 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:46:21.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:46:21.975 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 100.6183ms
+2025-08-11 15:46:22.094 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 183.687ms
+2025-08-11 15:46:22.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:46:22.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.6833ms
+2025-08-11 15:47:40.246 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:47:40.290 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 43.6312ms
+2025-08-11 15:47:40.371 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:48:00.857 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Orders - application/json 54
+2025-08-11 15:48:00.880 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 15:48:00.939 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.Requests.CreateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-11 15:48:01.214 +03:00 [INF] Starting creation of order for customer: karen
+2025-08-11 15:48:02.075 +03:00 [INF] Order 5 created successfully for customer: karen
+2025-08-11 15:48:02.097 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:48:02.197 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 1219.698ms
+2025-08-11 15:48:02.205 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-11 15:48:02.227 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 1370.0875ms
+2025-08-11 15:48:28.902 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7224/api/Orders/5 - application/json 59
+2025-08-11 15:48:28.910 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:48:28.948 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(Int32, OrderManagement.Domain.Requests.UpdateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-11 15:48:28.979 +03:00 [INF] Starting update for order 5
+2025-08-11 15:48:29.050 +03:00 [INF] Order 5 updated successfully
+2025-08-11 15:48:29.074 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:48:29.092 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 130.5399ms
+2025-08-11 15:48:29.112 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:48:29.121 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7224/api/Orders/5 - 200 null application/json; charset=utf-8 218.9794ms
+2025-08-11 15:49:10.837 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7224/api/Orders/5 - application/json 64
+2025-08-11 15:49:10.854 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:49:10.863 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(Int32, OrderManagement.Domain.Requests.UpdateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-11 15:49:10.888 +03:00 [INF] Starting update for order 5
+2025-08-11 15:49:10.895 +03:00 [INF] Order 5 updated successfully
+2025-08-11 15:49:10.902 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:49:10.907 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 30.6774ms
+2025-08-11 15:49:10.911 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:49:10.916 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7224/api/Orders/5 - 200 null application/json; charset=utf-8 79.0389ms
+2025-08-11 15:49:20.139 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7224/api/Orders/5 - application/json 61
+2025-08-11 15:49:20.148 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:49:20.153 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(Int32, OrderManagement.Domain.Requests.UpdateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-11 15:49:20.163 +03:00 [INF] Starting update for order 5
+2025-08-11 15:49:20.173 +03:00 [INF] Order 5 updated successfully
+2025-08-11 15:49:20.184 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:49:20.192 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 30.756ms
+2025-08-11 15:49:20.200 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 15:49:20.207 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7224/api/Orders/5 - 200 null application/json; charset=utf-8 68.1306ms
+2025-08-11 15:55:37.358 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-11 15:55:37.424 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-11 15:55:37.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 15:55:37.654 +03:00 [INF] Hosting environment: Development
+2025-08-11 15:55:37.657 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-11 15:57:23.999 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-11 15:57:24.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 424.8639ms
+2025-08-11 15:57:24.480 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-11 15:57:30.347 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-11 15:57:30.381 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-11 15:57:30.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 110.1456ms
+2025-08-11 15:57:30.580 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 199.1176ms
+2025-08-11 15:57:30.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-11 15:57:30.694 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.0619ms
+2025-08-11 15:59:13.116 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7224/api/Orders/5 - null null
+2025-08-11 15:59:13.144 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 15:59:13.226 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-11 15:59:13.465 +03:00 [INF] Attempting to delete order 5 and its related items
+2025-08-11 15:59:14.517 +03:00 [INF] Order 5 and its items deleted successfully
+2025-08-11 15:59:14.565 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 15:59:14.636 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 1392.9016ms
+2025-08-11 15:59:14.643 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-11 15:59:14.665 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7224/api/Orders/5 - 200 null application/json; charset=utf-8 1548.3834ms
+2025-08-11 16:00:10.588 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7224/api/Orders/5 - application/json 65
+2025-08-11 16:00:10.608 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 16:00:10.625 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(Int32, OrderManagement.Domain.Requests.UpdateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-11 16:00:10.699 +03:00 [INF] Starting update for order 5
+2025-08-11 16:00:10.774 +03:00 [INF] Order 5 updated successfully
+2025-08-11 16:00:10.791 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-11 16:00:10.806 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 164.8246ms
+2025-08-11 16:00:10.830 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-11 16:00:10.839 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7224/api/Orders/5 - 200 null application/json; charset=utf-8 250.3295ms

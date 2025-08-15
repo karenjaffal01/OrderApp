@@ -1,0 +1,191 @@
+2025-08-12 11:24:51.617 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 11:24:51.820 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 11:24:52.134 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 11:24:52.144 +03:00 [INF] Hosting environment: Development
+2025-08-12 11:24:52.164 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 11:25:00.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 11:25:01.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 1203.7495ms
+2025-08-12 11:25:01.749 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 11:25:10.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 11:25:10.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 36.6109ms
+2025-08-12 11:25:10.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 11:25:10.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 219.6793ms
+2025-08-12 11:25:10.585 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 11:25:10.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.3322ms
+2025-08-12 13:56:06.480 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 13:56:06.537 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 13:56:06.604 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 13:56:06.607 +03:00 [INF] Hosting environment: Development
+2025-08-12 13:56:06.610 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 13:56:17.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 13:56:17.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 359.4297ms
+2025-08-12 13:56:17.905 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 13:56:23.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 13:56:23.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 13:56:23.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 94.7624ms
+2025-08-12 13:56:23.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.9151ms
+2025-08-12 13:56:23.620 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 13:56:23.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.7138ms
+2025-08-12 13:59:55.399 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 13:59:55.438 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 13:59:55.484 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 13:59:55.486 +03:00 [INF] Hosting environment: Development
+2025-08-12 13:59:55.487 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:00:03.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:00:03.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 235.6277ms
+2025-08-12 14:00:03.578 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:00:10.299 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:00:10.321 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:00:10.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 59.9631ms
+2025-08-12 14:00:10.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.0373ms
+2025-08-12 14:00:10.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:00:10.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.7093ms
+2025-08-12 14:00:25.771 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:00:25.790 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:00:25.836 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:00:25.851 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 5.6094ms
+2025-08-12 14:00:25.857 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:00:25.863 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OrderManagement.Business.Interfaces.ILoginService' while attempting to activate 'OrderManagement.API.Controller.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-12 14:00:25.949 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 500 null text/plain; charset=utf-8 177.6338ms
+2025-08-12 14:02:21.395 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 14:02:21.445 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 14:02:21.649 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 14:02:21.651 +03:00 [INF] Hosting environment: Development
+2025-08-12 14:02:21.653 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:03:27.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:03:28.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 236.4525ms
+2025-08-12 14:03:28.214 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:03:32.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:03:32.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:03:32.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 65.1788ms
+2025-08-12 14:03:32.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.2225ms
+2025-08-12 14:03:32.733 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:03:32.758 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.3696ms
+2025-08-12 14:03:45.309 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:03:45.324 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:03:45.369 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:03:45.653 +03:00 [INF] Attempting to register user with username: karen
+2025-08-12 14:03:46.868 +03:00 [WRN] Failed to register user 'karen'. Reason: Error registering user: 42703: column "password" does not exist
+
+POSITION: 32
+2025-08-12 14:03:46.883 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 14:03:46.923 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 1542.3289ms
+2025-08-12 14:03:46.927 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:03:46.931 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 400 null application/json; charset=utf-8 1621.9906ms
+2025-08-12 14:08:41.385 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 14:08:41.432 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 14:08:41.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 14:08:41.482 +03:00 [INF] Hosting environment: Development
+2025-08-12 14:08:41.485 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:11:07.733 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:11:07.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 176.7553ms
+2025-08-12 14:11:07.916 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:11:12.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:11:12.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:11:12.282 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 75.5336ms
+2025-08-12 14:11:12.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.7763ms
+2025-08-12 14:11:12.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:11:12.493 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.0971ms
+2025-08-12 14:11:25.362 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:11:25.373 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:11:25.409 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:11:25.562 +03:00 [INF] Attempting to register user with username: karen
+2025-08-12 14:11:26.932 +03:00 [WRN] Failed to register user 'karen'. Reason: Error registering user: 42703: column "password" does not exist
+
+POSITION: 32
+2025-08-12 14:11:26.950 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 14:11:26.982 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 1562.8514ms
+2025-08-12 14:11:26.988 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:11:26.996 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 400 null application/json; charset=utf-8 1634.2073ms
+2025-08-12 14:12:19.093 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 14:12:19.141 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 14:12:19.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 14:12:19.195 +03:00 [INF] Hosting environment: Development
+2025-08-12 14:12:19.196 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:12:28.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:12:28.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 197.7874ms
+2025-08-12 14:12:28.374 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:12:36.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:12:36.659 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:12:36.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 40.6268ms
+2025-08-12 14:12:36.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.1106ms
+2025-08-12 14:12:36.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:12:36.856 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.4486ms
+2025-08-12 14:12:53.170 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:12:53.184 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:12:53.216 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:12:53.345 +03:00 [INF] Attempting to register user with username: karen
+2025-08-12 14:12:54.056 +03:00 [WRN] Failed to register user 'karen'. Reason: Error registering user: 42703: column "password" does not exist
+
+POSITION: 32
+2025-08-12 14:12:54.074 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 14:12:54.104 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 880.006ms
+2025-08-12 14:12:54.108 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:12:54.111 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 400 null application/json; charset=utf-8 941.5284ms
+2025-08-12 14:18:32.097 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 14:18:32.135 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 14:18:32.185 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 14:18:32.187 +03:00 [INF] Hosting environment: Development
+2025-08-12 14:18:32.189 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:18:38.925 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:18:39.119 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 199.649ms
+2025-08-12 14:18:39.148 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:18:43.884 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:18:43.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 16.2176ms
+2025-08-12 14:18:43.915 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:18:43.982 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.3654ms
+2025-08-12 14:18:44.049 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:18:44.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.9559ms
+2025-08-12 14:18:58.350 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:18:58.363 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:18:58.385 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:18:58.548 +03:00 [INF] Attempting to register user with username: karen
+2025-08-12 14:18:59.455 +03:00 [WRN] Failed to register user 'karen'. Reason: Error registering user: 42703: column "password" does not exist
+
+POSITION: 32
+2025-08-12 14:18:59.471 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 14:18:59.518 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 1123.3576ms
+2025-08-12 14:18:59.524 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:18:59.529 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 400 null application/json; charset=utf-8 1178.9756ms
+2025-08-12 14:32:29.110 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-12 14:32:29.156 +03:00 [INF] Now listening on: http://localhost:5184
+2025-08-12 14:32:29.206 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 14:32:29.208 +03:00 [INF] Hosting environment: Development
+2025-08-12 14:32:29.211 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-12 14:32:34.887 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-12 14:32:35.115 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 234.0545ms
+2025-08-12 14:32:35.131 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-12 14:32:47.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swaggger - null null
+2025-08-12 14:32:47.467 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swaggger - 404 0 null 13.4365ms
+2025-08-12 14:32:47.475 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/swaggger, Response status code: 404
+2025-08-12 14:32:54.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-12 14:32:54.337 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-12 14:32:54.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 38.6538ms
+2025-08-12 14:32:54.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.574ms
+2025-08-12 14:32:54.527 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-12 14:32:54.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.4804ms
+2025-08-12 14:33:11.433 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/Auth/register - application/json 46
+2025-08-12 14:33:11.447 +03:00 [INF] Executing endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:33:11.476 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OrderManagement.Domain.DTO.LoginDTO) on controller OrderManagement.API.Controller.AuthController (OrderManagement.API).
+2025-08-12 14:33:11.655 +03:00 [INF] Attempting to register user with username: karen
+2025-08-12 14:33:12.786 +03:00 [INF] User 'karen' registered successfully
+2025-08-12 14:33:12.805 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 14:33:12.848 +03:00 [INF] Executed action OrderManagement.API.Controller.AuthController.Register (OrderManagement.API) in 1362.6316ms
+2025-08-12 14:33:12.853 +03:00 [INF] Executed endpoint 'OrderManagement.API.Controller.AuthController.Register (OrderManagement.API)'
+2025-08-12 14:33:12.858 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/Auth/register - 200 null application/json; charset=utf-8 1425.4737ms
