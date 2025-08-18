@@ -5,6 +5,7 @@ using OrderManagement.Domain.Common;
 using OrderManagement.Domain.DTO;
 using OrderManagement.Domain.Entities;
 using OrderManagement.Persistence.Interfaces;
+using System.Reflection.Metadata.Ecma335;
 
 namespace OrderManagement.API.Controller
 {
@@ -39,14 +40,25 @@ namespace OrderManagement.API.Controller
             }
         }
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDTO dto)
+        public async Task<ActionResult<TokenResponseDTO>> Login([FromBody] LoginRequestDTO dto)
         {
-            var token = await _loginService.LoginUser(dto);
+            var result = await _loginService.LoginUser(dto);
 
-            if (token == null)
+            if (result == null)
                 return Unauthorized(new { message = "Invalid username or password" });
 
-            return Ok(new { token });
+            return Ok(result); 
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<ActionResult<TokenResponseDTO>> RefreshToken([FromBody] RefreshTokenRequestDTO request)
+        {
+            var result = await _loginService.RefreshTokensAsync(request);
+
+            if (result == null)
+                return Unauthorized(new { message = "Invalid refresh token" });
+
+            return Ok(result);
         }
     }
 }

@@ -23,7 +23,6 @@ namespace OrderManagement.Persistence.Repositories
 
         public async Task<int> AddOrderItemAsync(CreateOrderItemDTO dto, IDbTransaction transaction)
         {
-            // Step 1: Check stock
             var stockSql = "SELECT quantity FROM inventory.stock WHERE item_id = @ItemId FOR UPDATE";
             var stockQuantity = await _connection.QuerySingleOrDefaultAsync<int>(
                 stockSql,
@@ -34,15 +33,14 @@ namespace OrderManagement.Persistence.Repositories
             if (stockQuantity < dto.Quantity)
                 throw new InvalidOperationException("Insufficient stock for the requested item.");
 
-            // Step 2: Insert order item and get the inserted Id
             var insertSql = @"
-        SELECT add_order_item(
-            @p_order_id, 
-            @p_item_id, 
-            @p_product_name, 
-            @p_quantity, 
-            @p_unit_price
-        )";
+                SELECT add_order_item(
+                    @p_order_id, 
+                    @p_item_id, 
+                    @p_product_name, 
+                    @p_quantity, 
+                    @p_unit_price
+                )";
 
             var newOrderItemId = await _connection.QuerySingleAsync<int>(insertSql, new
             {
@@ -53,7 +51,6 @@ namespace OrderManagement.Persistence.Repositories
                 p_unit_price = dto.UnitPrice
             }, transaction);
 
-            // Step 3: Decrement stock
             var updateStockSql = "UPDATE inventory.stock SET quantity = quantity - @Qty WHERE item_id = @ItemId";
             await _connection.ExecuteAsync(updateStockSql, new
             {
@@ -63,9 +60,6 @@ namespace OrderManagement.Persistence.Repositories
 
             return newOrderItemId;
         }
-
-
-
 
         public async Task<(int errorCode, string message)> UpdateOrderItemAsync(UpdateOrderItemDTO dto, IDbTransaction transaction)
         {

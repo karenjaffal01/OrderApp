@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Dapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
@@ -7,8 +8,11 @@ using OrderManagement.Domain.Common;
 using OrderManagement.Domain.DTO;
 using OrderManagement.Domain.Entities;
 using OrderManagement.Persistence.Interfaces;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Mime;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 public class LoginService : ILoginService
@@ -17,12 +21,14 @@ public class LoginService : ILoginService
     private readonly ILogger<LoginService> _logger;
     private readonly PasswordHasher<Login> _passwordHasher;
     private readonly IConfiguration _configuration;
-    public LoginService(ILoginRepository repo, ILogger<LoginService> logger, IConfiguration configuration)
+    private readonly IDbConnection _connection;
+    public LoginService(ILoginRepository repo, ILogger<LoginService> logger, IConfiguration configuration,IDbConnection dbConnection)
     {
         _repo = repo;
         _logger = logger;
         _passwordHasher = new PasswordHasher<Login>();
         _configuration = configuration;
+        _connection = dbConnection;
     }
 
     public async Task<Response<object>> RegisterAsync(LoginDTO dto)
@@ -61,37 +67,82 @@ public class LoginService : ILoginService
             };
         }
     }
-    public async Task<string> LoginUser(LoginDTO user)
+    public async Task<TokenResponseDTO?> LoginUser(LoginRequestDTO request)
     {
-        _logger.LogInformation("Login attempt for user: {Username}", user.Username);
+        _logger.LogInformation("Login attempt for user: {Username}", request.Username);
 
-        try
+        var user = await _repo.GetUserAsync(request.Username);
+        if (user == null)
         {
-            var getUser = await _repo.GetUserAsync(user.Username);
-
-            if (getUser == null)
-            {
-                _logger.LogWarning("Login failed: User '{Username}' not found", user.Username);
-                return null; 
-            }
-
-            _logger.LogInformation("User '{Username}' found. Verifying password...", user.Username);
-
-            var result = _passwordHasher.VerifyHashedPassword(getUser, getUser.Password, user.Password);
-            if (result == PasswordVerificationResult.Failed)
-            {
-                _logger.LogWarning("Login failed: Invalid password for user '{Username}'", user.Username);
-                return null;
-            }
-
-            _logger.LogInformation("User '{Username}' successfully authenticated", user.Username);
-            return CreateToken(getUser);
+            _logger.LogWarning("Login failed: User '{Username}' not found", request.Username);
+            return null;
         }
-        catch (Exception ex)
+
+        var result = _passwordHasher.VerifyHashedPassword(user, user.Password, request.Password);
+        if (result == PasswordVerificationResult.Failed)
         {
-            _logger.LogError(ex, "Unexpected error while logging in user '{Username}'", user.Username);
-            throw; 
+            _logger.LogWarning("Login failed: Invalid password for user '{Username}'", request.Username);
+            return null;
         }
+
+        var accessToken = CreateToken(user);
+        var refreshToken = await GenerateAndSaveRefreshTokenAsync(user); 
+
+        return new TokenResponseDTO
+        {
+            AccessToken = accessToken,
+            RefreshToken = refreshToken
+        };
+    }
+
+    public async Task<Login?> ValidateRefreshTokenAsync(int userId, string refreshToken)
+    {
+        const string sql = @"
+        SELECT ""Id"", ""Username"", ""Password"", ""Role"",
+               ""RefreshToken"", ""RefreshTokenExpiryTime"",
+               ""IsActive"", ""IsDeleted"", ""CreatedDate""
+        FROM public.""Login""
+        WHERE ""Id"" = @Id AND ""IsDeleted"" = false;";
+
+        var user = await _connection.QuerySingleOrDefaultAsync<Login>(sql, new { Id = userId });
+
+        if (user == null) return null;
+        if (string.IsNullOrEmpty(user.RefreshToken)) return null;
+        if (!string.Equals(user.RefreshToken, refreshToken, StringComparison.Ordinal)) return null;
+        if (user.RefreshTokenExpiryTime is null || user.RefreshTokenExpiryTime <= DateTime.UtcNow) return null;
+
+        return user;
+    }
+
+    private string GenerateRefreshToken()
+    {
+        var randomNumber = new byte[32];
+        using var rng = RandomNumberGenerator.Create();
+        rng.GetBytes(randomNumber);
+        return Convert.ToBase64String(randomNumber);
+    }
+    private async Task<string> GenerateAndSaveRefreshTokenAsync(Login user, IDbTransaction? transaction = null)
+    {
+        var refreshToken = GenerateRefreshToken();
+        var expiry = DateTime.UtcNow.AddDays(7);
+
+        const string sql = @"
+        UPDATE public.""Login""
+        SET ""RefreshToken"" = @RefreshToken,
+            ""RefreshTokenExpiryTime"" = @Expiry
+        WHERE ""Id"" = @Id;";
+
+        await _connection.ExecuteAsync(sql, new
+        {
+            RefreshToken = refreshToken,
+            Expiry = expiry,
+            Id = user.Id
+        }, transaction);
+
+        user.RefreshToken = refreshToken;
+        user.RefreshTokenExpiryTime = expiry;
+
+        return refreshToken;
     }
 
     public string CreateToken(Login user)
@@ -118,4 +169,17 @@ public class LoginService : ILoginService
 
         return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
     }
+
+    public async Task<TokenResponseDTO?> RefreshTokensAsync(RefreshTokenRequestDTO request)
+    {        
+        var user = await ValidateRefreshTokenAsync(request.UserId, request.RefreshToken);
+        if (user is null) return null;
+        var response = new TokenResponseDTO
+        {
+            AccessToken = CreateToken(user),
+            RefreshToken = await GenerateAndSaveRefreshTokenAsync(user) 
+        };
+        return response;
+    }
+
 }

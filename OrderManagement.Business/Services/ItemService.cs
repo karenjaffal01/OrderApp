@@ -28,7 +28,6 @@ namespace OrderManagement.Business.Services
 
             try
             {
-                // 1️⃣ Create the item
                 var (itemId, errorCode, message) = await _unitOfWork.Items.CreateItem(dto);
 
                 if (errorCode != 0 || itemId == null)
@@ -42,7 +41,6 @@ namespace OrderManagement.Business.Services
                     };
                 }
 
-                // 2️⃣ Create stock for this item
                 var (stockError, stockMessage) = await _unitOfWork.Stock.CreateStock(itemId.Value);
 
                 if (stockError != 0)
@@ -56,7 +54,6 @@ namespace OrderManagement.Business.Services
                     };
                 }
 
-                // 3️⃣ Commit transaction
                 await _unitOfWork.CommitAsync();
 
                 return new Response<object>
