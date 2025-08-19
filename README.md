@@ -89,6 +89,40 @@ Create inventory schema with tables (items, stock + default audit columns).
 
 Write CRUD stored procedures.
 
+Week 3 : Service Communication and Ocelot Gateway
+Goals
+· Integrate APIs with Ocelot Gateway.
+· Secure routing with JWT.
+Steps
+1. Setup Gateway Project
+o Create ApiGateway project.
+o Install Ocelot NuGet.
+o Configure ocelot.json with /orders, /inventory routes.
+o Forward JWT tokens.
+2. Service Config
+o Update service URLs and ports.
+3. Security
+o Secure Gateway with JWT validation.
+o Block direct access to APIs (if needed).
+4. Testing
+o Validate routing and auth via Swagger/Postman.
+ 
+Week 4: Advanced Features and Polish
+Goals
+· Finalize logging, documentation, and testing.
+· Polish and optimize the system.
+Steps
+1. Enhanced Logging
+o Structured logs with correlation IDs, request/response bodies.
+2. Documentation
+o Complete Swagger setup.
+o Create Postman collection.
+4 / 5
+3. Optional Advanced
+o Health checks, readiness probes.
+o Rate limiting policies.
+ 
+
 Setup solution with API, Business, Persistence, Domain.
 
 Configure EF Core + Dapper.
