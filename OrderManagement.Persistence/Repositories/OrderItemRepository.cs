@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OrderManagement.Persistence.Repositories
-{
+{   
     public class OrderItemRepository : IOrderItemRepository
     {
         private readonly IDbConnection _connection;
@@ -31,7 +31,7 @@ namespace OrderManagement.Persistence.Repositories
             );
 
             if (stockQuantity < dto.Quantity)
-                throw new InvalidOperationException("Insufficient stock for the requested item.");
+                throw new InvalidOperationException("Not enough stock for the requested item");
 
             var insertSql = @"
                 SELECT add_order_item(
@@ -75,10 +75,8 @@ namespace OrderManagement.Persistence.Repositories
                 parameters,
                 transaction
             );
-
             return result;
         }
-
         public async Task<(int errorCode, string message)> DeleteOrderItemAsync(int id, IDbTransaction transaction)
         {
             var parameters = new DynamicParameters();
@@ -93,6 +91,4 @@ namespace OrderManagement.Persistence.Repositories
             return result;
         }
     }
-
-
 }

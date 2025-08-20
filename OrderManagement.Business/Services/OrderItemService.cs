@@ -10,10 +10,10 @@ namespace OrderManagement.Business.Services
 {
     public class OrderItemService : IOrderItemService
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IOrderUnitOfWork _unitOfWork;
         private readonly ILogger<OrderItemService> _logger;
 
-        public OrderItemService(IUnitOfWork unitOfWork, ILogger<OrderItemService> logger)
+        public OrderItemService(IOrderUnitOfWork unitOfWork, ILogger<OrderItemService> logger)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;

@@ -31,7 +31,7 @@ public class LoginService : ILoginService
         _connection = dbConnection;
     }
 
-    public async Task<Response<object>> RegisterAsync(LoginDTO dto)
+    public async Task<Response<object>> RegisterAsync(LoginRequestDTO dto)
     {
         _logger.LogInformation("Attempting to register user with username: {Username}", dto.Username);
 

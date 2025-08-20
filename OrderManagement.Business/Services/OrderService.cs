@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 public class OrderService : IOrderService
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly IOrderUnitOfWork _unitOfWork;
     private readonly ILogger<OrderService> _logger;
 
-    public OrderService(IUnitOfWork unitOfWork, ILogger<OrderService> logger)
+    public OrderService(IOrderUnitOfWork unitOfWork, ILogger<OrderService> logger)
     {
         _unitOfWork = unitOfWork;
         _logger = logger;

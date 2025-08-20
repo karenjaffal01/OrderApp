@@ -12,12 +12,14 @@ namespace OrderManagement.Business.Services
     public class ItemService : IItemService
     {
         private readonly ILogger<ItemService> _logger;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IItemUnitOfWork _unitOfWork;
+        private readonly IStockUnitOfWork _unitOfWorkStock;
 
-        public ItemService(ILogger<ItemService> logger, IUnitOfWork unitOfWork)
+        public ItemService(ILogger<ItemService> logger, IItemUnitOfWork unitOfWork, IStockUnitOfWork unitOfWorkStock)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
+            _unitOfWorkStock = unitOfWorkStock;
         }
 
         public async Task<Response<object>> CreateItemAsync(CreateItemDTO dto)
@@ -41,7 +43,7 @@ namespace OrderManagement.Business.Services
                     };
                 }
 
-                var (stockError, stockMessage) = await _unitOfWork.Stock.CreateStock(itemId.Value);
+                var (stockError, stockMessage) = await _unitOfWorkStock.Stock.CreateStock(itemId.Value);
 
                 if (stockError != 0)
                 {

@@ -1,0 +1,85 @@
+2025-08-20 14:34:10.681 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-20 14:34:11.059 +03:00 [INF] Now listening on: https://localhost:7171
+2025-08-20 14:34:11.062 +03:00 [INF] Now listening on: http://localhost:7001
+2025-08-20 14:34:11.126 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-20 14:34:11.128 +03:00 [INF] Hosting environment: Development
+2025-08-20 14:34:11.130 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API
+2025-08-20 14:34:14.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-20 14:34:15.140 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 307 0 null 195.1523ms
+2025-08-20 14:34:15.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2025-08-20 14:34:15.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 110.2854ms
+2025-08-20 14:34:15.419 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2025-08-20 14:34:22.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger - null null
+2025-08-20 14:34:22.146 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger - 301 0 null 9.4757ms
+2025-08-20 14:34:22.156 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2025-08-20 14:34:22.211 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 54.8841ms
+2025-08-20 14:34:22.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui.css - null null
+2025-08-20 14:34:22.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.css - null null
+2025-08-20 14:34:22.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - null null
+2025-08-20 14:34:22.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.js - null null
+2025-08-20 14:34:22.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-20 14:34:22.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.js - 200 null application/javascript;charset=utf-8 50.4625ms
+2025-08-20 14:34:22.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-20 14:34:22.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2025-08-20 14:34:22.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.css - 200 202 text/css 84.8362ms
+2025-08-20 14:34:22.328 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 90.6329ms
+2025-08-20 14:34:22.337 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 103.1ms
+2025-08-20 14:34:22.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui.css - 200 155175 text/css 109.197ms
+2025-08-20 14:34:22.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - 200 1485750 text/javascript 149.7432ms
+2025-08-20 14:34:22.394 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.4148ms
+2025-08-20 14:34:22.659 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2025-08-20 14:34:22.687 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.4716ms
+2025-08-20 14:34:22.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/favicon-32x32.png - null null
+2025-08-20 14:34:22.705 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/favicon-32x32.png - 200 628 image/png 13.1183ms
+2025-08-20 14:39:34.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth - null null
+2025-08-20 14:39:34.366 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth - 307 0 null 12.1634ms
+2025-08-20 14:39:34.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/auth - null null
+2025-08-20 14:39:34.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/auth - 404 0 null 70.7023ms
+2025-08-20 14:39:34.495 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/api/auth, Response status code: 404
+2025-08-20 14:39:38.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/auth - null null
+2025-08-20 14:39:38.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/auth - 404 0 null 18.3502ms
+2025-08-20 14:39:38.853 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/api/auth, Response status code: 404
+2025-08-20 14:46:19.338 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-20 14:46:19.556 +03:00 [INF] Now listening on: http://localhost:7001
+2025-08-20 14:46:19.606 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-20 14:46:19.609 +03:00 [INF] Hosting environment: Development
+2025-08-20 14:46:19.612 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API
+2025-08-20 14:46:27.089 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-20 14:46:27.378 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 308.3707ms
+2025-08-20 14:46:27.394 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-08-20 14:46:34.164 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger - null null
+2025-08-20 14:46:34.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger - 301 0 null 22.2869ms
+2025-08-20 14:46:34.195 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/index.html - null null
+2025-08-20 14:46:34.260 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 65.3624ms
+2025-08-20 14:46:34.271 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui.css - null null
+2025-08-20 14:46:34.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/index.css - null null
+2025-08-20 14:46:34.347 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/index.js - null null
+2025-08-20 14:46:34.347 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - null null
+2025-08-20 14:46:34.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-20 14:46:34.355 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-20 14:46:34.372 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/index.js - 200 null application/javascript;charset=utf-8 24.4498ms
+2025-08-20 14:46:34.402 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/index.css - 200 202 text/css 129.4701ms
+2025-08-20 14:46:34.444 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 79.2589ms
+2025-08-20 14:46:34.446 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui.css - 200 155175 text/css 175.0073ms
+2025-08-20 14:46:34.446 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 91.1298ms
+2025-08-20 14:46:34.451 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_vs/browserLink - null null
+2025-08-20 14:46:34.487 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/swagger-ui-bundle.js - 200 1485750 text/javascript 144.246ms
+2025-08-20 14:46:34.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.6734ms
+2025-08-20 14:46:34.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-08-20 14:46:34.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/favicon-32x32.png - null null
+2025-08-20 14:46:34.749 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.0188ms
+2025-08-20 14:46:34.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/favicon-32x32.png - 200 628 image/png 7.4993ms
+2025-08-20 14:47:14.046 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth - null null
+2025-08-20 14:47:14.065 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth - 404 0 null 18.5659ms
+2025-08-20 14:47:14.110 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/api/auth, Response status code: 404
+2025-08-20 14:47:45.030 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth/ - null null
+2025-08-20 14:47:45.044 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth/ - 404 0 null 17.1646ms
+2025-08-20 14:47:45.054 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/api/auth/, Response status code: 404
+2025-08-20 14:49:41.398 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth/register - null null
+2025-08-20 14:49:41.409 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-20 14:49:41.412 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-20 14:49:41.415 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth/register - 405 0 null 16.8817ms
+2025-08-20 14:50:11.888 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth/register - null null
+2025-08-20 14:50:11.940 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-20 14:50:11.941 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-20 14:50:11.943 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth/register - 405 0 null 56.2902ms

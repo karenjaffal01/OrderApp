@@ -9,9 +9,9 @@ namespace OrderManagement.Business.Services
     public class StockService : IStockService
     {
         private readonly ILogger<StockService> _logger;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IStockUnitOfWork _unitOfWork;
 
-        public StockService(ILogger<StockService> logger, IUnitOfWork unitOfWork)
+        public StockService(ILogger<StockService> logger, IStockUnitOfWork unitOfWork)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
