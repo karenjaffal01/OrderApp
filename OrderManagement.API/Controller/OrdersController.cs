@@ -85,7 +85,6 @@ public class OrdersController : ControllerBase
 
         return BadRequest(response);
     }
-    [Authorize]
     [HttpGet]
     public async Task<IActionResult> GetAllOrders()
     {
@@ -96,5 +95,4 @@ public class OrdersController : ControllerBase
 
         return BadRequest(response);
     }
-
 }

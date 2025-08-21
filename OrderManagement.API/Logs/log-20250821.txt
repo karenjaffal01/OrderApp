@@ -1,0 +1,360 @@
+2025-08-21 11:50:25.018 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 11:50:25.082 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 11:50:25.284 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 11:50:25.287 +03:00 [INF] Hosting environment: Development
+2025-08-21 11:50:25.289 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 11:50:30.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 11:50:31.283 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 436.5943ms
+2025-08-21 11:50:31.333 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 11:50:31.342 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 403 null null 10.3216ms
+2025-08-21 11:51:14.408 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 11:51:14.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 22.0334ms
+2025-08-21 11:51:14.586 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 11:51:14.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 10.5116ms
+2025-08-21 11:51:14.683 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 11:51:14.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 5.04ms
+2025-08-21 11:55:07.396 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 11:55:07.438 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 11:55:07.633 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 11:55:07.634 +03:00 [INF] Hosting environment: Development
+2025-08-21 11:55:07.635 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 11:55:27.963 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 11:55:28.267 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 313.366ms
+2025-08-21 11:55:28.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 11:55:28.493 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 28.05ms
+2025-08-21 11:55:28.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 11:55:28.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 10.6282ms
+2025-08-21 11:59:52.088 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 11:59:52.131 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 11:59:52.282 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 11:59:52.285 +03:00 [INF] Hosting environment: Development
+2025-08-21 11:59:52.287 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:00:00.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 12:00:01.166 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 267.77ms
+2025-08-21 12:00:01.222 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 12:00:01.231 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 403 null null 9.5458ms
+2025-08-21 12:00:12.777 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:00:12.797 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 20.2984ms
+2025-08-21 12:00:12.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:00:12.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 10.7552ms
+2025-08-21 12:00:13.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:00:13.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 6.5429ms
+2025-08-21 12:00:28.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Orders/GetAllOrders - null null
+2025-08-21 12:00:28.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Orders/GetAllOrders - 403 null null 12.9716ms
+2025-08-21 12:00:28.520 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:00:28.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 6.877ms
+2025-08-21 12:00:35.479 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-08-21 12:00:35.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/.well-known/appspecific/com.chrome.devtools.json - 403 null null 6.3759ms
+2025-08-21 12:04:09.317 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 12:04:09.354 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 12:04:09.518 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 12:04:09.520 +03:00 [INF] Hosting environment: Development
+2025-08-21 12:04:09.522 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:04:34.188 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:04:34.562 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 378.7226ms
+2025-08-21 12:04:34.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:04:34.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 34.6121ms
+2025-08-21 12:04:34.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:04:34.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 6.3255ms
+2025-08-21 12:06:45.520 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 12:06:45.569 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 12:06:45.623 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 12:06:45.626 +03:00 [INF] Hosting environment: Development
+2025-08-21 12:06:45.627 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:06:49.222 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 12:06:49.395 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 307 0 null 181.5289ms
+2025-08-21 12:06:49.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-21 12:06:49.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 404 0 null 12.2712ms
+2025-08-21 12:06:49.500 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/, Response status code: 404
+2025-08-21 12:06:54.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 12:06:54.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-08-21 12:06:54.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 97.7399ms
+2025-08-21 12:06:55.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.0001ms
+2025-08-21 12:06:55.130 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-08-21 12:06:55.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.0599ms
+2025-08-21 12:07:02.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Orders - null null
+2025-08-21 12:07:02.212 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 12:07:02.257 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 12:07:02.393 +03:00 [INF] Retrieving all orders
+2025-08-21 12:07:03.514 +03:00 [INF] Orders retrieved successfully
+2025-08-21 12:07:03.532 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 12:07:03.591 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1320.8305ms
+2025-08-21 12:07:03.594 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 12:07:03.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Orders - 200 null application/json; charset=utf-8 1399.559ms
+2025-08-21 12:07:29.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:07:29.916 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 9.6927ms
+2025-08-21 12:07:29.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:07:29.964 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 12:07:29.966 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 12:07:29.968 +03:00 [INF] Retrieving all orders
+2025-08-21 12:07:29.971 +03:00 [INF] Orders retrieved successfully
+2025-08-21 12:07:29.978 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 12:07:29.984 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 15.8408ms
+2025-08-21 12:07:29.986 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 12:07:29.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 200 null application/json; charset=utf-8 36.6725ms
+2025-08-21 12:07:30.060 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:07:30.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 404 0 null 5.4179ms
+2025-08-21 12:07:30.071 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7224/favicon.ico, Response status code: 404
+2025-08-21 12:20:15.415 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 12:20:15.459 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 12:20:15.624 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 12:20:15.626 +03:00 [INF] Hosting environment: Development
+2025-08-21 12:20:15.629 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:20:53.264 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:20:53.617 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 353.499ms
+2025-08-21 12:20:53.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:20:53.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 33.9101ms
+2025-08-21 12:20:53.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:20:53.975 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 8.6637ms
+2025-08-21 12:33:42.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:33:42.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 5.8017ms
+2025-08-21 12:37:23.524 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 12:37:23.563 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 12:37:23.765 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 12:37:23.767 +03:00 [INF] Hosting environment: Development
+2025-08-21 12:37:23.769 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:37:39.942 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:37:40.288 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 346.5848ms
+2025-08-21 12:37:40.498 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:37:40.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 22.531ms
+2025-08-21 12:37:40.619 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:37:40.627 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 8.5491ms
+2025-08-21 12:38:06.076 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 12:38:06.100 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 307 0 null 23.7861ms
+2025-08-21 12:38:06.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/ - null null
+2025-08-21 12:38:06.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/ - 403 null null 6.7883ms
+2025-08-21 12:38:06.543 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:38:06.549 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 5.2653ms
+2025-08-21 12:45:07.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:45:07.809 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 16.2984ms
+2025-08-21 12:45:07.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:45:07.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 4.2722ms
+2025-08-21 12:45:08.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:45:08.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 5.0174ms
+2025-08-21 12:49:00.653 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 12:49:00.693 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 12:49:00.869 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 12:49:00.871 +03:00 [INF] Hosting environment: Development
+2025-08-21 12:49:00.873 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 12:49:15.459 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 12:49:15.704 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 245.8725ms
+2025-08-21 12:49:15.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 12:49:15.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 22.1953ms
+2025-08-21 12:49:15.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 12:49:15.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 6.0297ms
+2025-08-21 13:44:16.010 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 13:44:16.059 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 13:44:16.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 13:44:16.238 +03:00 [INF] Hosting environment: Development
+2025-08-21 13:44:16.241 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 13:44:28.583 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 13:44:28.857 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 307 0 null 282.3235ms
+2025-08-21 13:44:29.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/orders - null null
+2025-08-21 13:44:29.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/orders - 403 null null 21.0498ms
+2025-08-21 13:44:29.173 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - null null
+2025-08-21 13:44:29.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7224/favicon.ico - 403 null null 6.0551ms
+2025-08-21 13:46:40.763 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 13:46:40.802 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 13:46:40.958 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 13:46:40.960 +03:00 [INF] Hosting environment: Development
+2025-08-21 13:46:40.965 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 13:46:55.559 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 13:46:55.879 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 325.1821ms
+2025-08-21 13:47:45.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 13:47:45.340 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 21.3985ms
+2025-08-21 13:56:21.097 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 13:56:21.133 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 13:56:21.323 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 13:56:21.329 +03:00 [INF] Hosting environment: Development
+2025-08-21 13:56:21.331 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 13:56:35.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/123 - null null
+2025-08-21 13:56:36.126 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OrdersController.GetOrderById (OrderManagement.API)
+OrdersController.GetOrder (OrderManagement.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-21 13:56:36.184 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/123 - 500 null text/html; charset=utf-8 281.6508ms
+2025-08-21 13:58:06.404 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 13:58:06.446 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 13:58:06.599 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 13:58:06.601 +03:00 [INF] Hosting environment: Development
+2025-08-21 13:58:06.604 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 13:58:16.915 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 13:58:17.117 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 204.6806ms
+2025-08-21 14:07:54.800 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:07:54.847 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:07:55.022 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:07:55.025 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:07:55.027 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:08:08.441 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:08:08.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 309.3101ms
+2025-08-21 14:08:13.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/ - null null
+2025-08-21 14:08:13.910 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/ - 403 null null 18.3018ms
+2025-08-21 14:08:21.656 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:08:21.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 12.7125ms
+2025-08-21 14:08:25.061 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/ - null null
+2025-08-21 14:08:25.073 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/ - 403 null null 11.8139ms
+2025-08-21 14:08:31.676 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 14:08:31.685 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 9.1605ms
+2025-08-21 14:08:31.786 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 14:08:31.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 403 null null 6.6545ms
+2025-08-21 14:14:43.646 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:14:43.686 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:14:43.829 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:14:43.833 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:14:43.837 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:14:56.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:14:56.864 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 403 null null 258.4132ms
+2025-08-21 14:24:11.384 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:24:11.430 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:24:11.611 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:24:11.613 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:24:11.614 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:24:29.506 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:24:29.792 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:24:29.833 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 14:24:30.042 +03:00 [INF] Retrieving all orders
+2025-08-21 14:24:30.990 +03:00 [INF] Orders retrieved successfully
+2025-08-21 14:24:31.010 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 14:24:31.098 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1251.7972ms
+2025-08-21 14:24:31.114 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:24:31.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1617.0842ms
+2025-08-21 14:26:20.295 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:26:20.339 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:26:20.500 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:26:20.502 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:26:20.504 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:26:31.416 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:26:31.723 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:26:31.741 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 14:26:31.884 +03:00 [INF] Retrieving all orders
+2025-08-21 14:26:32.610 +03:00 [INF] Orders retrieved successfully
+2025-08-21 14:26:32.632 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 14:26:32.697 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 945.0493ms
+2025-08-21 14:26:32.713 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:26:32.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1310.1041ms
+2025-08-21 14:26:39.589 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 14:26:39.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 35.5011ms
+2025-08-21 14:26:39.697 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 14:26:39.703 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 404 0 null 6.2666ms
+2025-08-21 14:26:39.711 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/favicon.ico, Response status code: 404
+2025-08-21 14:37:44.444 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:37:44.506 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:37:44.759 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:37:44.761 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:37:44.764 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:37:50.310 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 14:37:50.612 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 314.672ms
+2025-08-21 14:37:51.169 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 14:37:51.184 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 404 0 null 14.7214ms
+2025-08-21 14:37:51.195 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/favicon.ico, Response status code: 404
+2025-08-21 14:37:57.616 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/Orders - null null
+2025-08-21 14:37:57.633 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/Orders - 403 null null 16.5389ms
+2025-08-21 14:39:57.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 14:39:57.391 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 49.182ms
+2025-08-21 14:40:03.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger - null null
+2025-08-21 14:40:03.260 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger - 301 0 null 11.1446ms
+2025-08-21 14:40:03.268 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/index.html - null null
+2025-08-21 14:40:03.386 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 118.2385ms
+2025-08-21 14:40:03.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui.css - null null
+2025-08-21 14:40:03.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/index.css - null null
+2025-08-21 14:40:03.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-21 14:40:03.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 14:40:03.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui-bundle.js - null null
+2025-08-21 14:40:03.504 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/index.js - null null
+2025-08-21 14:40:03.531 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/index.js - 200 null application/javascript;charset=utf-8 58.5244ms
+2025-08-21 14:40:03.540 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 116.6567ms
+2025-08-21 14:40:03.541 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-21 14:40:03.556 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/index.css - 200 202 text/css 154.3044ms
+2025-08-21 14:40:03.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui.css - 200 155175 text/css 224.4515ms
+2025-08-21 14:40:03.626 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 184.6016ms
+2025-08-21 14:40:03.659 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/swagger-ui-bundle.js - 200 1485750 text/javascript 232.4739ms
+2025-08-21 14:40:03.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.5429ms
+2025-08-21 14:40:03.940 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-21 14:40:03.962 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/favicon-32x32.png - null null
+2025-08-21 14:40:03.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/favicon-32x32.png - 200 628 image/png 8.6261ms
+2025-08-21 14:40:03.985 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.9524ms
+2025-08-21 14:40:13.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-21 14:40:13.339 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:40:13.396 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 14:40:13.688 +03:00 [INF] Retrieving all orders
+2025-08-21 14:40:15.186 +03:00 [INF] Orders retrieved successfully
+2025-08-21 14:40:15.215 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 14:40:15.329 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1919.1145ms
+2025-08-21 14:40:15.333 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:40:15.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 200 null application/json; charset=utf-8 2010.358ms
+2025-08-21 14:49:05.641 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 14:49:05.681 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 14:49:05.885 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:49:05.888 +03:00 [INF] Hosting environment: Development
+2025-08-21 14:49:05.890 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 14:49:18.869 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 14:49:19.034 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:49:19.049 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 14:49:19.116 +03:00 [INF] Retrieving all orders
+2025-08-21 14:49:19.501 +03:00 [INF] Orders retrieved successfully
+2025-08-21 14:49:19.512 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 14:49:19.562 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 505.186ms
+2025-08-21 14:49:19.568 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 14:49:19.575 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 709.2477ms
+2025-08-21 14:49:24.683 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-21 14:49:24.706 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 403 null null 23.2696ms
+2025-08-21 14:49:24.785 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 14:49:24.795 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 404 0 null 9.4917ms
+2025-08-21 14:49:24.803 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/favicon.ico, Response status code: 404
+2025-08-21 14:49:32.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 14:49:32.374 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-21 14:49:32.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 21.9093ms
+2025-08-21 14:49:32.422 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1196ms
+2025-08-21 14:49:32.570 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-21 14:49:32.592 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.3949ms
+2025-08-21 14:49:39.672 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-21 14:49:39.682 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 403 null null 9.969ms
+2025-08-21 15:31:18.881 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 15:31:18.929 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 15:31:19.096 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:31:19.098 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:31:19.100 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 15:35:22.944 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 15:35:22.991 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 15:35:23.173 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:35:23.176 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:35:23.177 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 15:40:15.535 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 15:40:15.582 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 15:40:15.752 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:40:15.754 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:40:15.756 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-21 15:46:30.188 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-21 15:46:30.452 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 15:46:30.505 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-21 15:46:30.724 +03:00 [INF] Retrieving all orders
+2025-08-21 15:46:31.315 +03:00 [INF] Orders retrieved successfully
+2025-08-21 15:46:31.337 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-21 15:46:31.480 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 960.809ms
+2025-08-21 15:46:31.488 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-21 15:46:31.500 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1316.3228ms
+2025-08-21 15:46:38.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/Orders - null null
+2025-08-21 15:46:38.116 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/Orders - 403 null null 19.6336ms
+2025-08-21 15:46:38.151 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-21 15:46:38.157 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 404 0 null 6.522ms
+2025-08-21 15:46:38.165 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/favicon.ico, Response status code: 404
+2025-08-21 15:46:51.999 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 15:46:52.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 8.2089ms
+2025-08-21 15:46:52.023 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-21 15:46:52.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.2549ms
+2025-08-21 15:46:52.116 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-21 15:46:52.145 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.7502ms
+2025-08-21 15:46:58.124 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-21 15:46:58.131 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 403 null null 6.9959ms
+2025-08-21 15:51:34.292 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-21 15:51:34.329 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-21 15:51:34.474 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:51:34.478 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:51:34.480 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API

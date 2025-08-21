@@ -15,6 +15,7 @@
     <ProjectReference Include="..\OrderManagement.Business\OrderManagement.Business.csproj" />
     <ProjectReference Include="..\OrderManagement.Domain\OrderManagement.Domain.csproj" />
     <ProjectReference Include="..\OrderManagement.Persistence\OrderManagement.Persistence.csproj" />
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
   </ItemGroup>
 
 </Project>

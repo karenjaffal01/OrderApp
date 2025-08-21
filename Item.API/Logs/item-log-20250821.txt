@@ -1,0 +1,10 @@
+2025-08-21 15:36:00.379 +03:00 [INF] Now listening on: https://localhost:7128
+2025-08-21 15:36:00.418 +03:00 [INF] Now listening on: http://localhost:7003
+2025-08-21 15:36:00.477 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:36:00.483 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:36:00.485 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API
+2025-08-21 15:40:26.665 +03:00 [INF] Now listening on: https://localhost:7128
+2025-08-21 15:40:26.708 +03:00 [INF] Now listening on: http://localhost:7003
+2025-08-21 15:40:26.751 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:40:26.754 +03:00 [INF] Hosting environment: Development
+2025-08-21 15:40:26.758 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API

@@ -10,6 +10,7 @@ using OrderManagement.Persistence.Repositories;
 using OrderManagement.Persistence.UnitOfWorks;
 using Serilog;
 using Serilog.Enrichers.CorrelationId;
+using SharedLibrary;
 using System.Data;
 using System.Text;
 
@@ -44,9 +45,13 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 
 var app = builder.Build();
+app.UseMiddleware<RestrictAccessMiddleware>();
 app.UseSwagger();
-app.UseSwaggerUI();
-app.UseHttpsRedirection();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+});
+
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
