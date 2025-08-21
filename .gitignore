@@ -1,25 +1,33 @@
-
-bin/
-obj/
-
-# User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-**/bin/
-**/obj/
-# Mono Auto Generated Files
-mono_crash.*
-
-# VS Code settings
-.vscode/
-
-# Visual Studio working folder
+# Ignore VS local settings
 .vs/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+# Ignore build output folders in all subprojects
+ApiGateway/bin/
+ApiGateway/obj/
 
-# Other
-*.log
+Item.API/bin/
+Item.API/obj/
+
+Login.API/bin/
+Login.API/obj/
+
+OrderItem.API/bin/
+OrderItem.API/obj/
+
+OrderManagement.API/bin/
+OrderManagement.API/obj/
+
+OrderManagement.Business/bin/
+OrderManagement.Business/obj/
+
+OrderManagement.Domain/bin/
+OrderManagement.Domain/obj/
+
+OrderManagement.Persistence/bin/
+OrderManagement.Persistence/obj/
+
+SharedLibrary/bin/
+SharedLibrary/obj/
+
+Stock.API/bin/
+Stock.API/obj/
