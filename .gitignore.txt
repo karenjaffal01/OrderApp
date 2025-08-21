@@ -3,11 +3,10 @@
 *.user
 *.suo
 
-# Build outputs
-bin/
-obj/
+**/bin/
+**/obj/
 *.dll
 *.pdb
 *.cache
 *.db
-*.json
+*.log
