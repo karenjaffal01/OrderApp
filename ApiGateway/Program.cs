@@ -1,46 +1,38 @@
-﻿using ApiGateway.Middleware; // Your RestrictAccessMiddleware or InterceptionMiddleware
-using MMLib.SwaggerForOcelot;
-using Ocelot.DependencyInjection;
+﻿using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using CacheManager.Core;
+using Ocelot.Cache.CacheManager;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load Ocelot config
 builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
-// Register Ocelot
 builder.Services.AddOcelot(builder.Configuration);
 
-// Register SwaggerForOcelot
-builder.Services.AddSwaggerForOcelot(builder.Configuration);
-
-// Add controllers
-builder.Services.AddControllers();
-
-// Enable CORS
-builder.Services.AddCors(opt =>
+builder.Services.AddCacheManager<ICacheManager<object>>(builder.Configuration, "CacheManager", y =>
 {
-    opt.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+    y.WithDictionaryHandle();
 });
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Use CORS and your custom middleware
-app.UseCors();
-app.UseMiddleware<InterceptionMiddleware>();
-app.UseAuthentication();
-app.UseAuthorization();
-
-// Map controllers if needed
 app.MapControllers();
 
-// Serve aggregated Swagger UI at gateway
-app.UseSwaggerForOcelotUI(opt =>
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    opt.PathToSwaggerGenerator = "/swagger/docs";
+    c.SwaggerEndpoint("http://localhost:7002/swagger/v1/swagger.json", "Orders Service");
+    c.SwaggerEndpoint("http://localhost:7003/swagger/v1/swagger.json", "Items Service");
+    c.SwaggerEndpoint("http://localhost:7004/swagger/v1/swagger.json", "Stock Service");
+    c.SwaggerEndpoint("http://localhost:7001/swagger/v1/swagger.json", "Auth Service");
+
+    c.RoutePrefix = "swagger";
 });
 
-// Run Ocelot
 await app.UseOcelot();
 
 app.Run();

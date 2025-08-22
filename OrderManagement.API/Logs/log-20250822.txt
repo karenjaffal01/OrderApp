@@ -1,0 +1,277 @@
+2025-08-22 09:18:52.920 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:18:52.975 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:18:53.307 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:18:53.309 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:18:53.311 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:23:17.227 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:23:17.263 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:23:17.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:23:17.410 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:23:17.413 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:27:11.977 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:27:12.024 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:27:12.195 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:27:12.198 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:27:12.202 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:32:42.074 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:32:42.111 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:32:42.265 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:32:42.267 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:32:42.268 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:38:41.854 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:38:41.894 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:38:42.063 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:38:42.066 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:38:42.067 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:38:45.565 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 09:38:45.824 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 266.0247ms
+2025-08-22 09:38:45.836 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 09:38:50.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 09:38:50.323 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 21.8761ms
+2025-08-22 09:38:50.341 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 09:38:50.394 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.2543ms
+2025-08-22 09:38:50.455 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 09:38:50.488 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.607ms
+2025-08-22 09:39:58.760 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-22 09:39:58.769 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 09:39:58.801 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 09:39:58.934 +03:00 [INF] Retrieving all orders
+2025-08-22 09:39:59.431 +03:00 [INF] Orders retrieved successfully
+2025-08-22 09:39:59.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 09:39:59.485 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 675.979ms
+2025-08-22 09:39:59.489 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 09:39:59.492 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 200 null application/json; charset=utf-8 734.138ms
+2025-08-22 09:41:09.867 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 09:41:09.912 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 09:41:09.979 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 09:41:09.981 +03:00 [INF] Hosting environment: Development
+2025-08-22 09:41:09.983 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 09:41:13.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 09:41:13.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 205.8067ms
+2025-08-22 09:41:13.881 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 09:41:37.670 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 09:41:37.733 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 09:41:37.776 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 09:41:37.879 +03:00 [INF] Retrieving all orders
+2025-08-22 09:41:38.675 +03:00 [INF] Orders retrieved successfully
+2025-08-22 09:41:38.697 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 09:41:38.746 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 958.35ms
+2025-08-22 09:41:38.750 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 09:41:38.755 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1085.0518ms
+2025-08-22 10:16:23.704 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 10:16:23.758 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 10:16:23.952 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 10:16:23.955 +03:00 [INF] Hosting environment: Development
+2025-08-22 10:16:23.958 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 10:17:04.662 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 10:17:05.016 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 10:17:05.042 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-22 10:17:05.200 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 500 null text/html; charset=utf-8 543.0033ms
+2025-08-22 10:18:17.644 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 10:18:17.680 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 10:18:17.841 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 10:18:17.842 +03:00 [INF] Hosting environment: Development
+2025-08-22 10:18:17.844 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 10:20:22.260 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 10:20:22.260 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 10:20:22.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 38.7709ms
+2025-08-22 10:20:22.363 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.6423ms
+2025-08-22 10:20:22.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 10:20:22.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.1995ms
+2025-08-22 10:20:30.963 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-22 10:20:30.989 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 10:20:30.999 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-22 10:20:31.038 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 500 null text/plain; charset=utf-8 74.3281ms
+2025-08-22 10:45:32.602 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 10:45:32.645 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 10:45:32.825 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 10:45:32.827 +03:00 [INF] Hosting environment: Development
+2025-08-22 10:45:32.828 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 10:46:43.623 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 10:46:44.016 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 399.3349ms
+2025-08-22 10:46:44.032 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 10:46:47.979 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 10:46:48.000 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 20.8145ms
+2025-08-22 10:46:48.021 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 10:46:48.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.6826ms
+2025-08-22 10:46:48.130 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 10:46:48.160 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.6671ms
+2025-08-22 10:47:28.802 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-22 10:47:28.821 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 10:47:28.833 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-22 10:47:28.919 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 500 null text/plain; charset=utf-8 121.9838ms
+2025-08-22 10:50:01.711 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 10:50:02.076 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 10:50:02.079 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 10:50:02.257 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 10:50:02.259 +03:00 [INF] Hosting environment: Development
+2025-08-22 10:50:02.260 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 10:51:16.897 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 10:51:17.512 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 619.4889ms
+2025-08-22 10:51:17.531 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 10:51:21.817 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 10:51:21.839 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 10:51:21.841 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 24.0627ms
+2025-08-22 10:51:21.913 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.4285ms
+2025-08-22 10:51:21.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 10:51:22.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.8121ms
+2025-08-22 10:51:33.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/Orders - null null
+2025-08-22 10:51:33.541 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 10:51:33.574 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 10:51:33.725 +03:00 [INF] Retrieving all orders
+2025-08-22 10:51:34.217 +03:00 [INF] Orders retrieved successfully
+2025-08-22 10:51:34.234 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 10:51:34.309 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 722.7304ms
+2025-08-22 10:51:34.313 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 10:51:34.321 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/Orders - 200 null application/json; charset=utf-8 919.8408ms
+2025-08-22 10:51:48.881 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 10:51:48.897 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 10:51:48.905 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-22 10:51:48.908 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 401 0 null 26.985ms
+2025-08-22 10:59:45.452 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 10:59:45.812 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 10:59:45.815 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 10:59:45.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 10:59:45.985 +03:00 [INF] Hosting environment: Development
+2025-08-22 10:59:45.987 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:04:42.819 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:04:43.377 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:04:43.383 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:04:43.446 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:04:43.448 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:04:43.451 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:09:17.830 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:09:18.381 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:09:18.383 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:09:18.437 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:09:18.439 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:09:18.440 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:17:03.040 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:17:03.644 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:17:03.647 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:17:03.730 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:17:03.734 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:17:03.736 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:20:41.933 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:20:42.368 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:20:42.375 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:20:42.643 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:20:42.645 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:20:42.648 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:25:46.552 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:25:47.423 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:25:47.439 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:25:47.588 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:25:47.595 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:25:47.598 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:30:32.017 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:30:32.592 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:30:32.634 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:30:32.780 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:30:32.817 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:30:32.823 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:37:46.714 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:37:47.326 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:37:47.330 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:37:47.559 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:37:47.561 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:37:47.563 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:45:24.585 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 11:45:24.944 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 11:45:24.947 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 11:45:25.132 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 11:45:25.135 +03:00 [INF] Hosting environment: Development
+2025-08-22 11:45:25.137 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 11:46:13.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 11:46:13.908 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 11:46:13.987 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 11:46:14.251 +03:00 [INF] Retrieving all orders
+2025-08-22 11:46:14.902 +03:00 [INF] Orders retrieved successfully
+2025-08-22 11:46:14.920 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 11:46:15.013 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1009.4186ms
+2025-08-22 11:46:15.019 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 11:46:15.029 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1665.2903ms
+2025-08-22 11:47:19.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/5 - null null
+2025-08-22 11:47:19.148 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-22 11:47:19.172 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-22 11:47:19.196 +03:00 [INF] Retrieving order 5 with items
+2025-08-22 11:47:19.253 +03:00 [WRN] Order 5 not found
+2025-08-22 11:47:19.258 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-22 11:47:19.264 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 86.2806ms
+2025-08-22 11:47:19.267 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-22 11:47:19.270 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/5 - 400 null application/json; charset=utf-8 197.9873ms
+2025-08-22 12:19:27.513 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 12:19:27.884 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 12:19:27.887 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 12:19:28.034 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 12:19:28.036 +03:00 [INF] Hosting environment: Development
+2025-08-22 12:19:28.038 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 12:20:12.410 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 12:20:12.890 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 12:20:12.903 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-22 12:20:12.931 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 401 0 null 529.6689ms
+2025-08-22 12:20:46.897 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 12:20:46.916 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 19.89ms
+2025-08-22 12:20:46.936 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 12:20:50.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 12:20:50.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 11.3402ms
+2025-08-22 12:20:50.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 12:20:50.810 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.6751ms
+2025-08-22 12:20:50.877 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 12:20:50.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.0883ms
+2025-08-22 13:25:23.584 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 13:25:23.976 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 13:25:23.980 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 13:25:24.030 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 13:25:24.032 +03:00 [INF] Hosting environment: Development
+2025-08-22 13:25:24.034 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 13:25:59.473 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 13:26:00.594 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 13:26:00.638 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 13:26:00.842 +03:00 [INF] Retrieving all orders
+2025-08-22 13:26:01.724 +03:00 [INF] Orders retrieved successfully
+2025-08-22 13:26:01.750 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 13:26:01.863 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1214.9992ms
+2025-08-22 13:26:01.870 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 13:26:01.883 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 2434.4481ms
+2025-08-22 13:35:33.624 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 13:35:33.733 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 108.996ms
+2025-08-22 13:35:33.757 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 13:35:37.817 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 13:35:37.882 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 13:35:37.888 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 70.5727ms
+2025-08-22 13:35:37.944 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.6316ms
+2025-08-22 13:35:38.014 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 13:35:38.047 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.9993ms

@@ -51,7 +51,6 @@ public class OrdersController : ControllerBase
 
         return BadRequest(response);
     }
-
     [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteOrders(int id)

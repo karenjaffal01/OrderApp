@@ -13,15 +13,22 @@ namespace SharedLibrary
 
         public async Task InvokeAsync(HttpContext context)
         {
-            var referrer = context.Request.Headers["Referer"].FirstOrDefault();
+            var path = context.Request.Path.Value?.ToLower();
 
-            if (string.IsNullOrEmpty(referrer))
+            if (path != null && (path.StartsWith("/swagger") || path.StartsWith("/health")))
             {
-                context.Response.StatusCode = StatusCodes.Status403Forbidden;
-                await context.Response.WriteAsync("Access denied");
+                await _next(context);
                 return;
             }
-            
+
+            if (!context.Request.Headers.TryGetValue("Referer", out var referer) ||
+                referer != "Api-Gateway")
+            {
+                context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                await context.Response.WriteAsync("Forbidden: request must go through API Gateway");
+                return;
+            }
+
             await _next(context);
         }
     }

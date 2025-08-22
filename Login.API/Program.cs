@@ -79,15 +79,21 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
+builder.Services.AddCors(opt =>
+{
+    opt.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
 
 var app = builder.Build();
+
+app.UseCors();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API v1");
 });
 
-app.UseMiddleware<RestrictAccessMiddleware>();
+//app.UseMiddleware<RestrictAccessMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

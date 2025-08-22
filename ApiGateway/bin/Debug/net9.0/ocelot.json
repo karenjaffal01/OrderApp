@@ -10,7 +10,20 @@
           "Port": 7002
         }
       ],
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "default",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 6,
+        "Limit": 2
+      }
     },
     {
       "UpstreamPathTemplate": "/items/{everything}",
@@ -22,7 +35,20 @@
           "Port": 7003
         }
       ],
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "default",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 6,
+        "Limit": 2
+      }
     },
     {
       "UpstreamPathTemplate": "/stock/{everything}",
@@ -34,7 +60,20 @@
           "Port": 7004
         }
       ],
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "default",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 6,
+        "Limit": 2
+      }
     },
     {
       "UpstreamPathTemplate": "/login/{everything}",
@@ -46,52 +85,21 @@
           "Port": 7001
         }
       ],
-      "UpstreamHttpMethod": [ "GET", "POST" ]
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "default",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 6,
+        "Limit": 2
+      }
     }
   ],
-  "SwaggerEndPoints": [
-    {
-      "Key": "orders",
-      "Config": [
-        {
-          "Name": "Orders API",
-          "Version": "v1",
-          "Url": "http://localhost:7002/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "items",
-      "Config": [
-        {
-          "Name": "Items API",
-          "Version": "v1",
-          "Url": "http://localhost:7003/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "stock",
-      "Config": [
-        {
-          "Name": "Stock API",
-          "Version": "v1",
-          "Url": "http://localhost:7004/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "auth",
-      "Config": [
-        {
-          "Name": "Auth API",
-          "Version": "v1",
-          "Url": "http://localhost:7001/swagger/v1/swagger.json"
-        }
-      ]
-    }
-  ],
-  "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:7000"
-  }
+  "GlobalConfiguration": { "BaseUrl": "http://localhost:7000" }
 }
