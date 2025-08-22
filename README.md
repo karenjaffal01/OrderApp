@@ -1,131 +1,184 @@
-For Week 1, we need to implement the following:
-
-Setup the project structure.
-Build the first API service (OrderService)
-Create schema order with tables and stored procedures.
-Configure logging, base response, Swagger.
-Implement CRUD APIs with Dapper and basic validation.
-
-Steps:
-
-Environment Setup
-
-Install .NET 6 SDK, PostgreSQL, pgAdmin.
-Initialize Git repository.
-Install Visual Studio or VS Code.
-
-Project Structure
-
-Create a solution with projects:
-API
-Business
-Persistence
-Domain
-
-Database Setup
-
-Create order schema with tables:
-order, order\_items, login
-Ensure all base tables have the default columns:
-created\_by
-created\_date
-updated\_by
-updated\_date
-is\_active
-is\_deleted
-Write stored procedures (CRUD) returning { errorCode, data }.
-
-EF Core + Dapper Setup
-
-Configure DbContext and Dapper for stored procedures.
-Implement Repository and Unit of Work.
-Logging
-Setup Serilog (console and files) with correlation IDs.
-Base Response Structure
-{
-"message": "Operation successful",
-"data": {},
-"errorCode": 0
-}
-Swagger
-Enable and configure annotations.
-CRUD API Endpoints
-Implement /api/orders CRUD with Dapper.
-Use basic validation attributes (e.g., \[Required], \[StringLength]).
+\# Microservices Project with Clean Architecture, JWT, and Ocelot Gateway
 
 
 
+This project demonstrates a \*\*full-fledged microservices architecture\*\* using \*\*.NET 6\*\*, \*\*PostgreSQL\*\*, and \*\*Ocelot API Gateway\*\*, following \*\*Clean Architecture principles\*\*. It implements two main services (`OrderService` and `InventoryService`) with full CRUD operations, JWT authentication (including refresh tokens), transactional database operations, rate limiting, caching, structured logging, and normalized schemas.
+
+
+
+---
+
+
+
+\## Table of Contents
+
+
+
+\- \[Technologies](#technologies)
+
+\- \[Project Overview](#project-overview)
+
+\- \[Project Structure](#project-structure)
+
+\- \[Database Design](#database-design)
+
+&nbsp; - \[Order Schema](#order-schema)
+
+&nbsp; - \[Inventory Schema](#inventory-schema)
+
+\- \[Authentication \& Authorization](#authentication--authorization)
+
+\- \[Services](#services)
+
+&nbsp; - \[OrderService](#orderservice)
+
+&nbsp; - \[InventoryService](#inventoryservice)
+
+\- \[API Gateway](#api-gateway)
+
+\- \[Logging](#logging)
+
+\- \[Rate Limiting \& Caching](#rate-limiting--caching)
+
+\- \[Documentation](#documentation)
+
+\- \[Advanced Features](#advanced-features)
+
+\- \[Setup Instructions](#setup-instructions)
+
+\- \[Usage](#usage)
+
+\- \[Base Response Format](#base-response-format)
+
+\- \[License](#license)
+
+
+
+---
+
+
+
+\## Technologies
+
+
+
+\- \*\*Backend:\*\* .NET 8, C#
+
+\- \*\*Database:\*\* PostgreSQL
+
+\- \*\*ORM \& Micro-ORM:\*\* EF Core + Dapper
+
+\- \*\*API Gateway:\*\* Ocelot
+
+\- \*\*Authentication:\*\* JWT (Access + Refresh Tokens)
+
+\- \*\*Logging:\*\* Serilog (structured logs with correlation IDs)
+
+\- \*\*Caching \& Rate Limiting:\*\* In-memory + gateway-level policies
+
+\- \*\*Documentation:\*\* Swagger + Postman
+
+
+
+---
+
+
+
+\## Project Overview
+
+
+
+\- \*\*Goal:\*\* Build a microservices system with secure, scalable, and maintainable architecture.
+
+\- \*\*Services:\*\*  
+
+&nbsp; 1. \*\*OrderService:\*\* Manages customer orders.  
+
+&nbsp; 2. \*\*InventoryService:\*\* Manages stock and items.
+
+\- \*\*Gateway:\*\* Centralized API gateway using Ocelot to route requests, forward JWT, and enforce rate limits and caching.
+
+\- \*\*Clean Architecture:\*\* Separate concerns into `API`, `Business`, `Persistence`, and `Domain` layers.
+
+\- \*\*Transactions:\*\* All CRUD operations across multiple tables are transactional to maintain database consistency.
+
+\- \*\*Database Normalization:\*\* All schemas are normalized to avoid redundancy and enforce integrity.
+
+
+
+---
+
+
+
+\## Project Structure
 
 
 
 
-For Week 2: Authentication and InventoryService
 
-Goals
+&nbsp;Business # Business logic, services, use cases
 
-Implement JWT authentication, claims.
+&nbsp;Persistence # EF Core DbContext, Dapper Repositories, Unit of Work
 
-Add InventoryService with its own schema inventory.
+&nbsp;Domain # Entities, Enums, DTO
 
-Secure APIs with JWT and claims.
+&nbsp;ApiGateway # Ocelot gateway configuration, JWT forwarding, rate limiting, caching
 
-Steps
+&nbsp;Item.api # Controllers for item service
 
-JWT Setup
+&nbsp;Order.api # Controllers for order service that contains order items operations
 
-Configure token issuance and validation.
+&nbsp;Login.api # Controllers for login service with JWT authentication 
 
-Use login table for authentication.
+&nbsp;Stock.api # Controllers for stock service
 
-Define claims and roles.
 
-Secure APIs
 
-Apply \[Authorize] and claims policies to OrderService endpoints.
+\## Authentication \& Authorization
 
-InventoryService Setup
 
-Create inventory schema with tables (items, stock + default audit columns).
 
-Write CRUD stored procedures.
+\- \*\*JWT Authentication:\*\* Access + Refresh tokens
 
-Week 3 : Service Communication and Ocelot Gateway
-Goals
-· Integrate APIs with Ocelot Gateway.
-· Secure routing with JWT.
-Steps
-1. Setup Gateway Project
-o Create ApiGateway project.
-o Install Ocelot NuGet.
-o Configure ocelot.json with /orders, /inventory routes.
-o Forward JWT tokens.
-2. Service Config
-o Update service URLs and ports.
-3. Security
-o Secure Gateway with JWT validation.
-o Block direct access to APIs (if needed).
-4. Testing
-o Validate routing and auth via Swagger/Postman.
- 
-Week 4: Advanced Features and Polish
-Goals
-· Finalize logging, documentation, and testing.
-· Polish and optimize the system.
-Steps
-1. Enhanced Logging
-o Structured logs with correlation IDs, request/response bodies.
-2. Documentation
-o Complete Swagger setup.
-o Create Postman collection.
-4 / 5
-3. Optional Advanced
-o Health checks, readiness probes.
-o Rate limiting policies.
- 
+\- \*\*Claims-based Authorization:\*\* Define roles and permissions
 
-Setup solution with API, Business, Persistence, Domain.
+\- \*\*Login Table:\*\* Stores user credentials and roles
 
-Configure EF Core + Dapper.
+\- \*\*Security Features:\*\*
 
-Implement /api/inventory CRUD endpoints with JWT protection.
+&nbsp; - Refresh token workflow
+
+&nbsp; - Token expiration handling
+
+&nbsp; - Role and claims validation on all endpoints
+
+
+
+\## Ocelot Gateway Features:
+
+&nbsp; - Routes requests to OrderService and InventoryService
+
+&nbsp; - Forwards JWT tokens
+
+&nbsp; - Rate limiting per route
+
+&nbsp; - Caching for repeated queries
+
+&nbsp; - Optional: blocks direct API access for added security
+
+
+
+\## Logging:
+
+  - Serilog structured logging
+
+&nbsp;  Logs include:
+
+&nbsp;   -Correlation IDs for request tracing
+
+&nbsp;   -Request and response bodies
+
+&nbsp;   -Errors with stack traces
+
+&nbsp;   -Output to console + files
 
