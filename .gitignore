@@ -1,0 +1,33 @@
+# Ignore VS local settings
+.vs/
+
+# Ignore build output folders in all subprojects
+ApiGateway/bin/
+ApiGateway/obj/
+
+Item.API/bin/
+Item.API/obj/
+
+Login.API/bin/
+Login.API/obj/
+
+OrderItem.API/bin/
+OrderItem.API/obj/
+
+OrderManagement.API/bin/
+OrderManagement.API/obj/
+
+OrderManagement.Business/bin/
+OrderManagement.Business/obj/
+
+OrderManagement.Domain/bin/
+OrderManagement.Domain/obj/
+
+OrderManagement.Persistence/bin/
+OrderManagement.Persistence/obj/
+
+SharedLibrary/bin/
+SharedLibrary/obj/
+
+Stock.API/bin/
+Stock.API/obj/
