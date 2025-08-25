@@ -1,0 +1,130 @@
+2025-08-25 09:55:49.527 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 09:55:49.757 +03:00 [INF] Now listening on: http://localhost:7001
+2025-08-25 09:55:49.805 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 09:55:49.808 +03:00 [INF] Hosting environment: Development
+2025-08-25 09:55:49.811 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API
+2025-08-25 09:56:31.240 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-25 09:56:32.323 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 1084.4945ms
+2025-08-25 09:56:32.350 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-08-25 09:56:35.671 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-25 09:56:35.680 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 9.5816ms
+2025-08-25 09:56:35.694 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_vs/browserLink - null null
+2025-08-25 09:56:35.880 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.4194ms
+2025-08-25 09:56:35.936 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-08-25 09:56:35.965 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.232ms
+2025-08-25 09:56:51.838 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7001/api/Auth/login - application/json 49
+2025-08-25 09:56:51.851 +03:00 [INF] CORS policy execution successful.
+2025-08-25 09:56:51.869 +03:00 [INF] Executing endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 09:56:51.928 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OrderManagement.Domain.DTO.TokenResponseDTO]] Login(OrderManagement.Domain.DTO.LoginRequestDTO) on controller Login.API.Controller.AuthController (Login.API).
+2025-08-25 09:56:52.203 +03:00 [INF] Login attempt for user: karen
+2025-08-25 09:56:53.337 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.DTO.TokenResponseDTO'.
+2025-08-25 09:56:53.355 +03:00 [INF] Executed action Login.API.Controller.AuthController.Login (Login.API) in 1412.1324ms
+2025-08-25 09:56:53.361 +03:00 [INF] Executed endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 09:56:53.370 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7001/api/Auth/login - 200 null application/json; charset=utf-8 1532.1703ms
+2025-08-25 10:42:57.266 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-25 10:42:57.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 36.936ms
+2025-08-25 10:42:57.316 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-08-25 10:43:31.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-08-25 10:43:31.152 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.7293ms
+2025-08-25 10:43:31.235 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/favicon.ico - null null
+2025-08-25 10:43:31.241 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/favicon.ico - 404 0 null 6.3424ms
+2025-08-25 10:43:31.249 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/favicon.ico, Response status code: 404
+2025-08-25 11:01:14.442 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-25 11:01:14.460 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 17.1774ms
+2025-08-25 11:01:14.464 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-08-25 11:01:42.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-25 11:01:42.809 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_vs/browserLink - null null
+2025-08-25 11:01:42.829 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 39.0901ms
+2025-08-25 11:01:42.899 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.9923ms
+2025-08-25 11:01:42.958 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-08-25 11:01:42.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.3606ms
+2025-08-25 11:05:38.728 +03:00 [INF] Application is shutting down...
+2025-08-25 11:25:57.328 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 11:25:57.572 +03:00 [INF] Now listening on: http://localhost:7001
+2025-08-25 11:25:57.627 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 11:25:57.629 +03:00 [INF] Hosting environment: Development
+2025-08-25 11:25:57.631 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API
+2025-08-25 11:29:46.164 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null
+2025-08-25 11:29:46.573 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 412.1725ms
+2025-08-25 11:29:46.586 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404
+2025-08-25 11:29:53.791 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-25 11:29:53.802 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 11.2786ms
+2025-08-25 11:29:53.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/_vs/browserLink - null null
+2025-08-25 11:29:53.890 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.4439ms
+2025-08-25 11:29:53.953 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null
+2025-08-25 11:29:53.985 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.7286ms
+2025-08-25 11:30:12.928 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7001/api/Auth/login - application/json 48
+2025-08-25 11:30:12.947 +03:00 [INF] CORS policy execution successful.
+2025-08-25 11:30:12.957 +03:00 [INF] Executing endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:30:12.997 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OrderManagement.Domain.DTO.TokenResponseDTO]] Login(OrderManagement.Domain.DTO.LoginRequestDTO) on controller Login.API.Controller.AuthController (Login.API).
+2025-08-25 11:30:13.288 +03:00 [INF] Login attempt for user: admin
+2025-08-25 11:30:14.407 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.DTO.TokenResponseDTO'.
+2025-08-25 11:30:14.427 +03:00 [INF] Executed action Login.API.Controller.AuthController.Login (Login.API) in 1416.0115ms
+2025-08-25 11:30:14.430 +03:00 [INF] Executed endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:30:14.436 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7001/api/Auth/login - 200 null application/json; charset=utf-8 1508.5319ms
+2025-08-25 11:43:34.807 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7001/api/auth/login - application/json 55
+2025-08-25 11:43:34.868 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-25 11:43:34.871 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-25 11:43:34.873 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7001/api/auth/login - 405 0 null 66.5046ms
+2025-08-25 11:44:37.656 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7001/api/auth/login - application/json 55
+2025-08-25 11:44:37.661 +03:00 [INF] Executing endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:44:37.662 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OrderManagement.Domain.DTO.TokenResponseDTO]] Login(OrderManagement.Domain.DTO.LoginRequestDTO) on controller Login.API.Controller.AuthController (Login.API).
+2025-08-25 11:44:37.666 +03:00 [INF] Login attempt for user: admin
+2025-08-25 11:44:37.974 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.DTO.TokenResponseDTO'.
+2025-08-25 11:44:37.978 +03:00 [INF] Executed action Login.API.Controller.AuthController.Login (Login.API) in 313.1219ms
+2025-08-25 11:44:37.980 +03:00 [INF] Executed endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:44:37.982 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7001/api/auth/login - 200 null application/json; charset=utf-8 326.4988ms
+2025-08-25 11:45:00.148 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7001/api/auth/login - application/json 48
+2025-08-25 11:45:00.181 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 11:45:00.189 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 11:45:00.191 +03:00 [INF] Executing endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:45:00.193 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OrderManagement.Domain.DTO.TokenResponseDTO]] Login(OrderManagement.Domain.DTO.LoginRequestDTO) on controller Login.API.Controller.AuthController (Login.API).
+2025-08-25 11:45:00.197 +03:00 [INF] Login attempt for user: admin
+2025-08-25 11:45:00.273 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.DTO.TokenResponseDTO'.
+2025-08-25 11:45:00.275 +03:00 [INF] Executed action Login.API.Controller.AuthController.Login (Login.API) in 80.5758ms
+2025-08-25 11:45:00.277 +03:00 [INF] Executed endpoint 'Login.API.Controller.AuthController.Login (Login.API)'
+2025-08-25 11:45:00.279 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7001/api/auth/login - 200 null application/json; charset=utf-8 130.5221ms
+2025-08-25 12:26:04.736 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 12:26:04.957 +03:00 [INF] Now listening on: http://localhost:7001
+2025-08-25 12:26:05.010 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 12:26:05.012 +03:00 [INF] Hosting environment: Development
+2025-08-25 12:26:05.015 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API
+[13:21:06 INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. {"EventId":{"Id":63,"Name":"UsingProfileAsKeyRepositoryWithDPAPI"},"SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
+[13:21:06 INF] Now listening on: http://localhost:7001 {"EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}
+[13:21:06 INF] Application started. Press Ctrl+C to shut down. {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[13:21:06 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[13:21:06 INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[13:21:40 INF] Request starting HTTP/1.1 GET http://localhost:7001/ - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VS:00000001","RequestPath":"/","ConnectionId":"0HNF3O4N334VS"}
+[13:21:40 INF] Request finished HTTP/1.1 GET http://localhost:7001/ - 404 0 null 352.4037ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VS:00000001","RequestPath":"/","ConnectionId":"0HNF3O4N334VS"}
+[13:21:40 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7001/, Response status code: 404 {"EventId":{"Id":16},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VS:00000001","RequestPath":"/","ConnectionId":"0HNF3O4N334VS"}
+[13:21:46 INF] Request starting HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VS:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3O4N334VS"}
+[13:21:46 INF] Request starting HTTP/1.1 GET http://localhost:7001/_vs/browserLink - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000001","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3O4N334VT"}
+[13:21:47 INF] Request finished HTTP/1.1 GET http://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 49.2753ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VS:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3O4N334VS"}
+[13:21:47 INF] Request finished HTTP/1.1 GET http://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.3117ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000001","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3O4N334VT"}
+[13:21:47 INF] Request starting HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000002","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNF3O4N334VT"}
+[13:21:47 INF] Request finished HTTP/1.1 GET http://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.4852ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000002","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNF3O4N334VT"}
+[13:22:05 INF] Request starting HTTP/1.1 POST http://localhost:7001/api/Auth/login - application/json 49 {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:05 INF] CORS policy execution successful. {"EventId":{"Id":4,"Name":"PolicySuccess"},"SourceContext":"Microsoft.AspNetCore.Cors.Infrastructure.CorsService","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:05 INF] Executing endpoint 'Login.API.Controller.AuthController.Login (Login.API)' {"EventId":{"Name":"ExecutingEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:05 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[OrderManagement.Domain.DTO.TokenResponseDTO]] Login(OrderManagement.Domain.DTO.LoginRequestDTO) on controller Login.API.Controller.AuthController (Login.API). {"EventId":{"Id":102,"Name":"ControllerActionExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"b8c66545-d15e-4786-bd20-32c286302ff3","ActionName":"Login.API.Controller.AuthController.Login (Login.API)","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:05 INF] Login attempt for user: karen {"SourceContext":"LoginService","ActionId":"b8c66545-d15e-4786-bd20-32c286302ff3","ActionName":"Login.API.Controller.AuthController.Login (Login.API)","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:06 INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.DTO.TokenResponseDTO'. {"EventId":{"Id":1,"Name":"ObjectResultExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor","ActionId":"b8c66545-d15e-4786-bd20-32c286302ff3","ActionName":"Login.API.Controller.AuthController.Login (Login.API)","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:06 INF] Executed action Login.API.Controller.AuthController.Login (Login.API) in 622.4773ms {"EventId":{"Id":105,"Name":"ActionExecuted"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:06 INF] Executed endpoint 'Login.API.Controller.AuthController.Login (Login.API)' {"EventId":{"Id":1,"Name":"ExecutedEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}
+[13:22:06 INF] Request finished HTTP/1.1 POST http://localhost:7001/api/Auth/login - 200 null application/json; charset=utf-8 727.7079ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3O4N334VT:00000003","RequestPath":"/api/Auth/login","ConnectionId":"0HNF3O4N334VT"}

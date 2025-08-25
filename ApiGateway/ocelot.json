@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/orders/{everything}",
+      "UpstreamPathTemplate": "/api/orders/{everything}",
       "DownstreamPathTemplate": "/api/orders/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -11,12 +11,12 @@
         }
       ],
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "FileCacheOptions": {
-        "TtlSeconds": 60,
-        "Region": "default",
-        "Header": "OC-Caching-Control",
-        "EnableContentHashing": false
-      },
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 60,
+      //  "Region": "default",
+      //  "Header": "OC-Caching-Control",
+      //  "EnableContentHashing": false
+      //},
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -26,7 +26,7 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/items/{everything}",
+      "UpstreamPathTemplate": "/api/item/{everything}",
       "DownstreamPathTemplate": "/api/item/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -36,12 +36,12 @@
         }
       ],
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "FileCacheOptions": {
-        "TtlSeconds": 60,
-        "Region": "default",
-        "Header": "OC-Caching-Control",
-        "EnableContentHashing": false
-      },
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 60,
+      //  "Region": "default",
+      //  "Header": "OC-Caching-Control",
+      //  "EnableContentHashing": false
+      //},
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -51,7 +51,7 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/stock/{everything}",
+      "UpstreamPathTemplate": "/api/stock/{everything}",
       "DownstreamPathTemplate": "/api/stock/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -61,12 +61,12 @@
         }
       ],
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "FileCacheOptions": {
-        "TtlSeconds": 60,
-        "Region": "default",
-        "Header": "OC-Caching-Control",
-        "EnableContentHashing": false
-      },
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 60,
+      //  "Region": "default",
+      //  "Header": "OC-Caching-Control",
+      //  "EnableContentHashing": false
+      //},
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -76,7 +76,7 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/login/{everything}",
+      "UpstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -86,12 +86,12 @@
         }
       ],
       "UpstreamHttpMethod": [ "GET", "POST" ],
-      "FileCacheOptions": {
-        "TtlSeconds": 60,
-        "Region": "default",
-        "Header": "OC-Caching-Control",
-        "EnableContentHashing": false
-      },
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 60,
+      //  "Region": "default",
+      //  "Header": "OC-Caching-Control",
+      //  "EnableContentHashing": false
+      //},
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -101,5 +101,12 @@
       }
     }
   ],
-  "GlobalConfiguration": { "BaseUrl": "http://localhost:7000" }
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7000",
+    "RateLimitOptions": {
+      "EnableRateLimiting": true,
+      "Period": "1m",
+      "Limit": 100
+    }
+  }
 }

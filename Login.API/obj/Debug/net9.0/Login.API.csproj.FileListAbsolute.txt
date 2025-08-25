@@ -87,3 +87,4 @@ C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API\obj\Debug\net9.0\ref
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API\obj\Debug\net9.0\Login.API.pdb
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API\obj\Debug\net9.0\Login.API.genruntimeconfig.cache
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API\obj\Debug\net9.0\ref\Login.API.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Login.API\bin\Debug\net9.0\Logs\log-20250825.json

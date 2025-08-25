@@ -88,3 +88,9 @@ C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\obj\Debug\net9.0\refi
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\obj\Debug\net9.0\Item.API.pdb
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\obj\Debug\net9.0\Item.API.genruntimeconfig.cache
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\obj\Debug\net9.0\ref\Item.API.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\HealthChecks.NpgSql.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Hosting.Abstractions.dll

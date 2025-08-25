@@ -275,3 +275,46 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-08-22 13:35:37.944 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.6316ms
 2025-08-22 13:35:38.014 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
 2025-08-22 13:35:38.047 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.9993ms
+2025-08-22 16:03:53.433 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-22 16:03:53.974 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-22 16:03:53.980 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-22 16:03:54.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-22 16:03:54.035 +03:00 [INF] Hosting environment: Development
+2025-08-22 16:03:54.037 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-22 16:05:09.591 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-22 16:05:10.364 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 774.3892ms
+2025-08-22 16:05:10.404 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-22 16:05:14.630 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-22 16:05:14.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/_vs/browserLink - null null
+2025-08-22 16:05:14.684 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 54.3871ms
+2025-08-22 16:05:14.788 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.0947ms
+2025-08-22 16:05:14.843 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-22 16:05:14.950 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.2203ms
+2025-08-22 16:06:35.049 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-22 16:06:35.343 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 16:06:35.412 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-22 16:06:35.699 +03:00 [INF] Retrieving all orders
+2025-08-22 16:06:36.675 +03:00 [INF] Orders retrieved successfully
+2025-08-22 16:06:36.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 16:06:36.838 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 1403.866ms
+2025-08-22 16:06:36.849 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-22 16:06:36.863 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 1813.7897ms
+2025-08-22 16:07:05.393 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/4 - null null
+2025-08-22 16:07:05.429 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 16:07:05.455 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-22 16:07:05.461 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/4 - 401 0 null 68.2768ms
+2025-08-22 16:07:40.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/4 - null null
+2025-08-22 16:07:40.417 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-22 16:07:40.453 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-22 16:07:40.487 +03:00 [INF] Retrieving order 4 with items
+2025-08-22 16:07:40.566 +03:00 [INF] Order 4 retrieved successfully
+2025-08-22 16:07:40.570 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-22 16:07:40.581 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 118.2973ms
+2025-08-22 16:07:40.587 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-22 16:07:40.593 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/4 - 200 null application/json; charset=utf-8 217.4863ms
+2025-08-22 16:07:47.455 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/4 - null null
+2025-08-22 16:07:47.473 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-22 16:07:47.478 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-22 16:07:47.483 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/4 - 401 0 null 27.8625ms

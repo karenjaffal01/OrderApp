@@ -1,0 +1,67 @@
+2025-08-25 10:49:08.542 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 10:49:08.945 +03:00 [INF] Now listening on: https://localhost:7035
+2025-08-25 10:49:08.948 +03:00 [INF] Now listening on: http://localhost:7004
+2025-08-25 10:49:09.012 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 10:49:09.014 +03:00 [INF] Hosting environment: Development
+2025-08-25 10:49:09.015 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API
+2025-08-25 10:49:12.876 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7004/ - null null
+2025-08-25 10:49:13.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7004/ - 404 0 null 345.975ms
+2025-08-25 10:49:13.224 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7004/, Response status code: 404
+2025-08-25 10:49:28.942 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7004/swagger/v1/swagger.json - null null
+2025-08-25 10:49:29.048 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.7676ms
+2025-08-25 10:49:29.117 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7004/favicon.ico - null null
+2025-08-25 10:49:29.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7004/favicon.ico - 404 0 null 9.2494ms
+2025-08-25 10:49:29.132 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7004/favicon.ico, Response status code: 404
+2025-08-25 11:26:23.760 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 11:26:24.177 +03:00 [INF] Now listening on: https://localhost:7035
+2025-08-25 11:26:24.190 +03:00 [INF] Now listening on: http://localhost:7004
+2025-08-25 11:26:24.262 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 11:26:24.266 +03:00 [INF] Hosting environment: Development
+2025-08-25 11:26:24.273 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API
+2025-08-25 12:26:28.929 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 12:26:29.232 +03:00 [INF] Now listening on: https://localhost:7035
+2025-08-25 12:26:29.235 +03:00 [INF] Now listening on: http://localhost:7004
+2025-08-25 12:26:29.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 12:26:29.283 +03:00 [INF] Hosting environment: Development
+2025-08-25 12:26:29.285 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API
+2025-08-25 12:30:20.046 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7004/api/stock/create/2 - null 0
+2025-08-25 12:30:20.436 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-08-25 12:30:20.452 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-25 12:30:20.483 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7004/api/stock/create/2 - 401 0 null 441.9985ms
+2025-08-25 12:32:47.599 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7004/api/stock/create/2 - null 0
+2025-08-25 12:32:47.752 +03:00 [INF] Executing endpoint 'Stock.API.Controller.StockController.CreateStock (Stock.API)'
+2025-08-25 12:32:47.809 +03:00 [INF] Route matched with {action = "CreateStock", controller = "Stock"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStock(Int32) on controller Stock.API.Controller.StockController (Stock.API).
+2025-08-25 12:32:48.047 +03:00 [INF] Creating stock for item 2
+2025-08-25 12:32:49.405 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 12:32:49.426 +03:00 [INF] Executed action Stock.API.Controller.StockController.CreateStock (Stock.API) in 1607.6088ms
+2025-08-25 12:32:49.429 +03:00 [INF] Executed endpoint 'Stock.API.Controller.StockController.CreateStock (Stock.API)'
+2025-08-25 12:32:49.439 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7004/api/stock/create/2 - 200 null application/json; charset=utf-8 1839.6869ms
+2025-08-25 12:48:01.532 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:01.540 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-08-25 12:48:01.542 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-25 12:48:01.545 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - 401 0 null 12.9281ms
+2025-08-25 12:48:10.220 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:10.226 +03:00 [INF] Executing endpoint 'Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API)'
+2025-08-25 12:48:10.235 +03:00 [INF] Route matched with {action = "UpdateStockQuantity", controller = "Stock"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStockQuantity(Int32, Int32) on controller Stock.API.Controller.StockController (Stock.API).
+2025-08-25 12:48:10.240 +03:00 [INF] Updating stock 2 quantity to 1000
+2025-08-25 12:48:10.365 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 12:48:10.369 +03:00 [INF] Executed action Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API) in 131.0429ms
+2025-08-25 12:48:10.372 +03:00 [INF] Executed endpoint 'Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API)'
+2025-08-25 12:48:10.374 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - 200 null application/json; charset=utf-8 153.7249ms
+2025-08-25 12:48:27.942 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7004/api/stock/quantity/2 - null null
+2025-08-25 12:48:27.952 +03:00 [INF] Executing endpoint 'Stock.API.Controller.StockController.GetStockQuantity (Stock.API)'
+2025-08-25 12:48:27.957 +03:00 [INF] Route matched with {action = "GetStockQuantity", controller = "Stock"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStockQuantity(Int32) on controller Stock.API.Controller.StockController (Stock.API).
+2025-08-25 12:48:27.972 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 12:48:27.976 +03:00 [INF] Executed action Stock.API.Controller.StockController.GetStockQuantity (Stock.API) in 14.3749ms
+2025-08-25 12:48:27.978 +03:00 [INF] Executed endpoint 'Stock.API.Controller.StockController.GetStockQuantity (Stock.API)'
+2025-08-25 12:48:27.981 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7004/api/stock/quantity/2 - 200 null application/json; charset=utf-8 39.0361ms
+2025-08-25 12:48:55.312 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:55.319 +03:00 [INF] Executing endpoint 'Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API)'
+2025-08-25 12:48:55.321 +03:00 [INF] Route matched with {action = "UpdateStockQuantity", controller = "Stock"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStockQuantity(Int32, Int32) on controller Stock.API.Controller.StockController (Stock.API).
+2025-08-25 12:48:55.325 +03:00 [INF] Updating stock 2 quantity to 1000
+2025-08-25 12:48:55.328 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 12:48:55.331 +03:00 [INF] Executed action Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API) in 5.9215ms
+2025-08-25 12:48:55.333 +03:00 [INF] Executed endpoint 'Stock.API.Controller.StockController.UpdateStockQuantity (Stock.API)'
+2025-08-25 12:48:55.335 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7004/api/stock/updateQuantity/2/1000 - 200 null application/json; charset=utf-8 23.2646ms

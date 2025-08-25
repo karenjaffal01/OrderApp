@@ -1,0 +1,211 @@
+2025-08-25 09:56:06.800 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 09:56:07.119 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-25 09:56:07.122 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-25 09:56:07.328 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 09:56:07.330 +03:00 [INF] Hosting environment: Development
+2025-08-25 09:56:07.332 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-25 09:57:08.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/4 - null null
+2025-08-25 09:57:09.344 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 09:57:09.385 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-25 09:57:09.536 +03:00 [INF] Retrieving order 4 with items
+2025-08-25 09:57:10.597 +03:00 [INF] Order 4 retrieved successfully
+2025-08-25 09:57:10.613 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-25 09:57:10.701 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 1306.6205ms
+2025-08-25 09:57:10.730 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 09:57:10.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/4 - 200 null application/json; charset=utf-8 1929.0325ms
+2025-08-25 09:57:20.036 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/4 - null null
+2025-08-25 09:57:20.158 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 09:57:20.172 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 09:57:20.179 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-25 09:57:20.189 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-25 09:57:20.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/4 - 401 0 null 155.0832ms
+2025-08-25 09:57:37.282 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-25 09:57:37.296 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.Text.Json.JsonReaderException: ':' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at Microsoft.IdentityModel.Tokens.Json.JsonSerializerPrimitives.IsReaderAtTokenType(Utf8JsonReader& reader, JsonTokenType tokenType, Boolean advanceReader)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateHeaderClaimSet(ReadOnlySpan`1 byteSpan)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-25 09:57:37.304 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-08-25 09:57:37.307 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-25 09:57:37.316 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-25 09:57:37.320 +03:00 [INF] Retrieving all orders
+2025-08-25 09:57:37.325 +03:00 [INF] Orders retrieved successfully
+2025-08-25 09:57:37.327 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 09:57:37.334 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 15.5814ms
+2025-08-25 09:57:37.337 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-25 09:57:37.339 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 56.5838ms
+2025-08-25 09:59:34.813 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7002/api/orders/4 - null 0
+2025-08-25 09:59:34.820 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.Text.Json.JsonReaderException: ':' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at Microsoft.IdentityModel.Tokens.Json.JsonSerializerPrimitives.IsReaderAtTokenType(Utf8JsonReader& reader, JsonTokenType tokenType, Boolean advanceReader)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateHeaderClaimSet(ReadOnlySpan`1 byteSpan)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-25 09:59:34.827 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-08-25 09:59:34.830 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-25 09:59:34.833 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-25 09:59:34.836 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7002/api/orders/4 - 405 0 null 22.9298ms
+2025-08-25 10:00:02.372 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7002/api/orders/8 - null 0
+2025-08-25 10:00:02.387 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.Text.Json.JsonReaderException: ':' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at Microsoft.IdentityModel.Tokens.Json.JsonSerializerPrimitives.IsReaderAtTokenType(Utf8JsonReader& reader, JsonTokenType tokenType, Boolean advanceReader)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateHeaderClaimSet(ReadOnlySpan`1 byteSpan)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-25 10:00:02.394 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-08-25 10:00:02.396 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-25 10:00:02.397 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-25 10:00:02.398 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7002/api/orders/8 - 405 0 null 26.2288ms
+2025-08-25 10:10:51.765 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7002/api/orders - application/json 59
+2025-08-25 10:10:51.770 +03:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.Text.Json.JsonReaderException: ':' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at Microsoft.IdentityModel.Tokens.Json.JsonSerializerPrimitives.IsReaderAtTokenType(Utf8JsonReader& reader, JsonTokenType tokenType, Boolean advanceReader)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateHeaderClaimSet(ReadOnlySpan`1 byteSpan)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-08-25 10:10:51.774 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-08-25 10:10:51.777 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-25 10:10:51.779 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-25 10:10:51.780 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7002/api/orders - 401 0 null 15.2145ms
+2025-08-25 10:11:08.382 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7002/api/orders - application/json 59
+2025-08-25 10:11:08.386 +03:00 [INF] Executing endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-25 10:11:08.392 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder(OrderManagement.Domain.Requests.CreateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:11:08.413 +03:00 [INF] Starting creation of order for customer: ali
+2025-08-25 10:11:08.996 +03:00 [INF] Order 7 created successfully for customer: ali
+2025-08-25 10:11:09.002 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 10:11:09.008 +03:00 [INF] Executed action OrdersController.CreateOrder (OrderManagement.API) in 612.9777ms
+2025-08-25 10:11:09.012 +03:00 [INF] Executed endpoint 'OrdersController.CreateOrder (OrderManagement.API)'
+2025-08-25 10:11:09.014 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 631.7204ms
+2025-08-25 10:11:29.904 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/7 - application/json 59
+2025-08-25 10:11:29.908 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:11:29.909 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:11:29.911 +03:00 [INF] Retrieving order 7 with items
+2025-08-25 10:11:29.919 +03:00 [INF] Order 7 retrieved successfully
+2025-08-25 10:11:29.921 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-25 10:11:29.923 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 11.5954ms
+2025-08-25 10:11:29.924 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:11:29.925 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/7 - 200 null application/json; charset=utf-8 21.8511ms
+2025-08-25 10:12:47.861 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7002/api/orders/7 - application/json 74
+2025-08-25 10:12:47.867 +03:00 [INF] Executing endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-25 10:12:47.874 +03:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrder(OrderManagement.Domain.Requests.UpdateOrderRequest) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:12:47.882 +03:00 [INF] Starting update for order 7
+2025-08-25 10:12:47.899 +03:00 [INF] Order 7 updated successfully
+2025-08-25 10:12:47.903 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 10:12:47.906 +03:00 [INF] Executed action OrdersController.UpdateOrder (OrderManagement.API) in 28.7905ms
+2025-08-25 10:12:47.908 +03:00 [INF] Executed endpoint 'OrdersController.UpdateOrder (OrderManagement.API)'
+2025-08-25 10:12:47.911 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7002/api/orders/7 - 200 null application/json; charset=utf-8 80.7121ms
+2025-08-25 10:12:58.816 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/7 - application/json 74
+2025-08-25 10:12:58.822 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:12:58.824 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:12:58.827 +03:00 [INF] Retrieving order 7 with items
+2025-08-25 10:12:58.831 +03:00 [INF] Order 7 retrieved successfully
+2025-08-25 10:12:58.834 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-25 10:12:58.839 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 12.3618ms
+2025-08-25 10:12:58.842 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:12:58.845 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/7 - 200 null application/json; charset=utf-8 28.7554ms
+2025-08-25 10:13:08.781 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:7002/api/orders/7 - application/json 74
+2025-08-25 10:13:08.791 +03:00 [INF] Executing endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-25 10:13:08.803 +03:00 [INF] Route matched with {action = "DeleteOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrders(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:13:08.812 +03:00 [INF] Attempting to delete order 7 and its related items
+2025-08-25 10:13:08.823 +03:00 [INF] Order 7 and its items deleted successfully
+2025-08-25 10:13:08.829 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 10:13:08.833 +03:00 [INF] Executed action OrdersController.DeleteOrders (OrderManagement.API) in 24.6341ms
+2025-08-25 10:13:08.838 +03:00 [INF] Executed endpoint 'OrdersController.DeleteOrders (OrderManagement.API)'
+2025-08-25 10:13:08.841 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:7002/api/orders/7 - 200 null application/json; charset=utf-8 59.3761ms
+2025-08-25 10:13:15.986 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders/7 - application/json 74
+2025-08-25 10:13:15.994 +03:00 [INF] Executing endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:13:15.996 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(Int32) on controller OrdersController (OrderManagement.API).
+2025-08-25 10:13:16.000 +03:00 [INF] Retrieving order 7 with items
+2025-08-25 10:13:16.003 +03:00 [WRN] Order 7 not found
+2025-08-25 10:13:16.009 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-25 10:13:16.013 +03:00 [INF] Executed action OrdersController.GetOrderById (OrderManagement.API) in 13.4745ms
+2025-08-25 10:13:16.016 +03:00 [INF] Executed endpoint 'OrdersController.GetOrderById (OrderManagement.API)'
+2025-08-25 10:13:16.018 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders/7 - 400 null application/json; charset=utf-8 32.0963ms
+2025-08-25 10:30:41.150 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/api/orders - null null
+2025-08-25 10:30:41.162 +03:00 [INF] Executing endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-25 10:30:41.166 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller OrdersController (OrderManagement.API).
+2025-08-25 10:30:41.175 +03:00 [INF] Retrieving all orders
+2025-08-25 10:30:41.427 +03:00 [INF] Orders retrieved successfully
+2025-08-25 10:30:41.429 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Collections.Generic.List`1[[OrderManagement.Domain.DTO.OrderDTO, OrderManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 10:30:41.435 +03:00 [INF] Executed action OrdersController.GetAllOrders (OrderManagement.API) in 260.035ms
+2025-08-25 10:30:41.441 +03:00 [INF] Executed endpoint 'OrdersController.GetAllOrders (OrderManagement.API)'
+2025-08-25 10:30:41.445 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/api/orders - 200 null application/json; charset=utf-8 294.4099ms
+2025-08-25 10:45:06.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/ - null null
+2025-08-25 10:45:06.884 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/ - 404 0 null 137.5189ms
+2025-08-25 10:45:06.889 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/, Response status code: 404
+2025-08-25 10:45:30.076 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - null null
+2025-08-25 10:45:30.120 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.0775ms
+2025-08-25 10:45:30.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7002/favicon.ico - null null
+2025-08-25 10:45:30.212 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7002/favicon.ico - 404 0 null 6.4347ms
+2025-08-25 10:45:30.217 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7002/favicon.ico, Response status code: 404
+2025-08-25 11:26:16.719 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 11:26:17.584 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-25 11:26:17.587 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-25 11:26:17.830 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 11:26:17.833 +03:00 [INF] Hosting environment: Development
+2025-08-25 11:26:17.835 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API
+2025-08-25 12:26:15.166 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 12:26:15.508 +03:00 [INF] Now listening on: https://localhost:7224
+2025-08-25 12:26:15.511 +03:00 [INF] Now listening on: http://localhost:7002
+2025-08-25 12:26:15.673 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 12:26:15.675 +03:00 [INF] Hosting environment: Development
+2025-08-25 12:26:15.678 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\OrderManagement.API

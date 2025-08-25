@@ -1,0 +1,57 @@
+2025-08-25 10:48:17.672 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 10:48:18.001 +03:00 [INF] Now listening on: https://localhost:7128
+2025-08-25 10:48:18.005 +03:00 [INF] Now listening on: http://localhost:7003
+2025-08-25 10:48:18.066 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 10:48:18.069 +03:00 [INF] Hosting environment: Development
+2025-08-25 10:48:18.071 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API
+2025-08-25 10:48:20.520 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7003/ - null null
+2025-08-25 10:48:20.865 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7003/ - 404 0 null 354.7343ms
+2025-08-25 10:48:20.879 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7003/, Response status code: 404
+2025-08-25 10:48:35.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7003/swagger/v1/swagger.json - null null
+2025-08-25 10:48:36.002 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.8026ms
+2025-08-25 10:48:36.082 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7003/favicon.ico - null null
+2025-08-25 10:48:36.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7003/favicon.ico - 404 0 null 7.6608ms
+2025-08-25 10:48:36.097 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7003/favicon.ico, Response status code: 404
+2025-08-25 11:25:51.188 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 11:25:51.540 +03:00 [INF] Now listening on: https://localhost:7128
+2025-08-25 11:25:51.543 +03:00 [INF] Now listening on: http://localhost:7003
+2025-08-25 11:25:51.600 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 11:25:51.607 +03:00 [INF] Hosting environment: Development
+2025-08-25 11:25:51.609 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API
+2025-08-25 12:17:12.722 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7003/api/item/create - application/json 84
+2025-08-25 12:17:13.011 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 12:17:13.022 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 12:17:13.044 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-08-25 12:17:13.050 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-25 12:17:13.066 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7003/api/item/create - 401 0 null 345.2274ms
+2025-08-25 12:17:28.561 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7003/api/item/create - application/json 84
+2025-08-25 12:17:28.594 +03:00 [INF] Executing endpoint 'Item.API.Controller.ItemController.CreateItem (Item.API)'
+2025-08-25 12:17:28.623 +03:00 [INF] Route matched with {action = "CreateItem", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateItem(OrderManagement.Domain.DTO.CreateItemDTO) on controller Item.API.Controller.ItemController (Item.API).
+2025-08-25 12:17:28.766 +03:00 [INF] Creating new item: water
+2025-08-25 12:17:29.376 +03:00 [INF] Executing OkObjectResult, writing value of type 'OrderManagement.Domain.Common.Response`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-25 12:17:29.412 +03:00 [INF] Executed action Item.API.Controller.ItemController.CreateItem (Item.API) in 780.9457ms
+2025-08-25 12:17:29.416 +03:00 [INF] Executed endpoint 'Item.API.Controller.ItemController.CreateItem (Item.API)'
+2025-08-25 12:17:29.429 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7003/api/item/create - 200 null application/json; charset=utf-8 868.43ms
+2025-08-25 12:25:57.711 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 12:25:58.038 +03:00 [INF] Now listening on: https://localhost:7128
+2025-08-25 12:25:58.040 +03:00 [INF] Now listening on: http://localhost:7003
+2025-08-25 12:25:58.094 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 12:25:58.097 +03:00 [INF] Hosting environment: Development
+2025-08-25 12:25:58.100 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API

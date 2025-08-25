@@ -1,0 +1,526 @@
+2025-08-25 09:55:26.443 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 09:55:26.819 +03:00 [INF] Now listening on: http://localhost:7000
+2025-08-25 09:55:26.914 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 09:55:26.918 +03:00 [INF] Hosting environment: Development
+2025-08-25 09:55:26.920 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway
+2025-08-25 10:30:40.218 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/orders - null null
+2025-08-25 10:30:40.915 +03:00 [INF] RequestId: 0HNF3L55E1VO7:00000001, PreviousRequestId: -
+No authentication needed for path: /orders
+2025-08-25 10:30:40.920 +03:00 [INF] RequestId: 0HNF3L55E1VO7:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /orders/{everything}
+2025-08-25 10:30:41.448 +03:00 [INF] RequestId: 0HNF3L55E1VO7:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7002/api/orders
+2025-08-25 10:30:41.541 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/orders - 200 null application/json; charset=utf-8 1327.3753ms
+2025-08-25 10:30:41.569 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7000/orders, Response status code: 200
+2025-08-25 10:59:44.656 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/Item/create - application/json 84
+2025-08-25 10:59:44.709 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Item/create
+2025-08-25 10:59:44.711 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Item/create
+Setting error response for request: POST /Item/create
+2025-08-25 10:59:44.714 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/Item/create - 404 0 null 58.8102ms
+2025-08-25 11:00:41.369 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 48
+2025-08-25 11:00:41.375 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000002, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/Auth/login
+2025-08-25 11:00:41.376 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000002, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/Auth/login
+Setting error response for request: POST /api/Auth/login
+2025-08-25 11:00:41.378 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 404 0 null 8.7873ms
+2025-08-25 11:00:54.149 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/Auth/login - application/json 48
+2025-08-25 11:00:54.155 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000003, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Auth/login
+2025-08-25 11:00:54.157 +03:00 [WRN] RequestId: 0HNF3L55E1VO9:00000003, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Auth/login
+Setting error response for request: POST /Auth/login
+2025-08-25 11:00:54.160 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/Auth/login - 404 0 null 11.7845ms
+2025-08-25 11:04:23.535 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Auth/login - application/json 48
+2025-08-25 11:04:23.544 +03:00 [WRN] RequestId: 0HNF3L55E1VOB:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/Auth/login
+2025-08-25 11:04:23.546 +03:00 [WRN] RequestId: 0HNF3L55E1VOB:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/Auth/login
+Setting error response for request: POST /api/Auth/login
+2025-08-25 11:04:23.550 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Auth/login - 404 0 null 15.1548ms
+2025-08-25 11:25:44.254 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 11:25:44.597 +03:00 [INF] Now listening on: http://localhost:7000
+2025-08-25 11:25:44.664 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 11:25:44.668 +03:00 [INF] Hosting environment: Development
+2025-08-25 11:25:44.669 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway
+2025-08-25 11:28:33.125 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/auth/login - application/json 48
+2025-08-25 11:28:33.448 +03:00 [WRN] RequestId: 0HNF3M5GDLOV5:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/auth/login
+2025-08-25 11:28:33.451 +03:00 [WRN] RequestId: 0HNF3M5GDLOV5:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/auth/login
+Setting error response for request: POST /api/auth/login
+2025-08-25 11:28:33.479 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/auth/login - 404 0 null 356.3159ms
+2025-08-25 11:28:58.326 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/auth/login - application/json 48
+2025-08-25 11:28:58.376 +03:00 [WRN] RequestId: 0HNF3M5GDLOV5:00000002, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+2025-08-25 11:28:58.394 +03:00 [WRN] RequestId: 0HNF3M5GDLOV5:00000002, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+Setting error response for request: POST /auth/login
+2025-08-25 11:28:58.398 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/auth/login - 404 0 null 72.5633ms
+2025-08-25 11:30:50.259 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/auth/login - application/json 48
+2025-08-25 11:30:50.271 +03:00 [WRN] RequestId: 0HNF3M5GDLOV7:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/auth/login
+2025-08-25 11:30:50.274 +03:00 [WRN] RequestId: 0HNF3M5GDLOV7:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /api/auth/login
+Setting error response for request: POST /api/auth/login
+2025-08-25 11:30:50.277 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/auth/login - 404 0 null 18.2229ms
+2025-08-25 11:38:39.837 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/auth - application/json 48
+2025-08-25 11:38:39.843 +03:00 [WRN] RequestId: 0HNF3M5GDLOV9:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth
+2025-08-25 11:38:39.845 +03:00 [WRN] RequestId: 0HNF3M5GDLOV9:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth
+Setting error response for request: POST /auth
+2025-08-25 11:38:39.847 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/auth - 404 0 null 32.5975ms
+2025-08-25 11:38:46.280 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/auth/login - application/json 48
+2025-08-25 11:38:46.287 +03:00 [WRN] RequestId: 0HNF3M5GDLOV9:00000002, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+2025-08-25 11:38:46.289 +03:00 [WRN] RequestId: 0HNF3M5GDLOV9:00000002, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+Setting error response for request: POST /auth/login
+2025-08-25 11:38:46.290 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/auth/login - 404 0 null 10.3445ms
+2025-08-25 11:40:06.375 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/auth/login - application/json 48
+2025-08-25 11:40:06.591 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 11:40:06.607 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 11:40:06.612 +03:00 [WRN] RequestId: 0HNF3M5GDLOVB:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+2025-08-25 11:40:06.615 +03:00 [WRN] RequestId: 0HNF3M5GDLOVB:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /auth/login
+Setting error response for request: POST /auth/login
+2025-08-25 11:40:06.618 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/auth/login - 404 0 null 243.1282ms
+2025-08-25 11:41:21.200 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/auth/login - application/json 55
+2025-08-25 11:41:21.259 +03:00 [WRN] RequestId: 0HNF3M5GDLOVD:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /auth/login
+2025-08-25 11:41:21.263 +03:00 [WRN] RequestId: 0HNF3M5GDLOVD:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /auth/login
+Setting error response for request: GET /auth/login
+2025-08-25 11:41:21.266 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/auth/login - 404 0 null 65.2923ms
+2025-08-25 11:43:34.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/login/login - application/json 55
+2025-08-25 11:43:34.685 +03:00 [INF] RequestId: 0HNF3M5GDLOVF:00000001, PreviousRequestId: -
+No authentication needed for path: /login/login
+2025-08-25 11:43:34.689 +03:00 [INF] RequestId: 0HNF3M5GDLOVF:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /login/{everything}
+2025-08-25 11:43:34.882 +03:00 [WRN] RequestId: 0HNF3M5GDLOVF:00000001, PreviousRequestId: -
+405 Method Not Allowed status code of request URI: http://localhost:7001/api/auth/login
+2025-08-25 11:43:34.899 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/login/login - 405 0 null 251.7489ms
+2025-08-25 11:43:34.906 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7000/login/login, Response status code: 405
+2025-08-25 11:44:37.595 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/login/login - application/json 55
+2025-08-25 11:44:37.639 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000001, PreviousRequestId: -
+No authentication needed for path: /login/login
+2025-08-25 11:44:37.641 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /login/{everything}
+2025-08-25 11:44:37.979 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7001/api/auth/login
+2025-08-25 11:44:37.985 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/login/login - 200 null application/json; charset=utf-8 390.8696ms
+2025-08-25 11:44:37.989 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/login/login, Response status code: 200
+2025-08-25 11:45:00.136 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/login/login - application/json 48
+2025-08-25 11:45:00.140 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 11:45:00.143 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 11:45:00.146 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000002, PreviousRequestId: -
+No authentication needed for path: /login/login
+2025-08-25 11:45:00.147 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /login/{everything}
+2025-08-25 11:45:00.276 +03:00 [INF] RequestId: 0HNF3M5GDLOVH:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7001/api/auth/login
+2025-08-25 11:45:00.289 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/login/login - 200 null application/json; charset=utf-8 153.105ms
+2025-08-25 11:45:00.294 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/login/login, Response status code: 200
+2025-08-25 12:15:53.610 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/Item/create - application/json 84
+2025-08-25 12:15:53.618 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 12:15:53.627 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 12:15:53.631 +03:00 [WRN] RequestId: 0HNF3M5GDLOVJ:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Item/create
+2025-08-25 12:15:53.633 +03:00 [WRN] RequestId: 0HNF3M5GDLOVJ:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: POST /Item/create
+Setting error response for request: POST /Item/create
+2025-08-25 12:15:53.635 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/Item/create - 404 0 null 57.2903ms
+2025-08-25 12:17:12.625 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/Items/create - application/json 84
+2025-08-25 12:17:12.631 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-08-25 12:17:12.637 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'KRBj4scEkAdorGzRKFjVRiF7sX7kO0tv0GZBV2pn-W0'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-08-25 12:17:12.641 +03:00 [INF] RequestId: 0HNF3M5GDLOVL:00000001, PreviousRequestId: -
+No authentication needed for path: /Items/create
+2025-08-25 12:17:12.643 +03:00 [INF] RequestId: 0HNF3M5GDLOVL:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /items/{everything}
+2025-08-25 12:17:13.066 +03:00 [WRN] RequestId: 0HNF3M5GDLOVL:00000001, PreviousRequestId: -
+401 Unauthorized status code of request URI: http://localhost:7003/api/item/create
+2025-08-25 12:17:13.069 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/Items/create - 401 0 null 443.7884ms
+2025-08-25 12:17:13.075 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/Items/create, Response status code: 401
+2025-08-25 12:17:28.549 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/Items/create - application/json 84
+2025-08-25 12:17:28.555 +03:00 [INF] RequestId: 0HNF3M5GDLOVL:00000002, PreviousRequestId: -
+No authentication needed for path: /Items/create
+2025-08-25 12:17:28.557 +03:00 [INF] RequestId: 0HNF3M5GDLOVL:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /items/{everything}
+2025-08-25 12:17:29.408 +03:00 [INF] RequestId: 0HNF3M5GDLOVL:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7003/api/item/create
+2025-08-25 12:17:29.423 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/Items/create - 200 null application/json; charset=utf-8 873.9213ms
+2025-08-25 12:17:29.430 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/Items/create, Response status code: 200
+2025-08-25 12:24:17.513 +03:00 [INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-25 12:24:17.700 +03:00 [INF] Now listening on: http://localhost:7000
+2025-08-25 12:24:17.756 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-25 12:24:17.759 +03:00 [INF] Hosting environment: Development
+2025-08-25 12:24:17.761 +03:00 [INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway
+2025-08-25 12:30:19.234 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Stock/create/2 - null 0
+2025-08-25 12:30:19.762 +03:00 [INF] RequestId: 0HNF3N80TR3A0:00000001, PreviousRequestId: -
+No authentication needed for path: /api/Stock/create/2
+2025-08-25 12:30:19.771 +03:00 [INF] RequestId: 0HNF3N80TR3A0:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:30:20.492 +03:00 [WRN] RequestId: 0HNF3N80TR3A0:00000001, PreviousRequestId: -
+401 Unauthorized status code of request URI: http://localhost:7004/api/stock/create/2
+2025-08-25 12:30:20.530 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Stock/create/2 - 401 0 null 1318.695ms
+2025-08-25 12:30:20.545 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/api/Stock/create/2, Response status code: 401
+2025-08-25 12:32:47.443 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7000/api/Stock/create/2 - null 0
+2025-08-25 12:32:47.560 +03:00 [INF] RequestId: 0HNF3N80TR3A2:00000001, PreviousRequestId: -
+No authentication needed for path: /api/Stock/create/2
+2025-08-25 12:32:47.562 +03:00 [INF] RequestId: 0HNF3N80TR3A2:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:32:49.422 +03:00 [INF] RequestId: 0HNF3N80TR3A2:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7004/api/stock/create/2
+2025-08-25 12:32:49.440 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7000/api/Stock/create/2 - 200 null application/json; charset=utf-8 1998.429ms
+2025-08-25 12:32:49.445 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:7000/api/Stock/create/2, Response status code: 200
+2025-08-25 12:48:01.455 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:01.471 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000001, PreviousRequestId: -
+No authentication needed for path: /api/Stock/updateQuantity/2/1000
+2025-08-25 12:48:01.473 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:48:01.545 +03:00 [WRN] RequestId: 0HNF3N80TR3A4:00000001, PreviousRequestId: -
+401 Unauthorized status code of request URI: http://localhost:7004/api/stock/updateQuantity/2/1000
+2025-08-25 12:48:01.548 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - 401 0 null 92.7092ms
+2025-08-25 12:48:01.552 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT http://localhost:7000/api/Stock/updateQuantity/2/1000, Response status code: 401
+2025-08-25 12:48:10.207 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:10.216 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000002, PreviousRequestId: -
+No authentication needed for path: /api/Stock/updateQuantity/2/1000
+2025-08-25 12:48:10.217 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:48:10.370 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7004/api/stock/updateQuantity/2/1000
+2025-08-25 12:48:10.374 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - 200 null application/json; charset=utf-8 167.0171ms
+2025-08-25 12:48:10.380 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT http://localhost:7000/api/Stock/updateQuantity/2/1000, Response status code: 200
+2025-08-25 12:48:27.927 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7000/api/Stock/quantity/2 - null null
+2025-08-25 12:48:27.938 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000003, PreviousRequestId: -
+No authentication needed for path: /api/Stock/quantity/2
+2025-08-25 12:48:27.939 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000003, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:48:27.976 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000003, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7004/api/stock/quantity/2
+2025-08-25 12:48:27.982 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7000/api/Stock/quantity/2 - 200 null application/json; charset=utf-8 55.0015ms
+2025-08-25 12:48:27.987 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:7000/api/Stock/quantity/2, Response status code: 200
+2025-08-25 12:48:55.269 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - null 0
+2025-08-25 12:48:55.277 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000004, PreviousRequestId: -
+No authentication needed for path: /api/Stock/updateQuantity/2/1000
+2025-08-25 12:48:55.279 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /api/stock/{everything}
+2025-08-25 12:48:55.331 +03:00 [INF] RequestId: 0HNF3N80TR3A4:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:7004/api/stock/updateQuantity/2/1000
+2025-08-25 12:48:55.336 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:7000/api/Stock/updateQuantity/2/1000 - 200 null application/json; charset=utf-8 72.8529ms
+2025-08-25 12:48:55.341 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT http://localhost:7000/api/Stock/updateQuantity/2/1000, Response status code: 200
+[15:36:32 INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. {"EventId":{"Id":63,"Name":"UsingProfileAsKeyRepositoryWithDPAPI"},"SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
+[15:36:32 INF] Now listening on: http://localhost:7000 {"EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:36:32 INF] Application started. Press Ctrl+C to shut down. {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:36:32 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:36:32 INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE3:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QG6R9IE3"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE2:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QG6R9IE2"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE1:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QG6R9IE1"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE5:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QG6R9IE5"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE6:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QG6R9IE6"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 85.943ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE3:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QG6R9IE3"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/_vs/browserLink - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE3:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QG6R9IE3"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 248.13ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE3:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QG6R9IE3"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE6:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE6:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QG6R9IE6"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE5:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE5:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QG6R9IE5"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE1:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE1:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QG6R9IE1"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE2:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE2:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QG6R9IE2"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE4:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE4:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE6:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js
+Setting error response for request: GET /index.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE6:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QG6R9IE6"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE5:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js
+Setting error response for request: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE5:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QG6R9IE5"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE1:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css
+Setting error response for request: GET /swagger-ui.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE1:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QG6R9IE1"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE2:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css
+Setting error response for request: GET /index.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE2:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QG6R9IE2"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE4:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js
+Setting error response for request: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE4:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - 404 0 null 530.189ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE5:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QG6R9IE5"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.js - 404 0 null 530.5837ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE6:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QG6R9IE6"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui.css - 404 0 null 550.2003ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE1:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QG6R9IE1"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.css - 404 0 null 559.0252ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE2:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QG6R9IE2"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - 404 0 null 571.8337ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 11.8901ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/favicon-32x32.png - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE4:00000003, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-32x32.png {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE4:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE4:00000003, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-32x32.png
+Setting error response for request: GET /favicon-32x32.png {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE4:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request finished HTTP/1.1 GET http://localhost:7000/favicon-32x32.png - 404 0 null 28.2606ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 INF] Request starting HTTP/1.1 GET http://localhost:7000/favicon-16x16.png - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:46 WRN] RequestId: 0HNF3QG6R9IE4:00000004, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-16x16.png {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE4:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:47 WRN] RequestId: 0HNF3QG6R9IE4:00000004, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-16x16.png
+Setting error response for request: GET /favicon-16x16.png {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE4:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:47 INF] Request finished HTTP/1.1 GET http://localhost:7000/favicon-16x16.png - 404 0 null 19.9035ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:53 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/ready - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000005","RequestPath":"/health/ready","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:54 WRN] RequestId: 0HNF3QG6R9IE4:00000005, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/ready {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QG6R9IE4:00000005","RequestPath":"/health/ready","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:54 WRN] RequestId: 0HNF3QG6R9IE4:00000005, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/ready
+Setting error response for request: GET /health/ready {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QG6R9IE4:00000005","RequestPath":"/health/ready","ConnectionId":"0HNF3QG6R9IE4"}
+[15:36:54 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/ready - 404 0 null 230.3293ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QG6R9IE4:00000005","RequestPath":"/health/ready","ConnectionId":"0HNF3QG6R9IE4"}
+[15:44:56 INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. {"EventId":{"Id":63,"Name":"UsingProfileAsKeyRepositoryWithDPAPI"},"SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
+[15:44:56 INF] Now listening on: http://localhost:7000 {"EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:44:56 INF] Application started. Press Ctrl+C to shut down. {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:44:56 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:44:56 INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IO:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QKQIM9IO"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IP:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QKQIM9IP"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IL:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QKQIM9IL"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IM:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QKQIM9IM"}
+[15:45:01 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 118.0349ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IL:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QKQIM9IL"}
+[15:45:01 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IQ:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QKQIM9IQ"}
+[15:45:02 INF] Request starting HTTP/1.1 GET http://localhost:7000/_vs/browserLink - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IL:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QKQIM9IL"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IM:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IM:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QKQIM9IM"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IP:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IP:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QKQIM9IP"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IM:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css
+Setting error response for request: GET /index.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IM:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QKQIM9IM"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IP:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js
+Setting error response for request: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IP:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QKQIM9IP"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.css - 404 0 null 394.0043ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IM:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QKQIM9IM"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IO:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IO:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QKQIM9IO"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IQ:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IQ:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QKQIM9IQ"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IN:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IN:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - 404 0 null 441.9512ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IP:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QKQIM9IP"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IO:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js
+Setting error response for request: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IO:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QKQIM9IO"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 230.3585ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IL:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QKQIM9IL"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IQ:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js
+Setting error response for request: GET /index.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IQ:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QKQIM9IQ"}
+[15:45:02 WRN] RequestId: 0HNF3QKQIM9IN:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css
+Setting error response for request: GET /swagger-ui.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IN:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - 404 0 null 514.6701ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IO:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QKQIM9IO"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.js - 404 0 null 536.2607ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IQ:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QKQIM9IQ"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui.css - 404 0 null 543.0284ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:02 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:02 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 12.0152ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:11 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/live - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:11 WRN] RequestId: 0HNF3QKQIM9IN:00000003, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IN:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:11 WRN] RequestId: 0HNF3QKQIM9IN:00000003, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
+Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IN:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:11 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 180.852ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:50 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/live - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000004","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:50 WRN] RequestId: 0HNF3QKQIM9IN:00000004, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IN:00000004","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:50 WRN] RequestId: 0HNF3QKQIM9IN:00000004, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
+Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IN:00000004","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:50 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 29.247ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000004","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:52 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/live - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:52 WRN] RequestId: 0HNF3QKQIM9IN:00000005, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QKQIM9IN:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:52 WRN] RequestId: 0HNF3QKQIM9IN:00000005, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
+Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QKQIM9IN:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:45:52 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 35.3735ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QKQIM9IN:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QKQIM9IN"}
+[15:47:20 INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. {"EventId":{"Id":63,"Name":"UsingProfileAsKeyRepositoryWithDPAPI"},"SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
+[15:47:20 INF] Now listening on: http://localhost:7000 {"EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:47:20 INF] Application started. Press Ctrl+C to shut down. {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:47:20 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:47:20 INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PG:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QM6G04PG"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PC:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QM6G04PC"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PF:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QM6G04PF"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PE:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QM6G04PE"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PD:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QM6G04PD"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 297.6613ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PD:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QM6G04PD"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/_vs/browserLink - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PD:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QM6G04PD"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PC:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PC:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QM6G04PC"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PF:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PF:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QM6G04PF"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PC:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css
+Setting error response for request: GET /index.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PC:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QM6G04PC"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PF:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js
+Setting error response for request: GET /index.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PF:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QM6G04PF"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.css - 404 0 null 411.5138ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PC:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QM6G04PC"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.js - 404 0 null 417.9356ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PF:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QM6G04PF"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PG:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PG:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QM6G04PG"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PE:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PE:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QM6G04PE"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PB:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PB:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PG:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js
+Setting error response for request: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PG:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QM6G04PG"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.7562ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PD:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QM6G04PD"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PE:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js
+Setting error response for request: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PE:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QM6G04PE"}
+[15:47:29 WRN] RequestId: 0HNF3QM6G04PB:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css
+Setting error response for request: GET /swagger-ui.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PB:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - 404 0 null 484.3527ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PG:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QM6G04PG"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - 404 0 null 509.6704ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PE:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QM6G04PE"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui.css - 404 0 null 519.6934ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:29 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:29 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 10.8ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:37 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/live - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:37 WRN] RequestId: 0HNF3QM6G04PB:00000003, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:37 WRN] RequestId: 0HNF3QM6G04PB:00000003, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
+Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
+[15:47:37 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 147.1695ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
