@@ -26,6 +26,25 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/api/OrderItem/{everything}",
+      "DownstreamPathTemplate": "/api/OrderItem/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 6,
+        "Limit": 2
+      }
+    },
+    {
       "UpstreamPathTemplate": "/api/item/{everything}",
       "DownstreamPathTemplate": "/api/item/{everything}",
       "DownstreamScheme": "http",

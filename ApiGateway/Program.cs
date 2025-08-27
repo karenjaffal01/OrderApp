@@ -1,8 +1,6 @@
 ﻿using CacheManager.Core;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -11,6 +9,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Serilog;
 using Serilog.Enrichers.CorrelationId;
+using Serilog.Formatting.Json;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,10 +23,6 @@ builder.Services.AddCacheManager<ICacheManager<object>>(builder.Configuration, "
     y.WithDictionaryHandle();
 });
 builder.Services.AddHttpClient();
-
-builder.Services.AddHealthChecks()
-    .AddCheck("self", () => HealthCheckResult.Healthy("Gateway is alive"))
-    .AddCheck<DownStreamHealthChecks>("downstream_services");
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -48,7 +43,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]))
         };
     });
-builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -74,12 +69,16 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
-    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}")
-    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day, outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}")
+    .Enrich.WithCorrelationId()
+    .WriteTo.Console()
+    .WriteTo.File(new JsonFormatter(), "Logs/log.json", rollingInterval: RollingInterval.Day)
     .CreateLogger();
+
 builder.Host.UseSerilog();
+
 var app = builder.Build();
 
 app.MapControllers();
@@ -91,18 +90,9 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("http://localhost:7003/swagger/v1/swagger.json", "Items Service");
     c.SwaggerEndpoint("http://localhost:7004/swagger/v1/swagger.json", "Stock Service");
     c.SwaggerEndpoint("http://localhost:7001/swagger/v1/swagger.json", "Auth Service");
-
     c.RoutePrefix = "swagger";
 });
-app.MapHealthChecks("/health/live", new HealthCheckOptions
-{
-    Predicate = check => check.Name == "self"
-});
 
-app.MapHealthChecks("/health/ready", new HealthCheckOptions
-{
-    Predicate = check => check.Name == "downstream_services"
-});
 await app.UseOcelot();
 
 app.Run();

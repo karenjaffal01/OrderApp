@@ -88,3 +88,11 @@ C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\obj\Debug\net9.0\ref
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\obj\Debug\net9.0\Stock.API.pdb
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\obj\Debug\net9.0\Stock.API.genruntimeconfig.cache
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\obj\Debug\net9.0\ref\Stock.API.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\HealthChecks.NpgSql.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Logs\log20250826.json
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Stock.API\bin\Debug\net9.0\Logs\log20250827.json

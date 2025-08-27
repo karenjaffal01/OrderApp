@@ -15,6 +15,7 @@ using OrderManagement.Persistence.Repositories;
 using OrderManagement.Persistence.UnitOfWorks;
 using Serilog;
 using Serilog.Enrichers.CorrelationId;
+using Serilog.Formatting.Json;
 using SharedLibrary;
 using System.Data;
 using System.Text;
@@ -78,9 +79,10 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 Log.Logger = new LoggerConfiguration()
+    .Enrich.WithCorrelationId()
     .Enrich.FromLogContext()
-    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}")
-    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day, outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}")
+    .WriteTo.Console()
+     .WriteTo.File(new JsonFormatter(), "Logs/log.json", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog();
 builder.Services.AddHealthChecks()

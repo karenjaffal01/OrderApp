@@ -524,3 +524,95 @@ ResponderMiddleware found 1 error ->
 UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
 Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
 [15:47:37 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 147.1695ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QM6G04PB:00000003","RequestPath":"/health/live","ConnectionId":"0HNF3QM6G04PB"}
+[15:52:52 INF] User profile is available. Using 'C:\Users\karen.jaffal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. {"EventId":{"Id":63,"Name":"UsingProfileAsKeyRepositoryWithDPAPI"},"SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
+[15:52:53 INF] Now listening on: http://localhost:7000 {"EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:52:53 INF] Application started. Press Ctrl+C to shut down. {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:52:53 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:52:53 INF] Content root path: C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\ApiGateway {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6I:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QP8DVK6I"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6J:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QP8DVK6J"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6L:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QP8DVK6L"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6G:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QP8DVK6G"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/index.css - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6H:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QP8DVK6H"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:57 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 58.6279ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6I:00000001","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QP8DVK6I"}
+[15:52:57 INF] Request starting HTTP/1.1 GET http://localhost:7000/_vs/browserLink - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6I:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QP8DVK6I"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6G:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6G:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QP8DVK6G"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6J:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6J:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QP8DVK6J"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6L:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6L:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QP8DVK6L"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6H:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6H:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QP8DVK6H"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6K:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6G:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui.css
+Setting error response for request: GET /swagger-ui.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6G:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QP8DVK6G"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6J:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.js
+Setting error response for request: GET /index.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6J:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QP8DVK6J"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6L:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-bundle.js
+Setting error response for request: GET /swagger-ui-bundle.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6L:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QP8DVK6L"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6H:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /index.css
+Setting error response for request: GET /index.css {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6H:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QP8DVK6H"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /swagger-ui-standalone-preset.js
+Setting error response for request: GET /swagger-ui-standalone-preset.js {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6K:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui.css - 404 0 null 337.5713ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6G:00000001","RequestPath":"/swagger-ui.css","ConnectionId":"0HNF3QP8DVK6G"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.js - 404 0 null 338.7363ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6J:00000001","RequestPath":"/index.js","ConnectionId":"0HNF3QP8DVK6J"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-bundle.js - 404 0 null 347.2266ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6L:00000001","RequestPath":"/swagger-ui-bundle.js","ConnectionId":"0HNF3QP8DVK6L"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/index.css - 404 0 null 354.3111ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6H:00000001","RequestPath":"/index.css","ConnectionId":"0HNF3QP8DVK6H"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/swagger-ui-standalone-preset.js - 404 0 null 361.831ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000001","RequestPath":"/swagger-ui-standalone-preset.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 247.0117ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6I:00000002","RequestPath":"/_vs/browserLink","ConnectionId":"0HNF3QP8DVK6I"}
+[15:52:58 INF] Request starting HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 25.968ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000002","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request starting HTTP/1.1 GET http://localhost:7000/favicon-32x32.png - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000003, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-32x32.png {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6K:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000003, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-32x32.png
+Setting error response for request: GET /favicon-32x32.png {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6K:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/favicon-32x32.png - 404 0 null 37.2261ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000003","RequestPath":"/favicon-32x32.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request starting HTTP/1.1 GET http://localhost:7000/favicon-16x16.png - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000004, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-16x16.png {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6K:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 WRN] RequestId: 0HNF3QP8DVK6K:00000004, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /favicon-16x16.png
+Setting error response for request: GET /favicon-16x16.png {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6K:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:52:58 INF] Request finished HTTP/1.1 GET http://localhost:7000/favicon-16x16.png - 404 0 null 32.1318ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000004","RequestPath":"/favicon-16x16.png","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:07 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/live - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:07 WRN] RequestId: 0HNF3QP8DVK6K:00000005, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6K:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:07 WRN] RequestId: 0HNF3QP8DVK6K:00000005, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/live
+Setting error response for request: GET /health/live {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6K:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:07 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/live - 404 0 null 141.691ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000005","RequestPath":"/health/live","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:22 INF] Request starting HTTP/1.1 GET http://localhost:7000/health/ready - null null {"EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000006","RequestPath":"/health/ready","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:22 WRN] RequestId: 0HNF3QP8DVK6K:00000006, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/ready {"SourceContext":"Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware","RequestId":"0HNF3QP8DVK6K:00000006","RequestPath":"/health/ready","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:22 WRN] RequestId: 0HNF3QP8DVK6K:00000006, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /health/ready
+Setting error response for request: GET /health/ready {"SourceContext":"Ocelot.Responder.Middleware.ResponderMiddleware","RequestId":"0HNF3QP8DVK6K:00000006","RequestPath":"/health/ready","ConnectionId":"0HNF3QP8DVK6K"}
+[15:53:22 INF] Request finished HTTP/1.1 GET http://localhost:7000/health/ready - 404 0 null 43.1158ms {"EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HNF3QP8DVK6K:00000006","RequestPath":"/health/ready","ConnectionId":"0HNF3QP8DVK6K"}

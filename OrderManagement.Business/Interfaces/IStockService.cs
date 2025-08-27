@@ -1,17 +1,15 @@
-﻿using System;
+﻿using OrderManagement.Domain.Common;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace OrderManagement.Business.Interfaces
 {
     public interface IStockService
     {
-        Task<(int errorCode, string message)> CreateStock(int itemId);
-        Task<(int errorCode, string message)> UpdateStockQuantity(int stockId, int quantity);
-        Task<(int errorCode, string message)> DeleteStock(int stockId);
-        Task<int> GetStockQuantity(int itemId);
-        Task<IEnumerable<dynamic>> GetAllStocks();
+        Task<Response<object>> CreateStockAsync(int itemId);
+        Task<Response<object>> UpdateStockQuantityAsync(int stockId, int quantity);
+        Task<Response<object>> DeleteStockAsync(int stockId);
+        Task<Response<int>> GetStockQuantityAsync(int itemId);
+        Task<Response<IEnumerable<dynamic>>> GetAllStocksAsync();
     }
 }

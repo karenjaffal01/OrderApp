@@ -10,7 +10,6 @@ namespace SharedLibrary
         {
             _next = next;
         }
-
         public async Task InvokeAsync(HttpContext context)
         {
             var path = context.Request.Path.Value?.ToLower();

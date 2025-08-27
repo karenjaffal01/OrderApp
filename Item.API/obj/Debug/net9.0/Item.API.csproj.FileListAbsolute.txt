@@ -94,3 +94,5 @@ C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Micr
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Logs\log-20250826.json
+C:\Users\karen.jaffal\Downloads\OrderApp\OrderApp\Item.API\bin\Debug\net9.0\Logs\log20250827.json

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OrderManagement.Business.Interfaces;
+using OrderManagement.Domain.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -21,58 +22,60 @@ namespace Stock.API.Controller
         [HttpPost("create/{itemId}")]
         public async Task<IActionResult> CreateStock(int itemId)
         {
-            var (errorCode, message) = await _stockService.CreateStock(itemId);
+            var response = await _stockService.CreateStockAsync(itemId);
 
-            if (errorCode == 0)
-                return Ok(new { message });
-            else
-                return BadRequest(new { message });
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+
+            return BadRequest(response);
         }
 
         [Authorize(Roles = "Admin")]
         [HttpPut("updateQuantity/{stockId}/{quantity}")]
         public async Task<IActionResult> UpdateStockQuantity(int stockId, int quantity)
         {
-            var (errorCode, message) = await _stockService.UpdateStockQuantity(stockId, quantity);
+            var response = await _stockService.UpdateStockQuantityAsync(stockId, quantity);
 
-            if (errorCode == 0)
-                return Ok(new { message });
-            else
-                return BadRequest(new { message });
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+
+            return BadRequest(response);
         }
 
         [Authorize(Roles = "Admin")]
         [HttpDelete("{stockId}")]
         public async Task<IActionResult> DeleteStock(int stockId)
         {
-            var (errorCode, message) = await _stockService.DeleteStock(stockId);
+            var response = await _stockService.DeleteStockAsync(stockId);
 
-            if (errorCode == 0)
-                return Ok(new { message });
-            else
-                return NotFound(new { message });
+            if (response.Code == Response<object>.ErrorCode.Success)
+                return Ok(response);
+
+            return NotFound(response);
         }
 
         [Authorize]
         [HttpGet("quantity/{itemId}")]
         public async Task<IActionResult> GetStockQuantity(int itemId)
         {
-            int quantity = await _stockService.GetStockQuantity(itemId);
-            if (quantity >= 0)
-                return Ok(new { itemId, quantity });
-            else
-                return NotFound(new { message = "Stock not found" });
+            var response = await _stockService.GetStockQuantityAsync(itemId);
+
+            if (response.Code == Response<int>.ErrorCode.Success)
+                return Ok(response);
+
+            return NotFound(response);
         }
 
         [Authorize]
         [HttpGet("all")]
         public async Task<IActionResult> GetAllStocks()
         {
-            IEnumerable<dynamic> stocks = await _stockService.GetAllStocks();
-            if (stocks != null)
-                return Ok(stocks);
-            else
-                return NotFound(new { message = "No stocks found" });
+            var response = await _stockService.GetAllStocksAsync();
+
+            if (response.Code == Response<IEnumerable<dynamic>>.ErrorCode.Success)
+                return Ok(response);
+
+            return NotFound(response);
         }
     }
 }
