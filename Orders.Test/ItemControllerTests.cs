@@ -36,7 +36,6 @@ namespace Orders.Test
             Assert.Equal(Response<object>.ErrorCode.Success, returnedResponse.Code);
             Assert.Equal("Item created", returnedResponse.Message);
         }
-
         [Fact]
         public async Task CreateItem_ReturnsBadRequest()
         {
@@ -127,7 +126,6 @@ namespace Orders.Test
             Assert.Equal(0, errorCodeProp);
             Assert.Equal("Updated successfully", messageProp);
         }
-
         [Fact]
         public async Task UpdateItem_ReturnsBadRequest()
         {

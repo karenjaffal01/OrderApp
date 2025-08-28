@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16
+    container_name: orderapp-db
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: orderappdb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - orderapp-network
+
+  apigateway:
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    container_name: apigateway
+    ports:
+      - "7000:7000"
+    depends_on:
+      - authapi
+      - ordersapi
+      - itemapi
+      - stockapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - orderapp-network
+
+  authapi:
+    build:
+      context: .
+      dockerfile: Login.API/Dockerfile
+    container_name: authapi
+    ports:
+      - "7001:7001"
+    environment:
+      - ASPNETCORE_URLS=http://+:7001
+      - DbHost=db
+      - DbUser=myuser
+      - DbPassword=mypassword
+      - DbName=orderappdb
+    networks:
+      - orderapp-network
+
+  ordersapi:
+    build:
+      context: .
+      dockerfile: OrderManagement.API/Dockerfile
+    container_name: ordersapi
+    ports:
+      - "7002:7002"
+    environment:
+      - ASPNETCORE_URLS=http://+:7002
+      - DbHost=db
+      - DbUser=myuser
+      - DbPassword=mypassword
+      - DbName=orderappdb
+    networks:
+      - orderapp-network
+
+  itemapi:
+    build:
+      context: .
+      dockerfile: Item.API/Dockerfile
+    container_name: itemapi
+    ports:
+      - "7003:7003"
+    environment:
+      - ASPNETCORE_URLS=http://+:7003
+      - DbHost=db
+      - DbUser=myuser
+      - DbPassword=mypassword
+      - DbName=orderappdb
+    networks:
+      - orderapp-network
+
+  stockapi:
+    build:
+      context: .
+      dockerfile: Stock.API/Dockerfile
+    container_name: stockapi
+    ports:
+      - "7004:7004"
+    environment:
+      - ASPNETCORE_URLS=http://+:7004
+      - DbHost=db
+      - DbUser=myuser
+      - DbPassword=mypassword
+      - DbName=orderappdb
+    networks:
+      - orderapp-network
+
+volumes:
+  db-data:
+
+networks:
+  orderapp-network:

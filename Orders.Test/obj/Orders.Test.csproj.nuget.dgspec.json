@@ -78,6 +78,10 @@
             "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
             }
           },
           "imports": [
@@ -173,6 +177,10 @@
             "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
             }
           },
           "imports": [
@@ -281,6 +289,10 @@
             "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -1003,6 +1015,10 @@
             "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
             }
           },
           "imports": [

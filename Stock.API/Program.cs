@@ -23,14 +23,9 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 var password = builder.Configuration["DbPassword"];
-if (!string.IsNullOrEmpty(password))
-{
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") + password;
-    builder.Services.AddScoped<IDbConnection>(_ => new NpgsqlConnection(connectionString));
-}
-else
-{
-    Console.WriteLine("Warning: Database password is not configured");
+if (!string.IsNullOrEmpty(password)) { 
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") + password; 
+    builder.Services.AddScoped<IDbConnection>(_ => new NpgsqlConnection(connectionString)); 
 }
 
 builder.Services.AddScoped<IStockUnitOfWork, StockUnitOfWork>();
