@@ -31,3 +31,6 @@ SharedLibrary/obj/
 
 Stock.API/bin/
 Stock.API/obj/
+
+Orders.Test/bin/
+Orders.Test/obj/
