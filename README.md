@@ -1,184 +1,210 @@
-\# Microservices Project with Clean Architecture, JWT, and Ocelot Gateway
+🏗️ Microservices Project with Clean Architecture, JWT, and Ocelot API Gateway
 
+This project demonstrates a full-fledged microservices architecture using .NET 8, PostgreSQL, and Ocelot API Gateway, built with Clean Architecture principles.
 
+It includes multiple services (OrderService, InventoryService, LoginService, StockService) and features JWT authentication with refresh tokens, transactional operations, structured logging, rate limiting, caching, and Dockerized deployments.
 
-This project demonstrates a \*\*full-fledged microservices architecture\*\* using \*\*.NET 6\*\*, \*\*PostgreSQL\*\*, and \*\*Ocelot API Gateway\*\*, following \*\*Clean Architecture principles\*\*. It implements two main services (`OrderService` and `InventoryService`) with full CRUD operations, JWT authentication (including refresh tokens), transactional database operations, rate limiting, caching, structured logging, and normalized schemas.
+The project is designed to be secure, scalable, and maintainable, making it a solid foundation for real-world enterprise systems.
 
+📑 Table of Contents
 
+Technologies
 
----
+Project Overview
 
+Project Structure
 
+Database Design
 
-\## Table of Contents
+Order Schema
 
+Inventory Schema
 
+Authentication & Authorization
 
-\- \[Technologies](#technologies)
+Services
 
-\- \[Project Overview](#project-overview)
+OrderService
 
-\- \[Project Structure](#project-structure)
+InventoryService
 
-\- \[Database Design](#database-design)
+API Gateway
 
-&nbsp; - \[Order Schema](#order-schema)
+Logging
 
-&nbsp; - \[Inventory Schema](#inventory-schema)
+Rate Limiting & Caching
 
-\- \[Authentication \& Authorization](#authentication--authorization)
+Testing & Documentation
 
-\- \[Services](#services)
+Setup Instructions
 
-&nbsp; - \[OrderService](#orderservice)
+Usage
 
-&nbsp; - \[InventoryService](#inventoryservice)
+Base Response Format
 
-\- \[API Gateway](#api-gateway)
+License
 
-\- \[Logging](#logging)
+⚙️ Technologies
 
-\- \[Rate Limiting \& Caching](#rate-limiting--caching)
+Backend: .NET 8, C#
 
-\- \[Documentation](#documentation)
+Database: PostgreSQL
 
-\- \[Advanced Features](#advanced-features)
+ORM & Micro-ORM: EF Core + Dapper
 
-\- \[Setup Instructions](#setup-instructions)
+API Gateway: Ocelot
 
-\- \[Usage](#usage)
+Authentication: JWT (Access + Refresh Tokens)
 
-\- \[Base Response Format](#base-response-format)
+Logging: Serilog (with correlation IDs)
 
-\- \[License](#license)
+Caching & Rate Limiting: In-memory + Ocelot policies
 
+Documentation: Swagger + Postman Collections
 
+Containerization: Docker (services run in isolated containers)
 
----
+🚀 Project Overview
 
+Goal: Build a microservices-based system with secure APIs, modular services, and centralized gateway management.
 
+Core Services:
 
-\## Technologies
+OrderService: Handles customer orders and order items.
 
+InventoryService: Manages stock and product items.
 
+LoginService: Provides JWT-based authentication and refresh token handling.
 
-\- \*\*Backend:\*\* .NET 8, C#
+StockService: Maintains stock updates for items.
 
-\- \*\*Database:\*\* PostgreSQL
+Gateway: Ocelot API Gateway routes requests, applies policies, and enforces security.
 
-\- \*\*ORM \& Micro-ORM:\*\* EF Core + Dapper
+Clean Architecture: Layers are separated into Domain, Application, Infrastructure, and API.
 
-\- \*\*API Gateway:\*\* Ocelot
+Database: Normalized relational schemas with transactional consistency.
 
-\- \*\*Authentication:\*\* JWT (Access + Refresh Tokens)
+📂 Project Structure
+Business/        # Business logic, services, use cases
+Persistence/     # EF Core DbContext, Dapper Repositories, Unit of Work
+Domain/          # Entities, Enums, DTOs
+ApiGateway/      # Ocelot configuration, JWT forwarding, rate limiting
+Order.Api/       # Controllers for Order service (orders + order items)
+Item.Api/        # Controllers for Item service
+Stock.Api/       # Controllers for Stock service
+Login.Api/       # Controllers for Login/authentication
 
-\- \*\*Logging:\*\* Serilog (structured logs with correlation IDs)
+🔑 Authentication & Authorization
 
-\- \*\*Caching \& Rate Limiting:\*\* In-memory + gateway-level policies
+JWT Authentication: Access + Refresh tokens
 
-\- \*\*Documentation:\*\* Swagger + Postman
+Claims-based Authorization: Role & permission validation
 
+Login Table: Securely stores credentials & roles
 
+Security Features:
 
----
+Refresh token workflow
 
+Expired token handling
 
+Role-based endpoint restrictions
 
-\## Project Overview
+🌐 Ocelot API Gateway Features
 
+Routes requests to microservices (Order, Inventory, Login, Stock)
 
+Forwards JWT tokens for secure communication
 
-\- \*\*Goal:\*\* Build a microservices system with secure, scalable, and maintainable architecture.
+Enforces per-route rate limiting
 
-\- \*\*Services:\*\*  
+Provides caching for repeated queries
 
-&nbsp; 1. \*\*OrderService:\*\* Manages customer orders.  
+Optionally blocks direct API access, forcing all traffic through the gateway
 
-&nbsp; 2. \*\*InventoryService:\*\* Manages stock and items.
+📊 Logging
 
-\- \*\*Gateway:\*\* Centralized API gateway using Ocelot to route requests, forward JWT, and enforce rate limits and caching.
+Serilog structured logging
 
-\- \*\*Clean Architecture:\*\* Separate concerns into `API`, `Business`, `Persistence`, and `Domain` layers.
+Logs include:
 
-\- \*\*Transactions:\*\* All CRUD operations across multiple tables are transactional to maintain database consistency.
+Correlation IDs for request tracing
 
-\- \*\*Database Normalization:\*\* All schemas are normalized to avoid redundancy and enforce integrity.
+Request & response payloads
 
+Error details with stack traces
 
+Outputs to console & file sinks
 
----
+⏱️ Rate Limiting & Caching
 
+Rate Limiting: Prevents abuse by limiting requests per user or service
 
+Caching: Improves performance by caching frequently accessed routes
 
-\## Project Structure
+🧪 Testing & Documentation
 
+Unit Tests:
 
+Covers business logic and service behaviors
 
+Ensures API endpoints return expected responses (200, 400, etc.)
 
+Integration Tests (via Postman):
 
-&nbsp;Business # Business logic, services, use cases
+Postman collections provided for testing workflows
 
-&nbsp;Persistence # EF Core DbContext, Dapper Repositories, Unit of Work
+Predefined requests for login, orders, inventory, and stock APIs
 
-&nbsp;Domain # Entities, Enums, DTO
+Swagger UI: Available per service for exploring endpoints
 
-&nbsp;ApiGateway # Ocelot gateway configuration, JWT forwarding, rate limiting, caching
+🐳 Dockerized Deployment
 
-&nbsp;Item.api # Controllers for item service
+Each service is containerized into its own Docker container, making it easy to:
 
-&nbsp;Order.api # Controllers for order service that contains order items operations
+Spin up isolated environments
 
-&nbsp;Login.api # Controllers for login service with JWT authentication 
+Scale services independently
 
-&nbsp;Stock.api # Controllers for stock service
+Run the whole system using docker-compose
 
+⚡ Setup Instructions
 
+Clone the repository
 
-\## Authentication \& Authorization
+Configure PostgreSQL database connection strings in appsettings.json
 
+Run migrations for each service
 
+Start services locally or build & run with Docker:
 
-\- \*\*JWT Authentication:\*\* Access + Refresh tokens
+docker-compose up --build
 
-\- \*\*Claims-based Authorization:\*\* Define roles and permissions
 
-\- \*\*Login Table:\*\* Stores user credentials and roles
+Access APIs through the Ocelot Gateway
 
-\- \*\*Security Features:\*\*
+▶️ Usage
 
-&nbsp; - Refresh token workflow
+Authentication:
 
-&nbsp; - Token expiration handling
+Login using /login endpoint to obtain JWT tokens
 
-&nbsp; - Role and claims validation on all endpoints
+Use the token to authorize requests via Swagger or Postman
 
+Order Operations:
 
+Create, update, delete, and fetch customer orders
 
-\## Ocelot Gateway Features:
+Inventory Operations:
 
-&nbsp; - Routes requests to OrderService and InventoryService
+Add new items, update stock, and fetch available items
 
-&nbsp; - Forwards JWT tokens
+📦 Base Response Format
 
-&nbsp; - Rate limiting per route
+All APIs return responses in a consistent format:
 
-&nbsp; - Caching for repeated queries
-
-&nbsp; - Optional: blocks direct API access for added security
-
-
-
-\## Logging:
-
-  - Serilog structured logging
-
-&nbsp;  Logs include:
-
-&nbsp;   -Correlation IDs for request tracing
-
-&nbsp;   -Request and response bodies
-
-&nbsp;   -Errors with stack traces
-
-&nbsp;   -Output to console + files
-
+{
+  "success": true,
+  "message": "Operation completed successfully",
+  "data": { }
+}
