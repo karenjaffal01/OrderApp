@@ -85,14 +85,24 @@ Clean Architecture: Layers are separated into Domain, Application, Infrastructur
 Database: Normalized relational schemas with transactional consistency.
 
 📂 Project Structure
+
 Business/        # Business logic, services, use cases
+
 Persistence/     # EF Core DbContext, Dapper Repositories, Unit of Work
+
 Domain/          # Entities, Enums, DTOs
+
 ApiGateway/      # Ocelot configuration, JWT forwarding, rate limiting
+
 Order.Api/       # Controllers for Order service (orders + order items)
+
 Item.Api/        # Controllers for Item service
+
 Stock.Api/       # Controllers for Stock service
+
 Login.Api/       # Controllers for Login/authentication
+
+Orders.Test/     #Unit tests for all the controllers
 
 🔑 Authentication & Authorization
 
